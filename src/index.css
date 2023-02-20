@@ -1,13 +1,125 @@
+/* THESE ARE THE MAIN FONTS FOR THE PROJECT */
+/* 
+font-family: 'Aboreto', cursive;
+font-family: 'Aguafina Script', cursive;
+font-family: 'Alegreya SC', serif;
+font-family: 'Bilbo', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Moon Dance', cursive;
+font-family: 'Oranienbaum', serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Wire One', sans-serif;
+ */
+
+/* * {
+  border: blue dotted;
+} */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: hsla(312, 66%, 76%, 1);
+
+  background: linear-gradient(180deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+  background: -moz-linear-gradient(180deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+  background: -webkit-linear-gradient(180deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ea98da", endColorstr="#5b6cf9", GradientType=1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ========== START NAV STYLES ========== */
+nav {
+  color: white;
 }
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-custom-css {
+  border-style: none;
+  padding-top: 0;
+  padding-bottom: 10px;
+  font-family: 'Oranienbaum', serif;
+}
+
+.navigation-clean-button {
+  /* background: #222222; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* color: white; */
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+.nav-container-custom-css {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline !important;
+  letter-spacing: .1rem;
+}
+
+.brand {
+  font-family: 'Aboreto', cursive;
+  letter-spacing: .1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.secondary-brand-size {
+  font-size: 1rem;
+}
+
+.nav-link-custom-css {
+  color: white;
+  font-size: clamp(.9rem, 1.6vw, 1rem);
+  font-weight: 900 !important;
+}
+
+.login-signup-nav-links {
+  text-align: right;
+
+}
+
+.actions .navigation-clean-button {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.navigation-clean-button .actions .login {
+  margin-right: 7px;
+  text-decoration: none;
+}
+
+.navMenu {
+  text-align: right;
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+}
+
+/* ========== END NAV STYLES ========== */
+
+/* ========== START MEDIA QUERIES ========== */
+@media (max-width: 992px) {
+  .navbar-nav {
+    line-height: .7em;
+  }
+
+  .container-for-mediaquery {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar-toggler {
+    color: brown;
+  }
+
+}
+
+/* ========== END MEDIA QUERIES ========== */
