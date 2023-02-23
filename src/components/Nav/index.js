@@ -22,7 +22,7 @@ function Nav() {
                             <span class="navbar-toggler-icon position-absolute top-0 end-0 me-4"></span>
                         </button>
                         <div className='row collapse navbar-collapse navMenu' id='navbarToggleExternalContent'>
-                            <ul className='col navbar-nav p-0'>
+                            <ul className='col navbar-nav p-0 text-uppercase'>
                                 <li className='nav-item nav-link-custom-css me-4'>
                                     Meet Crystal
                                 </li>
