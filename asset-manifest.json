@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/crystaldavila/static/css/main.063510bc.css",
+    "main.js": "/crystaldavila/static/js/main.fafcafb3.js",
+    "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
+    "static/media/cd-group-photo.jpeg": "/crystaldavila/static/media/cd-group-photo.32e4fa04ef20f61bfdab.jpeg",
+    "static/media/cd-photo-hero.png": "/crystaldavila/static/media/cd-photo-hero.54d56e63ec1344e57073.png",
+    "index.html": "/crystaldavila/index.html",
+    "main.063510bc.css.map": "/crystaldavila/static/css/main.063510bc.css.map",
+    "main.fafcafb3.js.map": "/crystaldavila/static/js/main.fafcafb3.js.map",
+    "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.063510bc.css",
+    "static/js/main.fafcafb3.js"
+  ]
+}
