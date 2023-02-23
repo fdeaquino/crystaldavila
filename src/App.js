@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Nav></Nav>
       
       <Hero></Hero>
+
+      <Footer></Footer>
       </main>
     </div>
   );
