@@ -16,16 +16,12 @@ function About() {
                 </div>
             </section>
             <section className='py-4 py-lg-5'>
-                <div className="container">
-                    <div className="row">
+                <div className="container h-100">
+                    <div className="row h-100 justify-content-center timeline-container">
                         <div className="col-lg-12">
                             <h3 className="text-center">Crystal's Story</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
                             <ul className="timeline">
-                                <li>
-                                    <div className="timeline-image"><img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /></div>
+                                <li className='py-2'>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
                                             <h4>Early Years</h4>
@@ -37,10 +33,12 @@ function About() {
                                             </p>
                                         </div>
                                     </div>
+                                    <div className="timeline-image d-flex justify-content-center">
+                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
+                                    </div>
                                     <div className="line"></div>
                                 </li>
-                                <li className="timeline-inverted">
-                                    <div className="timeline-image"><img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /></div>
+                                <li className="py-2 timeline-inverted">
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
                                             <h4>College Years</h4>
@@ -52,10 +50,12 @@ function About() {
                                             </p>
                                         </div>
                                     </div>
+                                    <div className="timeline-image d-flex justify-content-center">
+                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
+                                    </div>
                                     <div className="line"></div>
                                 </li>
-                                <li>
-                                    <div className="timeline-image"><img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /></div>
+                                <li className='py-2'>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
                                             <h4>Career Start</h4>
@@ -67,10 +67,12 @@ function About() {
                                             </p>
                                         </div>
                                     </div>
+                                    <div className="timeline-image d-flex justify-content-center">
+                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
+                                    </div>
                                     <div className="line"></div>
                                 </li>
-                                <li className="timeline-inverted">
-                                    <div className="timeline-image"><img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /></div>
+                                <li className="py-2 timeline-inverted">
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
                                             <h4>Student Advocacy</h4>
@@ -82,10 +84,12 @@ function About() {
                                             </p>
                                         </div>
                                     </div>
+                                    <div className="timeline-image d-flex justify-content-center">
+                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
+                                    </div>
                                     <div className="line"></div>
                                 </li>
-                                <li>
-                                    <div className="timeline-image"><img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /></div>
+                                <li className='py-2'>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
                                             <h4>Trustee</h4>
@@ -97,6 +101,10 @@ function About() {
                                             </p>
                                         </div>
                                     </div>
+                                    <div className="timeline-image d-flex justify-content-center">
+                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
+                                    </div>
+                                    {/* <div className="line"></div> */}
                                 </li>
                             </ul>
                         </div>
