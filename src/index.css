@@ -275,6 +275,20 @@ nav {
 
 /* ========== END HERO STYLES ========== */
 
+/* ========== START ABOUT SECTION STYLES ========== */
+.timeline {
+  position: relative;
+  margin-top: 22px;
+  list-style: none;
+  padding: 4px 0 0;
+}
+
+
+
+
+
+/* ========== END ABOUT SECTION STYLES ========== */
+
 /* ========== START FOOTER STYLES ========== */
 footer {
   color: white;

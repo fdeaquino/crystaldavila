@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './components/Nav';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
+import About from './components/About';
 import Footer from './components/Footer';
 
 
@@ -10,7 +11,8 @@ function App() {
       <main>
       <Nav></Nav>
       
-      <Hero></Hero>
+      {/* <Hero></Hero> */}
+      <About></About>
 
       <Footer></Footer>
       </main>
