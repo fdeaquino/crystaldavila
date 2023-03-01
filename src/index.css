@@ -286,14 +286,14 @@ nav {
 .timeline>li:nth-child(even) {
   position: relative;
   margin-bottom: 50px;
-  height: 180px;
+  height: 11.25rem;
   right: -5rem;
 }
 
 .timeline>li:nth-child(odd) {
   position: relative;
   margin-bottom: 50px;
-  height: 180px;
+  height: 11.25rem;
   left: -5rem;
 }
 
@@ -305,7 +305,7 @@ nav {
 
 .timeline>li:after {
   clear: both;
-  min-height: 170px;
+  min-height: 10.625rem;
 }
 
 .timeline>li .timeline-panel {
@@ -323,9 +323,9 @@ nav {
   border: 7px solid #bf164d;
   border-radius: 100%;
   background-color: #bf164d;
-  box-shadow: 0 0 5px #ccc;
-  width: 200px;
-  height: 200px;
+  /* box-shadow: 0 0 5px #ccc; */
+  width: 12.5rem;
+  height: 12.5rem;
   margin-left: -100px;
 }
 
@@ -429,14 +429,25 @@ footer {
 /* ========== START FOOTEr STYLES ========== */
 
 /* ========== START MEDIA QUERIES ========== */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .timeline>li:nth-child(2n + 1) .line::before {
-    left: 580px;
+@media (min-width: 1200px) {
+  .timeline>li:nth-child(odd) .line:before {
+    top: clamp(10rem, 9rem, 13rem);
+    left: clamp(42rem, 40rem, 44rem);
+    height: 9.25rem;
   }
 
-  .timeline>li:nth-child(2n) .line::before {
-    left: 360px;
+  .timeline>li:nth-child(even) .line:before {
+    top: clamp(9rem, 9rem, 10rem);
+    left: clamp(32rem, 29rem, 35rem);
+    height: 9.25rem;
   }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* .timeline>li:nth-child(odd) .line::before {
+    left: 22.5rem;
+  } */
 
   .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 100px 20px 30px;
@@ -445,6 +456,25 @@ footer {
   .timeline>li .timeline-panel {
     padding: 0 30px 20px 100px;
   }
+
+  .timeline>li:nth-child(even) {
+    right: -2.5rem;
+  }
+
+  /*  */
+
+  .timeline>li:nth-child(odd) .line:before {
+    top: 10rem;
+    left: 33rem;
+    height: 6.25rem;
+  }
+
+  .timeline>li:nth-child(even) .line:before {
+    top: 10rem;
+    left: 25rem;
+    height: 6.25rem;
+  }
+
 }
 
 
@@ -547,9 +577,9 @@ footer {
     margin-right: .5rem;
   }
 
-  .timeline>li .timeline-image {
+  /* .timeline>li .timeline-image {
     position: relative;
-  }
+  } */
 
 
 }
@@ -559,6 +589,7 @@ footer {
     margin-bottom: 0;
     min-height: 0;
     right: 0;
+    height: 13.75rem;
   }
 
   .timeline>li:nth-child(odd) {
@@ -592,6 +623,16 @@ footer {
   .timeline>li .line {
     display: none;
   }
+
+  .timeline>li:nth-child(odd) .line:before {
+    top: 10rem;
+    height: 9.25rem;
+  }
+
+  .timeline>li:nth-child(even) .line:before {
+    top: 10rem;
+    height: 9.25rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -622,8 +663,8 @@ footer {
 
   .timeline>li .timeline-image {
     position: static;
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     margin-bottom: 0;
   }
 
@@ -661,9 +702,7 @@ footer {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .timeline>li:nth-child(2n + 1) {
-    height: 220px;
-  }
+  
 
   .timeline>li .timeline-panel {
     display: block;
@@ -685,29 +724,29 @@ footer {
     margin: 0 auto !important;
   }
 
-  .timeline>li:nth-child(2n + 1) .timeline-image {
+  .timeline>li:nth-child(odd) .timeline-image {
     left: 0;
   }
 
-  .timeline>li:nth-child(2n) .timeline-image {
-    left: 150px;
+  .timeline>li:nth-child(even) .timeline-image {
+    left: 9.375rem;
   }
 
   .timeline>li .line {
     display: block;
   }
 
-  .timeline>li:nth-child(2n + 1) .line::before {
-    left: 190px;
+  .timeline>li:nth-child(odd) .line::before {
+    left: 12rem;
   }
 
-  .timeline>li:nth-child(2n) .line::before {
-    left: 150px;
+  .timeline>li:nth-child(even) .line::before {
+    left: 10rem;
   }
 
-  .timeline>li:nth-child(2n) .timeline-panel,
-  .timeline>li:nth-child(2n + 1) .timeline-panel {
-    left: 380px;
+  .timeline>li:nth-child(even) .timeline-panel,
+  .timeline>li:nth-child(odd) .timeline-panel {
+    left: 23.75rem;
     padding: 0 0 20px;
     text-align: left;
     width: 50%;
@@ -722,14 +761,14 @@ footer {
 
 
 @media (max-width: 767px) {
-  .timeline>li:nth-child(2n + 1) {
-    height: 220px;
+  .timeline>li:nth-child(odd) {
+    height: 13.75rem;
   }
 
   .timeline>li .timeline-panel {
     float: none !important;
     display: block;
-    max-width: 420px;
+    max-width: 26.25rem;
   }
 
   .timeline>li .timeline-image {
@@ -743,7 +782,7 @@ footer {
 
   .timeline>li {
     height: auto !important;
-    max-width: 450px !important;
+    max-width: 28.125rem !important;
     margin: 0 auto !important;
   }
 
