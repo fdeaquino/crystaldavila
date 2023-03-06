@@ -421,12 +421,34 @@ svg {
 
 /* ========== END ABOUT SECTION STYLES ========== */
 
+/* ========== START ISSUES STYLES ========== */
+.issues-header-text {
+  font-family: 'Aboreto', cursive;
+  color: white;
+  /* letter-spacing: .2rem; */
+  font-weight: 300;
+  font-size: clamp(3rem, 1.6vw, 4rem);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.dropdown-right {
+  justify-content: flex-end;
+}
+
+.dropdown-left {
+  justify-content: flex-start;
+}
+
+
+/* ========== END ISSUES SECTION STYLES ========== */
+
 /* ========== START FOOTER STYLES ========== */
 footer {
   color: white;
 }
 
-/* ========== START FOOTEr STYLES ========== */
+/* ========== START FOOTER STYLES ========== */
 
 /* ========== START MEDIA QUERIES ========== */
 @media (min-width: 1200px) {
@@ -575,6 +597,10 @@ footer {
   .timeline-container {
     margin-left: .5rem;
     margin-right: .5rem;
+  }
+
+  .issues-header-text {
+    font-size: clamp(1.5rem, 4vw, 4rem);
   }
 
   /* .timeline>li .timeline-image {
