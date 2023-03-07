@@ -3,6 +3,7 @@ import React from 'react';
 function OnTheIssues() {
     return (
         <>
+            {/* First section - Issues header */}
             <section>
                 <div className='container h-100'>
                     <div className='row h-100 justify-content-center hero-container'>
@@ -12,6 +13,7 @@ function OnTheIssues() {
                     </div>
                 </div>
             </section>
+            {/* Second section - Priorities list with dropdowns */}
             <section className='py-4 py-lg-5'>
                 <div className="container h-100">
                     <div className="row h-100 justify-content-center timeline-container">
@@ -20,104 +22,179 @@ function OnTheIssues() {
                         </div>
                     </div>
                     <div className="row h-100 timeline-container">
-                        <div class="col-lg-6 dropdown d-flex dropdown-right my-2">
+                        {/* Dropdown 1 */}
+                        <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
                             <button
-                                class="btn btn-secondary dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
                                 type="button"
+                                id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
+                                aria-has-popup="true"
                                 aria-expanded="false"
                             >
                                 School District Transparency
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end p-4">
-                                <li><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                <li>
-                                    <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Learn more</a></button>
-                                </li>
-                            </ul>
+                            <div className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <ul className="p-4 mb-0">
+                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
+                                    <li className='decoration-none'>
+                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-lg-6 dropdown d-flex dropdown-left my-2">
+                        {/* Dropdown 2 */}
+                        <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
                             <button
-                                class="btn btn-secondary dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
                                 type="button"
+                                id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
+                                aria-has-popup="true"
                                 aria-expanded="false"
                             >
                                 School Funding
                             </button>
-                            <ul class="dropdown-menu p-4">
-                                <li><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                <li>
-                                    <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Learn more</a></button>
-                                </li>
-                            </ul>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <ul className="p-4 mb-0">
+                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
+                                    <li className='decoration-none'>
+                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-
-                        <div class="col-lg-6 dropdown d-flex dropdown-right my-2">
+                        {/* Dropdown 3 */}
+                        <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
                             <button
-                                class="btn btn-secondary dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
                                 type="button"
+                                id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
+                                aria-has-popup="true"
                                 aria-expanded="false"
                             >
                                 Teacher Burnout
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end p-4">
-                                <li><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                <li>
-                                    <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Learn more</a></button>
-                                </li>
-                            </ul>
+                            <div className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <ul className="p-4 mb-0">
+                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
+                                    <li className='decoration-none'>
+                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-lg-6 dropdown d-flex dropdown-left my-2">
+                        {/* Dropdown 4 */}
+                        <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
                             <button
-                                class="btn btn-secondary dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
                                 type="button"
+                                id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
+                                aria-has-popup="true"
                                 aria-expanded="false"
                             >
                                 College Readiness
                             </button>
-                            <ul class="dropdown-menu p-4">
-                                <li><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                <li>
-                                    <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Learn more</a></button>
-                                </li>
-                            </ul>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <ul className="p-4 mb-0">
+                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
+                                    <li className='decoration-none'>
+                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-
-                        <div class="col-lg-6 dropdown d-flex dropdown-right my-2">
+                        {/* Dropdown 5 */}
+                        <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
                             <button
-                                class="btn btn-secondary dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
                                 type="button"
+                                id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
+                                aria-has-popup="true"
                                 aria-expanded="false"
                             >
                                 Early Childhood Education
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end p-4">
-                                <li><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                <li>
-                                    <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Learn more</a></button>
-                                </li>
-                            </ul>
+                            <div className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <ul className="p-4 mb-0">
+                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
+                                    <li className='decoration-none'>
+                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-lg-6 dropdown d-flex dropdown-left my-2">
+                        {/* Dropdown 6 */}
+                        <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
                             <button
-                                class="btn btn-secondary dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
                                 type="button"
+                                id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
+                                aria-has-popup="true"
                                 aria-expanded="false"
                             >
                                 School Safety
                             </button>
-                            <ul class="dropdown-menu p-4">
-                                <li><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                <li>
-                                    <button class="dropdown-item" type="button"><a class="dropdown-item" href="#">Learn more</a></button>
-                                </li>
-                            </ul>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <ul className="p-4 mb-0">
+                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
+                                    <li className='decoration-none'>
+                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
+                        {/* EXPERIMENTING */}
+                        {/* <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
+                            <button
+                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                type="button"
+                                id='dropdownMenuButton'
+                                data-bs-toggle="dropdown"
+                                aria-has-popup="true"
+                                aria-expanded="false"
+                            >
+                                School Safety
+                            </button>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <ul className="p-4 mb-0">
+                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
+                                    <li className='decoration-none'>
+                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div> */}
+
+                        
 
                     </div>
                 </div>

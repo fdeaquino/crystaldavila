@@ -440,6 +440,26 @@ svg {
   justify-content: flex-start;
 }
 
+.priority-dropdown-styles {
+  width: 30vw;
+  min-width: fit-content;
+}
+
+.decoration-none {
+  list-style: none;
+}
+
+
+button.close {
+  border: none;
+  padding: 0;
+  background: none;
+  color: inherit;
+  outline: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+}
 
 /* ========== END ISSUES SECTION STYLES ========== */
 
@@ -499,7 +519,11 @@ footer {
 
 }
 
-
+@media (min-width: 992px) and (max-width: 1199px) {
+  .priority-dropdown-styles {
+    width: 34vw;
+  }
+}
 
 @media (min-width: 992px) {
   .card-title {
@@ -607,6 +631,20 @@ footer {
     position: relative;
   } */
 
+  .dropdown-left,
+  .dropdown-right {
+    justify-content: center;
+  }
+
+  .priority-dropdown-styles {
+    width: 100%;
+    min-width: fit-content;
+    font-size: clamp(0.8rem, 1.6vw, 1rem);
+  }
+
+  .dropdown-menu {
+    transform: translate3d(0px, 36px, 0px) !important;
+  }
 
 }
 
@@ -728,7 +766,7 @@ footer {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
+
 
   .timeline>li .timeline-panel {
     display: block;
@@ -781,7 +819,7 @@ footer {
   .timeline>li:after {
     min-height: 20px;
   }
-  
+
 }
 
 
