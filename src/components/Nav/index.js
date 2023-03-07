@@ -10,7 +10,7 @@ function Nav(props) {
                 <div className='container-fluid container nav-container-custom-css p-0'>
                     <div className='container-for-mediaquery'>
                         <h1 className='d-inline-flex brand'>
-                            <Link to='/'>
+                            <Link to='/crystaldavila'>
                                 Crystal Davila
                             </Link>
                         </h1>
@@ -29,11 +29,11 @@ function Nav(props) {
                             <ul className='col navbar-nav p-0 text-uppercase'>
                                 <li className='nav-item nav-link-custom-css me-4'>
                                     {currentComponent === 'About' ? (
-                                        <Link style={{ color: 'red' }} to='/about'>
+                                        <Link style={{ color: 'red' }} to='/crystaldavila/about'>
                                             Meet Crystal
                                         </Link>
                                     ) : (
-                                        <Link style={{ background: 'transparent' }} to='/about' onClick={() => {
+                                        <Link style={{ background: 'transparent' }} to='/crystaldavila/about' onClick={() => {
                                             setCurrentComponent('About')
                                         }}>
                                             Meet Crystal
@@ -43,11 +43,11 @@ function Nav(props) {
 
                                 <li className='nav-item nav-link-custom-css me-4'>
                                     {currentComponent === 'OnTheIssues' ? (
-                                        <Link style={{ color: 'red' }} to='/on-the-issues'>
+                                        <Link style={{ color: 'red' }} to='/crystaldavila/on-the-issues'>
                                             On The Issues
                                         </Link>
                                     ) : (
-                                        <Link style={{ background: 'transparent' }} to='/on-the-issues' onClick={() => {
+                                        <Link style={{ background: 'transparent' }} to='/crystaldavila/on-the-issues' onClick={() => {
                                             setCurrentComponent('OnTheIssues')
                                         }}>
                                             On The Issues
@@ -57,11 +57,11 @@ function Nav(props) {
 
                                 <li className='nav-item nav-link-custom-css me-4'>
                                     {currentComponent === 'Vision' ? (
-                                        <Link style={{ color: 'red' }} to='/vision'>
+                                        <Link style={{ color: 'red' }} to='/crystaldavila/vision'>
                                             Vision
                                         </Link>
                                     ) : (
-                                        <Link style={{ background: 'transparent' }} to='/vision' onClick={() => {
+                                        <Link style={{ background: 'transparent' }} to='/crystaldavila/vision' onClick={() => {
                                             setCurrentComponent('Vision')
                                         }}>
                                             Vision
@@ -71,11 +71,11 @@ function Nav(props) {
                                 
                                 <li className='nav-item nav-link-custom-css'>
                                     {currentComponent === 'GetInvolved' ? (
-                                        <Link style={{ color: 'red' }} to='/get-involved'>
+                                        <Link style={{ color: 'red' }} to='/crystaldavila/get-involved'>
                                             Get Involved
                                         </Link>
                                     ) : (
-                                        <Link style={{ background: 'transparent' }} to='/get-involved' onClick={() => {
+                                        <Link style={{ background: 'transparent' }} to='/crystaldavila/get-involved' onClick={() => {
                                             setCurrentComponent('GetInvolved')
                                         }}>
                                             Get Involved

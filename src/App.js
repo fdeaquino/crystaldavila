@@ -18,23 +18,23 @@ function App() {
         <main>
           <Routes>
             <Route
-              path="/"
+              path="/crystaldavila"
               element={<Hero />}
             />
             <Route
-              path="/about"
+              path="/crystaldavila/about"
               element={<About />}
             />
             <Route
-              path="/on-the-issues"
+              path="/crystaldavila/on-the-issues"
               element={<OnTheIssues />}
             />
             <Route
-              path="/vision"
+              path="/crystaldavila/vision"
               element={<Vision />}
             />
             <Route
-              path="/get-involved"
+              path="/crystaldavila/get-involved"
               element={<GetInvolved />}
             />
           </Routes>
