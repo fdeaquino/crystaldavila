@@ -19,7 +19,7 @@ function About() {
                 <div className="container h-100">
                     <div className="row h-100 justify-content-center timeline-container">
                         <div className="col-lg-12">
-                            <h3 className="text-center">Crystal's Story</h3>
+                            <h3 className="join-convo-text text-center">Crystal's Story</h3>
                             <ul className="timeline">
                                 <li className='py-2'>
                                     <div className="timeline-panel">

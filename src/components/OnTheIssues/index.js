@@ -18,14 +18,14 @@ function OnTheIssues() {
                 <div className="container h-100">
                     <div className="row h-100 justify-content-center timeline-container">
                         <div className="col-lg-12">
-                            <h3 className="text-center">Crystal's Priorities</h3>
+                            <h3 className="join-convo-text text-center">Crystal's Priorities</h3>
                         </div>
                     </div>
                     <div className="row h-100 timeline-container">
                         {/* Dropdown 1 */}
                         <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
                             <button
-                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
                                 type="button"
                                 id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
@@ -49,7 +49,7 @@ function OnTheIssues() {
                         {/* Dropdown 2 */}
                         <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
                             <button
-                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
                                 type="button"
                                 id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
@@ -73,7 +73,7 @@ function OnTheIssues() {
                         {/* Dropdown 3 */}
                         <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
                             <button
-                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
                                 type="button"
                                 id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
@@ -97,7 +97,7 @@ function OnTheIssues() {
                         {/* Dropdown 4 */}
                         <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
                             <button
-                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
                                 type="button"
                                 id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
@@ -121,7 +121,7 @@ function OnTheIssues() {
                         {/* Dropdown 5 */}
                         <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
                             <button
-                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
                                 type="button"
                                 id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
@@ -145,7 +145,7 @@ function OnTheIssues() {
                         {/* Dropdown 6 */}
                         <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
                             <button
-                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
                                 type="button"
                                 id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
@@ -170,7 +170,7 @@ function OnTheIssues() {
                         {/* EXPERIMENTING */}
                         {/* <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
                             <button
-                                className="priority-dropdown-styles btn btn-dark dropdown-toggle"
+                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
                                 type="button"
                                 id='dropdownMenuButton'
                                 data-bs-toggle="dropdown"
