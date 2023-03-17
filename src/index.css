@@ -497,6 +497,43 @@ button.close {
   bottom: 0;
 }
 
+.community-care-section h3 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.community-care-section .border {
+  border: 1px solid #243E8C!important;
+  border-radius: 10px;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.community-care-section .rounded {
+  border-radius: 8px;
+}
+
+.community-care-section .p-3 {
+  padding: 1rem;
+}
+
+.community-care-section .mb-4 {
+  margin-bottom: 1rem;
+}
+
+.line-vision-sections {
+  border-bottom: 2px solid rgb(158, 41, 135);
+  margin-top: 20px;
+}
+
+
+
 /* ========== END VISION SECTION STYLES ========== */
 
 /* ========== START FOOTER STYLES ========== */
