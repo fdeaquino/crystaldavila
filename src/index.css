@@ -468,6 +468,37 @@ button.close {
 
 /* ========== END ISSUES SECTION STYLES ========== */
 
+/* ========== START VISION SECTION STYLES ========== */
+.vision-quote {
+  max-width: calc(619px + 371 * ((100vw - 1280px) / 720));
+}
+
+.vision-card-link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.vision-card-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgb(158, 41, 135);
+  margin-top: 5px;
+  /* Adjust this value to change the distance between the text and the line */
+  margin-left: -100px;
+  /* Adjust this value to extend the line to the left */
+  margin-right: -100px;
+  /* Adjust this value to extend the line to the right */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* ========== END VISION SECTION STYLES ========== */
+
 /* ========== START FOOTER STYLES ========== */
 footer {
   color: white;
@@ -608,7 +639,6 @@ footer {
 
   .card-body {
     width: 80vw;
-    ;
   }
 
   .stack-quote-photo {
