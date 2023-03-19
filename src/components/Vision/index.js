@@ -1,6 +1,56 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 
+const VisionCard = ({ title, items }) => (
+    <div className='community-care-section mb-4'>
+        <h3 className='text-uppercase'>
+            {title}
+        </h3>
+        <div className='row'>
+            {items.map((item, index) => (
+                <div key={index} className='col-sm-6 col-lg-6 mb-4'>
+                    <div className='border rounded p-3'>
+                        <p>{item}</p>
+                        <BsArrowRight className='float-end' />
+                    </div>
+                </div>
+            ))}
+        </div>
+        <div className='line-vision-sections'></div>
+    </div>
+);
+
+const visionData = [
+    {
+        title: '1. Care For Community',
+        items: [
+            'Fight For LGBTQIA+ Rights',
+            'Create A Just Immigration System',
+            'Invest in Arts and Humanities',
+            'Establish Economic Justice For Working Families',
+        ],
+    },
+    {
+        title: '2. Social Programs',
+        items: [
+            'Lorem ipsum Lorem ipsum Lorem ipsum',
+            'Lorem ipsum Lorem ipsum Lorem ipsum Lorem',
+            'Lorem ipsum Lorem ipsum Lorem',
+            'Lorem ipsum Lorem ipsum Lorem ipsumLorem',
+            'Lorem ipsum Loremipsum',
+        ],
+    },
+    {
+        title: '3. For The Future',
+        items: [
+            'Lorem ipsum Lorem ipsum Lorem ipsum',
+            'Lorem ipsum Lorem ipsum Lorem ipsum Lorem',
+            'Lorem ipsum Lorem ipsum Lorem',
+        ],
+    },
+];
+
+
 function Vision() {
     return (
         <>
@@ -38,110 +88,12 @@ function Vision() {
                     </div>
                 </div>
             </section>
-            <section className='py-4 py-lg-5'>
-                <div className='container h-100'>
+            <section className="py-4 py-lg-5">
+                <div className="container h-100">
                     <div className="row h-100 justify-content-center timeline-container">
-                        {/* Three Vision Cards */}
-                        <div className="community-care-section mb-4">
-                            <h3 className="text-uppercase">
-                                <span>1. </span>
-                                Care For Community
-                            </h3>
-                            <div className="row">
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Fight For LGBTQIA+ Rights</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Create A Just Immigration System</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Invest in Arts and Humanities</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Establish Economic Justice For Working Families</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="line-vision-sections"></div>
-                        </div>
-
-                        <div className="community-care-section mb-4">
-                            <h3 className="text-uppercase">
-                                <span>2. </span>
-                                Social Programs
-                            </h3>
-                            <div className="row">
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Lorem ipsum Lorem</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Loremipsum</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="line-vision-sections"></div>
-                        </div>
-
-                        <div className="community-care-section mb-4">
-                            <h3 className="text-uppercase">
-                                <span>3. </span>
-                                For The Future
-                            </h3>
-                            <div className="row">
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                                <div className="col-sm-6 col-lg-6 mb-4">
-                                    <div className="border rounded p-3">
-                                        <p>Lorem ipsum Lorem ipsum Lorem</p>
-                                        <BsArrowRight className="float-end" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {visionData.map((data, index) => (
+                            <VisionCard key={index} title={data.title} items={data.items} />
+                        ))}
                     </div>
                 </div>
             </section>
