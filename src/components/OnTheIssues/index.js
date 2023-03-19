@@ -1,5 +1,66 @@
 import React from 'react';
 
+// the priorities array stores the data for each dropdown
+const priorities = [
+    {
+        title: 'School District Transparency',
+        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
+    },
+    {
+        title: 'School Funding',
+        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
+    },
+    {
+        title: 'Teacher Burnout',
+        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
+    },
+    {
+        title: 'College Readiness',
+        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
+    },
+    {
+        title: 'Early Childhood Education',
+        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
+    },
+    {
+        title: 'School Safety',
+        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
+    }
+
+];
+
+const PriorityDropdown = ({ title, content, alignLeft }) => (
+    <div className={`col-lg-6 dropdown d-flex ${alignLeft ? 'dropdown-left' : 'dropdown-right'} my-2`}>
+        <button
+            className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
+            type='button'
+            id='dropdownMenuButton'
+            data-bs-toggle='dropdown'
+            aria-haspopup='true'
+            aria-expanded='false'
+        >
+            {title}
+        </button>
+        <div className={`dropdown-menu${alignLeft ? '' : ' dropdown-menu-end'}`} aria-labelledby="dropdownMenuButton">
+            <button type="button" className='close' data-dismiss="dropdown" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <ul className='p-4 mb-0'>
+                <li className='decoration-none'>
+                    <p>{content}</p>
+                </li>
+                <li className='decoration-none'>
+                    <button className='dropdown-item' type='button'>
+                        <a className='dropdown-item' href='#'>
+                            Learn more
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+)
+
 function OnTheIssues() {
     return (
         <>
@@ -22,180 +83,15 @@ function OnTheIssues() {
                         </div>
                     </div>
                     <div className="row h-100 timeline-container">
-                        {/* Dropdown 1 */}
-                        <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
-                            <button
-                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-                                type="button"
-                                id='dropdownMenuButton'
-                                data-bs-toggle="dropdown"
-                                aria-has-popup="true"
-                                aria-expanded="false"
-                            >
-                                School District Transparency
-                            </button>
-                            <div className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <ul className="p-4 mb-0">
-                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                    <li className='decoration-none'>
-                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* Dropdown 2 */}
-                        <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
-                            <button
-                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-                                type="button"
-                                id='dropdownMenuButton'
-                                data-bs-toggle="dropdown"
-                                aria-has-popup="true"
-                                aria-expanded="false"
-                            >
-                                School Funding
-                            </button>
-                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <ul className="p-4 mb-0">
-                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                    <li className='decoration-none'>
-                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* Dropdown 3 */}
-                        <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
-                            <button
-                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-                                type="button"
-                                id='dropdownMenuButton'
-                                data-bs-toggle="dropdown"
-                                aria-has-popup="true"
-                                aria-expanded="false"
-                            >
-                                Teacher Burnout
-                            </button>
-                            <div className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <ul className="p-4 mb-0">
-                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                    <li className='decoration-none'>
-                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* Dropdown 4 */}
-                        <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
-                            <button
-                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-                                type="button"
-                                id='dropdownMenuButton'
-                                data-bs-toggle="dropdown"
-                                aria-has-popup="true"
-                                aria-expanded="false"
-                            >
-                                College Readiness
-                            </button>
-                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <ul className="p-4 mb-0">
-                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                    <li className='decoration-none'>
-                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* Dropdown 5 */}
-                        <div className="col-lg-6 dropdown d-flex dropdown-right my-2">
-                            <button
-                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-                                type="button"
-                                id='dropdownMenuButton'
-                                data-bs-toggle="dropdown"
-                                aria-has-popup="true"
-                                aria-expanded="false"
-                            >
-                                Early Childhood Education
-                            </button>
-                            <div className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <ul className="p-4 mb-0">
-                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                    <li className='decoration-none'>
-                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* Dropdown 6 */}
-                        <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
-                            <button
-                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-                                type="button"
-                                id='dropdownMenuButton'
-                                data-bs-toggle="dropdown"
-                                aria-has-popup="true"
-                                aria-expanded="false"
-                            >
-                                School Safety
-                            </button>
-                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <ul className="p-4 mb-0">
-                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                    <li className='decoration-none'>
-                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* EXPERIMENTING */}
-                        {/* <div className="col-lg-6 dropdown d-flex dropdown-left my-2">
-                            <button
-                                className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-                                type="button"
-                                id='dropdownMenuButton'
-                                data-bs-toggle="dropdown"
-                                aria-has-popup="true"
-                                aria-expanded="false"
-                            >
-                                School Safety
-                            </button>
-                            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <button type="button" className="close" data-dismiss="dropdown" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <ul className="p-4 mb-0">
-                                    <li className='decoration-none'><p>Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.</p></li>
-                                    <li className='decoration-none'>
-                                        <button className="dropdown-item" type="button"><a className="dropdown-item" href="#">Learn more</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                        </div> */}
-
-                        
-
+                        {/* PrioritiesDropdown component that takes in the title, content, and and alignLeft props to render each dropdown */}
+                        {priorities.map((priority, index) => (
+                            <PriorityDropdown
+                                key={index}
+                                title={priority.title}
+                                content={priority.content}
+                                alignLeft={index % 2 === 1}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
