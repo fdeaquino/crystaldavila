@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function Nav(props) {
     const [currentComponent, setCurrentComponent] = useState('');
     const [openMenu, setOpenMenu] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false);
 
     useEffect(() => {
         const menu = document.getElementById("menu");
@@ -17,11 +18,26 @@ function Nav(props) {
             mobileMenu.style.right = rightDistance + "px";
         } else {
             menu.classList.remove("openmenu");
-            mobileMenu.style.position = "absolute";
-            mobileMenu.style.top = "-80px";
-            mobileMenu.style.right = "12px";
+            setTimeout(() => {
+                mobileMenu.style.position = "absolute";
+                mobileMenu.style.top = "-80px";
+                mobileMenu.style.right = "12px";
+            }, 500); // matches the transition in the CSS
         }
     }, [openMenu]);
+
+    const toggleMenu = () => {
+        if (!openMenu) {
+            setOpenMenu(true);
+            setMenuVisible(true);
+        } else {
+            setOpenMenu(false);
+            setTimeout(() => {
+                setMenuVisible(false);
+            }, 500); //matches the transition in the CSS
+        }
+    };
+
 
     return (
         <>
@@ -42,7 +58,7 @@ function Nav(props) {
 
                         <div className='container position-relative'>
                             <div className=' animated-mobile-menu'>
-                                <div className='menu' id='menu' onClick={() => setOpenMenu(!openMenu)}>
+                                <div className='menu' id='menu' onClick={toggleMenu}>
                                     <div>
                                         <span className='line-1'></span>
                                         <span className='line-2'></span>
@@ -115,7 +131,7 @@ function Nav(props) {
                 </nav>
             </header>
             {openMenu && (
-                <div className="overlay-menu">
+                <div className={`overlay-menu${menuVisible ? ' d-flex' : ''}${openMenu ? ' open' : ''}`}>
                     <ul>
                         <li>
                             <Link
