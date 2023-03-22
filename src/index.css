@@ -668,6 +668,7 @@ footer {
 /* ========== START FOOTER STYLES ========== */
 
 /* ========== START MEDIA QUERIES ========== */
+/* Large devices (min-width: 1200px) */
 @media (min-width: 1200px) {
   .timeline>li:nth-child(odd) .line:before {
     top: clamp(10rem, 9rem, 13rem);
@@ -684,10 +685,6 @@ footer {
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* .timeline>li:nth-child(odd) .line::before {
-    left: 22.5rem;
-  } */
-
   .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 100px 20px 30px;
   }
@@ -699,8 +696,6 @@ footer {
   .timeline>li:nth-child(even) {
     right: -2.5rem;
   }
-
-  /*  */
 
   .timeline>li:nth-child(odd) .line:before {
     top: 10rem;
@@ -714,14 +709,12 @@ footer {
     height: 6.25rem;
   }
 
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
   .priority-dropdown-styles {
     width: 34vw;
   }
 }
 
+/* Medium devices (min-width: 992px) */
 @media (min-width: 992px) {
   .card-title {
     font-size: clamp(1.5rem, 1.6vw, 2rem);
@@ -729,12 +722,10 @@ footer {
 
   .card-subtitle {
     font-size: clamp(1.25rem, 1.6vw, 1.75rem);
-
   }
 
   .card-link {
     font-size: clamp(0.8rem, 1.6vw, 1rem);
-
   }
 
   .animated-mobile-menu {
@@ -746,7 +737,12 @@ footer {
   }
 }
 
+/* Medium and small devices (max-width: 992px) */
 @media (max-width: 992px) {
+    .animated-mobile-menu {
+    display: flex;
+  }
+
   .navbar-nav {
     line-height: .7em;
   }
@@ -770,7 +766,6 @@ footer {
     padding: 1.2rem;
     margin-top: -4.5rem;
   }
-
 
   .nav-link-custom-css {
     display: flex;
@@ -803,7 +798,7 @@ footer {
 
   .hero-text {
     font-size: clamp(1.5rem, 4vw, 4rem);
-    margin-right: 1rem
+    margin-right: 1rem;
   }
 
   .card-body {
@@ -819,7 +814,6 @@ footer {
     min-height: 25vh;
     background-position: center;
     width: 80vw;
-
   }
 
   .timeline-container {
@@ -830,10 +824,6 @@ footer {
   .issues-header-text {
     font-size: clamp(1.5rem, 4vw, 4rem);
   }
-
-  /* .timeline>li .timeline-image {
-    position: relative;
-  } */
 
   .dropdown-left,
   .dropdown-right {
@@ -849,15 +839,16 @@ footer {
   .dropdown-menu {
     transform: translate3d(0px, 36px, 0px) !important;
   }
-
 }
 
+/* Extra small devices (max-width: 991px) */
 @media (max-width: 991px) {
   .navMenu {
     display: none;
   }
 }
 
+/* Small devices (min-width: 768px) and (max-width: 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline>li:nth-child(even) {
     margin-bottom: 0;
@@ -917,6 +908,7 @@ footer {
   }
 }
 
+/* Media query for small screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .photo-container {
     width: 30vw;
@@ -930,6 +922,7 @@ footer {
   }
 }
 
+/* Media query for extra small screens (max-width: 767px) */
 @media only screen and (max-width: 767px) {
   .timeline>li:nth-child(even) {
     margin-bottom: 0;
@@ -982,10 +975,8 @@ footer {
   }
 }
 
-
+/* Media query for small to medium screens (min-width: 768px) and (max-width: 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
-
-
   .timeline>li .timeline-panel {
     display: block;
     max-width: 420px;
@@ -1041,7 +1032,7 @@ footer {
 }
 
 
-
+/* Media query for extra small screens (max-width: 767px) */
 @media (max-width: 767px) {
   .timeline>li:nth-child(odd) {
     height: 13.75rem;
@@ -1072,13 +1063,4 @@ footer {
     min-height: 0;
   }
 }
-
-
-
-/* @media (min-width: 576px) and (max-width: 767px) {
-  .navbar-toggler-icon {
-    margin-right: 2.5rem!important;
-  }
-} */
-
 /* ========== END MEDIA QUERIES ========== */
