@@ -660,6 +660,18 @@ button.close {
 
 /* ========== END VISION SECTION STYLES ========== */
 
+/* ========== START GET INVOLVED SECTION STYLES ========== */
+.volunteer-section {
+  font-family: Arial, sans-serif;
+}
+
+.volunteer-card img {
+  max-width: 100px;
+}
+
+
+/* ========== END GET INVOLVED SECTION STYLES ========== */
+
 /* ========== START FOOTER STYLES ========== */
 footer {
   color: white;
@@ -801,9 +813,9 @@ footer {
     margin-right: 1rem;
   }
 
-  .card-body {
+  /* .card-body {
     width: 80vw;
-  }
+  } */
 
   .stack-quote-photo {
     display: flex;
