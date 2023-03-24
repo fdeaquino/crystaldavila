@@ -662,6 +662,15 @@ button.close {
 /* ========== END VISION SECTION STYLES ========== */
 
 /* ========== START GET INVOLVED SECTION STYLES ========== */
+.responsive-icon {
+  width: 5vw;
+  height: 5vw;
+  min-width: 36px;
+  max-width: 45px;
+  min-height: 36px;
+  max-height: 45px;
+}
+
 /* .volunteer-section {
   font-family: Arial, sans-serif;
 } */
