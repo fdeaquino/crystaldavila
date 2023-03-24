@@ -116,25 +116,25 @@ nav {
   position: absolute;
   top: -80px;
   right: 12px;
-  }
-  
-  .menu {
+}
+
+.menu {
   width: 40px;
   height: 40px;
   margin: 8px;
   background-image: linear-gradient(to right, #e91e63, #f44336);
   border-radius: 5px;
   cursor: pointer;
-  }
-  
-  .menu div {
+}
+
+.menu div {
   height: 22px;
   width: 22px;
   margin: 9px;
   position: relative;
-  }
-  
-  .menu span {
+}
+
+.menu span {
   background: #fff;
   width: 100%;
   height: 2px;
@@ -145,33 +145,33 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.5s, width 0.5s;
-  }
-  
-  .menu .line-1 {
+}
+
+.menu .line-1 {
   transform: translate(-50%, -6px);
-  }
-  
-  .menu .line-3 {
+}
+
+.menu .line-3 {
   transform: translate(-50%, 4px);
-  }
-  
-  .openmenu .line-1 {
+}
+
+.openmenu .line-1 {
   transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  
-  .openmenu .line-3 {
+}
+
+.openmenu .line-3 {
   transform: translate(-50%, -50%) rotate(45deg);
-  }
-  
-  .openmenu .line-2 {
+}
+
+.openmenu .line-2 {
   width: 0;
-  }
-  
-  .navMenu.openmenu {
+}
+
+.navMenu.openmenu {
   display: block !important;
-  }
-  
-  .overlay-menu {
+}
+
+.overlay-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -187,55 +187,56 @@ nav {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
-  }
-  
-  .overlay-menu.d-flex {
+}
+
+.overlay-menu.d-flex {
   opacity: 1;
   visibility: visible;
-  }
-  
-  .overlay-menu ul {
+}
+
+.overlay-menu ul {
   list-style-type: none;
   text-align: center;
   padding: 0;
   color: white;
-  }
-  
-  .overlay-menu li {
+}
+
+.overlay-menu li {
   padding: 1rem;
   transform: translateY(-20px);
   opacity: 0;
   transition: all 0.5s ease;
   visibility: hidden;
-  }
-  
-  .overlay-menu.open {
+}
+
+.overlay-menu.open {
   opacity: 1;
   visibility: visible;
-  }
-  
-  .overlay-menu.open li {
+}
+
+.overlay-menu.open li {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
-  }
-  
-  .overlay-menu li:nth-child(1) {
+}
+
+.overlay-menu li:nth-child(1) {
   transition-delay: 0.1s;
-  }
-  
-  .overlay-menu li:nth-child(2) {
+}
+
+.overlay-menu li:nth-child(2) {
   transition-delay: 0.2s;
-  }
-  
-  .overlay-menu li:nth-child(3) {
+}
+
+.overlay-menu li:nth-child(3) {
   transition-delay: 0.3s;
-  }
-  
-  .overlay-menu li:nth-child(4) {
+}
+
+.overlay-menu li:nth-child(4) {
   transition-delay: 0.4s;
-  }
-  /* ========== END ANIMATED MOBILE MENU STYLES ========== */
+}
+
+/* ========== END ANIMATED MOBILE MENU STYLES ========== */
 
 /* ========== START HERO STYLES ========== */
 .hero-container {
@@ -661,13 +662,29 @@ button.close {
 /* ========== END VISION SECTION STYLES ========== */
 
 /* ========== START GET INVOLVED SECTION STYLES ========== */
-.volunteer-section {
+/* .volunteer-section {
   font-family: Arial, sans-serif;
-}
+} */
 
 .volunteer-card img {
   max-width: 100px;
 }
+
+/* .voter-registration {
+  font-family: Arial, sans-serif;
+} */
+
+.voter-info img {
+  max-width: 100px;
+}
+
+.voter-info {
+  text-align: center;
+}
+
+/* .donate-section {
+  font-family: Arial, sans-serif;
+} */
 
 
 /* ========== END GET INVOLVED SECTION STYLES ========== */
@@ -751,7 +768,7 @@ footer {
 
 /* Medium and small devices (max-width: 992px) */
 @media (max-width: 992px) {
-    .animated-mobile-menu {
+  .animated-mobile-menu {
     display: flex;
   }
 
@@ -1075,4 +1092,5 @@ footer {
     min-height: 0;
   }
 }
+
 /* ========== END MEDIA QUERIES ========== */

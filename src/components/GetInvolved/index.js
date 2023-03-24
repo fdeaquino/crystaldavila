@@ -17,6 +17,13 @@ function GetInvolved() {
             time: '7:00 PM',
             location: 'Local Restaurant',
             imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
+            title: 'Fundraising Dinner',
+            date: 'April 20, 2023',
+            time: '7:00 PM',
+            location: 'Local Restaurant',
+            imageUrl: 'fundraising-dinner-banner.jpg'
         }
     ];
 
@@ -50,7 +57,7 @@ function GetInvolved() {
                     <h3>Volunteer with Us</h3>
                     <p>Join our team and make a difference by participating in various volunteer activities:</p>
                     <div className="row mt-4 h-100 justify-content-center ">
-                        <div className="col-md-4 col-sm-6 d-flex justify-content-center">
+                        <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                             <div className="volunteer-card card p-4">
                                 <img src="canvassing-icon.png" alt="Canvassing Icon" className="mb-3" />
                                 <h4>Canvassing</h4>
@@ -58,7 +65,7 @@ function GetInvolved() {
                                 <button className="btn btn-primary mt-2" onClick={() => window.location.href = 'canvassing-signup.html'}>Sign Up</button>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-6 d-flex justify-content-center">
+                        <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                             <div className="volunteer-card card p-4">
                                 <img src="phone-banking-icon.png" alt="Phone Banking Icon" className="mb-3" />
                                 <h4>Phone Banking</h4>
@@ -66,7 +73,7 @@ function GetInvolved() {
                                 <button className="btn btn-primary mt-2" onClick={() => window.location.href = 'phone-banking-signup.html'}>Sign Up</button>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-6 d-flex justify-content-center">
+                        <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                             <div className="volunteer-card card p-4">
                                 <img src="phone-banking-icon.png" alt="Phone Banking Icon" className="mb-3" />
                                 <h4>Social Media Outreach</h4>
@@ -99,7 +106,92 @@ function GetInvolved() {
                     <button className="btn btn-primary" onClick={() => window.location.href = 'full-event-calendar.html'}>View Full Calendar</button>
                 </div>
             </section>
-
+            {/* Fifth section - Voter Registration Information */}
+            <section className="voter-registration py-5">
+                <div className="container text-center">
+                    <h2>Register to Vote & Election Information</h2>
+                    <div className="row mt-4">
+                        <div className="col-md-4 col-sm-6 mb-4">
+                            <div className="voter-info">
+                                <img src="registration-icon.png" alt="Registration Icon" className="mb-3" />
+                                <h3>Voter Registration</h3>
+                                <p>Deadline: October 1, 2023</p>
+                                <a href="https://www.vote.org/register-to-vote/" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-2">Register Now</a>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-sm-6 mb-4">
+                            <div className="voter-info">
+                                <img src="early-voting-icon.png" alt="Early Voting Icon" className="mb-3" />
+                                <h3>Early Voting</h3>
+                                <p>October 15 - November 1, 2023</p>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-sm-6 mb-4">
+                            <div className="voter-info">
+                                <img src="polling-location-icon.png" alt="Polling Location Icon" className="mb-3" />
+                                <h3>Polling Locations</h3>
+                                <p>Find your nearest polling location</p>
+                                <a href="https://www.vote.org/polling-place-locator/" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-2">Find Location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Sixth section - Donations */}
+            <section className="donate-section py-5">
+                <div className="container text-center">
+                    <h2>Make a Contribution</h2>
+                    <p>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
+                    <button className="btn btn-primary mt-3 mb-4" onClick={() => window.location.href = 'donation-page.html'}>Donate Today</button>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h3>Recurring Donations</h3>
+                            <p>Support our campaign on an ongoing basis by setting up a monthly donation.</p>
+                            <button className="btn btn-secondary mt-3" onClick={() => window.location.href = 'recurring-donation-page.html'}>Set Up Recurring Donation</button>
+                        </div>
+                        <div className="col-md-6">
+                            <h3>Mail a Check</h3>
+                            <p>If you prefer to donate by mail, please send your check to:</p>
+                            <address>
+                                Crystal Davila - School Board Reelection Campaign<br />
+                                1234 Main St.<br />
+                                Pasadena, TX 77506
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Seventh section - Contact Information */}
+            <section className="contact-info py-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h2>Get in Touch</h2>
+                            <p>Phone: (123) 456-7890</p>
+                            <p>Email: info@campaignwebsite.com</p>
+                            <p>Address: 1234 Main St, Pasadena, TX 77506</p>
+                        </div>
+                        <div className="col-md-6">
+                            <h2>Contact Us</h2>
+                            <form className="contact-form">
+                                <div className="form-group">
+                                    <label htmlFor="name">Name</label>
+                                    <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="email">Email</label>
+                                    <input type="email" className="form-control" id="email" placeholder="Your Email" />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="message">Message</label>
+                                    <textarea className="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" className="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
