@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div>
         <Nav />
-        <main>
+        <main className='content-padding'>
           <Routes>
             <Route
               path="/crystaldavila"

@@ -5,6 +5,8 @@ function Nav(props) {
     const [currentComponent, setCurrentComponent] = useState('');
     const [openMenu, setOpenMenu] = useState(false);
     const [menuVisible, setMenuVisible] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
 
     useEffect(() => {
         const menu = document.getElementById("menu");
@@ -26,6 +28,19 @@ function Nav(props) {
         }
     }, [openMenu]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            setScrolled(scrollTop > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     const toggleMenu = () => {
         if (!openMenu) {
             setOpenMenu(true);
@@ -42,7 +57,7 @@ function Nav(props) {
     return (
         <>
             <header>
-                <nav className='navbar navbar-dark navbar-expand-lg navbar-fixed-top navigation-clean-button navbar-custom-css'>
+                <nav className={`navbar navbar-dark navbar-expand-lg navbar-fixed-top navigation-clean-button navbar-custom-css${openMenu ? '' : (scrolled ? ' navbar-scrolled' : '')}`}>
                     <div className='container-fluid container nav-container-custom-css p-0'>
                         <div className='container-for-mediaquery'>
                             <h1 className='d-inline-flex brand'>
