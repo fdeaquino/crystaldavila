@@ -79,7 +79,9 @@ function GetInvolved() {
                                 </div>
                                 <h4>Voter Outreach</h4>
                                 <p>Help us spread the word by going door-to-door in your neighborhood.</p>
-                                <button className="btn btn-primary mt-2" onClick={() => window.location.href = 'voter-outreach-signup.html'}>Sign Up</button>
+                                <a href="signup.html">
+                                    <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
+                                </a>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
@@ -91,7 +93,9 @@ function GetInvolved() {
                                 </div>
                                 <h4>Phone Banking</h4>
                                 <p>Assist with calling potential supporters to discuss our campaign's goals and events.</p>
-                                <button className="btn btn-primary mt-2" onClick={() => window.location.href = 'phone-banking-signup.html'}>Sign Up</button>
+                                <a href="signup.html">
+                                    <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
+                                </a>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
@@ -113,7 +117,9 @@ function GetInvolved() {
                                 </div>
                                 <h4>Social Media Outreach</h4>
                                 <p>Engage the community and expand our social media presence.</p>
-                                <button className="btn btn-primary mt-2" onClick={() => window.location.href = 'phone-banking-signup.html'}>Sign Up</button>
+                                <a href="signup.html">
+                                    <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
+                                </a>
                             </div>
                         </div>
                         {/* Add more volunteer cards as needed */}
@@ -151,7 +157,9 @@ function GetInvolved() {
                                 <img src="registration-icon.png" alt="Registration Icon" className="mb-3" />
                                 <h3>Voter Registration</h3>
                                 <p>Deadline: October 1, 2023</p>
-                                <a href="https://www.vote.org/register-to-vote/" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-2">Register Now</a>
+                                <a href="https://www.vote.org/register-to-vote/">
+                                    <button class="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Register Now</button>
+                                </a>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-6 mb-4">
@@ -166,7 +174,9 @@ function GetInvolved() {
                                 <img src="polling-location-icon.png" alt="Polling Location Icon" className="mb-3" />
                                 <h3>Polling Locations</h3>
                                 <p>Find your nearest polling location</p>
-                                <a href="https://www.vote.org/polling-place-locator/" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-2">Find Location</a>
+                                <a href="https://www.vote.org/polling-place-locator/">
+                                    <button class="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Find Location</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +187,9 @@ function GetInvolved() {
                 <div className="container text-center">
                     <h2>Make a Contribution</h2>
                     <p>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
-                    <button className="btn btn-primary mt-3 mb-4" onClick={() => window.location.href = 'donation-page.html'}>Donate Today</button>
+                    <a href="donation-page.html">
+                        <button class="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Donate Today</button>
+                    </a>
                 </div>
             </section>
             {/* Seventh section - Contact Information */}
@@ -205,7 +217,7 @@ function GetInvolved() {
                                     <label htmlFor="message">Message</label>
                                     <textarea className="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
                                 </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
                             </form>
                         </div>
                     </div>
