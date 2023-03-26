@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-// go back a few more times
+import { Link, useLocation } from 'react-router-dom';
+
 function Nav(props) {
     const [currentComponent, setCurrentComponent] = useState('');
     const [openMenu, setOpenMenu] = useState(false);
     const [menuVisible, setMenuVisible] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
 
 
     useEffect(() => {
@@ -41,6 +42,28 @@ function Nav(props) {
         };
     }, []);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [currentComponent]);
+
+    useEffect(() => {
+        if (location.pathname === '/crystaldavila') {
+            setCurrentComponent('');
+        }
+    }, [location.pathname]);
+
+    useEffect(() => {
+        const handlePopstate = () => {
+            setOpenMenu(false);
+        };
+
+        window.addEventListener('popstate', handlePopstate);
+        return () => {
+            window.removeEventListener('popstate', handlePopstate);
+        };
+    }, []);
+
+
 
     const toggleMenu = () => {
         if (!openMenu) {
@@ -52,6 +75,7 @@ function Nav(props) {
                 setMenuVisible(false);
             }, 500); //matches the transition in the CSS
         }
+
     };
 
 
@@ -61,7 +85,10 @@ function Nav(props) {
                 <nav className={`navbar navbar-expand-lg navbar-fixed-top navigation-clean-button navbar-custom-css${openMenu ? '' : (scrolled ? ' navbar-scrolled' : '')}`}>
                     <div className='container-fluid container nav-container-custom-css p-0' style={{ position: 'relative', zIndex: '9999' }}>
                         <div className='container-for-mediaquery'>
-                            <h1 className='d-inline-flex brand' style={{ zIndex: '9999' }}>
+                            <h1 className='d-inline-flex brand' style={{ zIndex: '9999' }} onClick={() => {
+                                setCurrentComponent('');
+                                setOpenMenu(false);
+                            }}>
                                 <Link to='/crystaldavila'>
                                     Crystal Davila
                                 </Link>
