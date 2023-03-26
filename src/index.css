@@ -214,6 +214,10 @@ nav {
   color: white;
 }
 
+.overlay-menu ul li.active a {
+  text-decoration: underline;
+}
+
 .overlay-menu li {
   padding: 1rem;
   transform: translateY(-20px);
