@@ -6,6 +6,7 @@ function Nav(props) {
     const [openMenu, setOpenMenu] = useState(false);
     const [menuVisible, setMenuVisible] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [activeMenuItem, setActiveMenuItem] = useState('');
     const location = useLocation();
 
 
@@ -47,9 +48,7 @@ function Nav(props) {
     }, [currentComponent]);
 
     useEffect(() => {
-        if (location.pathname === '/crystaldavila') {
-            setCurrentComponent('');
-        }
+        setCurrentComponent(location.pathname.split('/')[2] || '');
     }, [location.pathname]);
 
     useEffect(() => {
@@ -65,18 +64,19 @@ function Nav(props) {
 
 
 
-    const toggleMenu = () => {
+    const toggleMenu = (component) => {
         if (!openMenu) {
             setOpenMenu(true);
             setMenuVisible(true);
+            setCurrentComponent(component);
         } else {
             setOpenMenu(false);
             setTimeout(() => {
                 setMenuVisible(false);
             }, 500); //matches the transition in the CSS
         }
-
     };
+
 
 
     return (
@@ -88,6 +88,7 @@ function Nav(props) {
                             <h1 className='d-inline-flex brand' style={{ zIndex: '9999' }} onClick={() => {
                                 setCurrentComponent('');
                                 setOpenMenu(false);
+                                setMenuVisible(false); 
                             }}>
                                 <Link to='/crystaldavila'>
                                     Crystal Davila
@@ -171,56 +172,68 @@ function Nav(props) {
                     </div>
                 </nav>
             </header>
-            {openMenu && (
-                <div className={`overlay-menu${menuVisible ? ' d-flex' : ''}${openMenu ? ' open' : ''}`}>
-                    <ul>
-                        <li className={currentComponent === 'About' ? 'active' : ''}>
-                            <Link
-                                to="/crystaldavila/about"
-                                onClick={() => {
-                                    setCurrentComponent('About');
-                                    setOpenMenu(false);
-                                }}
-                            >
-                                Meet Crystal
-                            </Link>
-                        </li>
-                        <li className={currentComponent === 'OnTheIssues' ? 'active' : ''}>
-                            <Link
-                                to="/crystaldavila/on-the-issues"
-                                onClick={() => {
-                                    setCurrentComponent('OnTheIssues');
-                                    setOpenMenu(false);
-                                }}
-                            >
-                                On The Issues
-                            </Link>
-                        </li>
-                        <li className={currentComponent === 'Vision' ? 'active' : ''}>
-                            <Link
-                                to="/crystaldavila/vision"
-                                onClick={() => {
-                                    setCurrentComponent('Vision');
-                                    setOpenMenu(false);
-                                }}
-                            >
-                                Vision
-                            </Link>
-                        </li>
-                        <li className={currentComponent === 'GetInvolved' ? 'active' : ''}>
-                            <Link
-                                to="/crystaldavila/get-involved"
-                                onClick={() => {
-                                    setCurrentComponent('GetInvolved');
-                                    setOpenMenu(false);
-                                }}
-                            >
-                                Get Involved
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            )}
+
+            <div className={`overlay-menu${menuVisible ? ' d-flex' : ''}${openMenu ? ' open' : ''}`}>
+                <ul>
+                    <li className={currentComponent === 'About' ? 'active' : ''}>
+                        <Link
+                            to="/crystaldavila/about"
+                            onClick={() => {
+                                setCurrentComponent('About');
+                                setOpenMenu(false);
+                                setActiveMenuItem('About');
+                                setMenuVisible(false); 
+                            }}
+                            className={activeMenuItem === 'About' ? 'active' : ''}
+                        >
+                            Meet Crystal
+                        </Link>
+                    </li>
+                    <li className={currentComponent === 'OnTheIssues' ? 'active' : ''}>
+                        <Link
+                            to="/crystaldavila/on-the-issues"
+                            onClick={() => {
+                                setCurrentComponent('OnTheIssues');
+                                setOpenMenu(false);
+                                setActiveMenuItem('OnTheIssues');
+                                setMenuVisible(false); 
+                            }}
+                            className={activeMenuItem === 'OnTheIssues' ? 'active' : ''}
+                        >
+                            On The Issues
+                        </Link>
+                    </li>
+                    <li className={currentComponent === 'Vision' ? 'active' : ''}>
+                        <Link
+                            to="/crystaldavila/vision"
+                            onClick={() => {
+                                setCurrentComponent('Vision');
+                                setOpenMenu(false);
+                                setActiveMenuItem('Vision');
+                                setMenuVisible(false); 
+                            }}
+                            className={activeMenuItem === 'Vision' ? 'active' : ''}
+                        >
+                            Vision
+                        </Link>
+                    </li>
+                    <li className={currentComponent === 'GetInvolved' ? 'active' : ''}>
+                        <Link
+                            to="/crystaldavila/get-involved"
+                            onClick={() => {
+                                setCurrentComponent('GetInvolved');
+                                setOpenMenu(false);
+                                setActiveMenuItem('GetInvolved');
+                                setMenuVisible(false); 
+                            }}
+                            className={activeMenuItem === 'GetInvolved' ? 'active' : ''}
+                        >
+                            Get Involved
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+
 
         </>
     )
