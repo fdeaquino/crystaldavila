@@ -24,7 +24,7 @@ function Nav(props) {
             menu.classList.remove("openmenu");
             setTimeout(() => {
                 mobileMenu.style.position = "absolute";
-                mobileMenu.style.top = "-80px";
+                mobileMenu.style.top = "-81px";
                 mobileMenu.style.right = "12px";
             }, 500); // matches the transition in the CSS
         }
@@ -95,7 +95,7 @@ function Nav(props) {
                                 </Link>
                             </h1>
 
-                            <span className='d-inline-flex text-uppercase secondary-brand-styles' style={{ zIndex: '9999' }}>
+                            <span className='d-inline-flex text-uppercase secondary-brand-styles secondary-brand-size' style={{ zIndex: '9999' }}>
                                 For P.I.S.D. School Board
                             </span>
                         </div>

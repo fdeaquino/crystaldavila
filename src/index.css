@@ -17,16 +17,10 @@ font-family: 'Oswald', sans-serif;
 } */
 
 body {
-  font-family: 'Oswald', sans-serif;
-
   background: hsla(312, 66%, 76%, 1);
-
   background: linear-gradient(180deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
-
   background: -moz-linear-gradient(180deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
-
   background: -webkit-linear-gradient(180deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
-
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ea98da", endColorstr="#5b6cf9", GradientType=1);
 }
 
@@ -80,18 +74,20 @@ nav {
 }
 
 .brand {
-  font-family: 'Aboreto', cursive;
+  font-family: 'Great Vibes', cursive;
   letter-spacing: .1rem;
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: clamp(2.5rem, 1.6vw, 3.5rem);
+  margin-bottom: 0.1rem!important;
 }
 
 .secondary-brand-size {
-  font-size: 1rem;
+  font-size: clamp(.8rem, 1.6vw, 1rem);
+  padding-top: 1px;
 }
 
 .secondary-brand-styles {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Aboreto', cursive;
   font-weight: 100;
   justify-content: center;
 }
@@ -200,6 +196,7 @@ nav {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
+  font-family: 'Aboreto', cursive;
 }
 
 .overlay-menu.d-flex {
@@ -869,7 +866,7 @@ footer {
 
   .brand,
   .secondary-brand-styles {
-    margin-left: 1rem;
+    margin-left: 1.4rem;
   }
 
   .hero-container {
