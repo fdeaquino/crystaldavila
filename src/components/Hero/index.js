@@ -34,25 +34,34 @@ function Hero() {
             <section class="py-4 py-lg-5 ">
                 <div class="container text-center h-100 rectangle-section bg-light-gray">
                     <h3>Join The Conversation</h3>
-                    <p>Upcoming Events</p>
+                    <p className='join-convo-text text-dark event-header'>Upcoming Events</p>
                     <div className='row mt-4 h-100 justify-content-center'>
                         <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
-                            <h4>Dia De Los Niños Celebration</h4>
+                            <h4 className='mb-3'>Café con Crystal</h4>
                             {/* kids image goes here */}
                             <div></div>
-                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue"> Learn More </button></a>
+                            <p className='event-info mb-1'>Restaurant Name</p>
+                            <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
+                            <p className='event-info'>April 4th, 2023</p>
+                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
                         </div>
                         <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
-                            <h4>Café con Crystal</h4>
+                            <h4 className='mb-3'>Dia De Los Niños Celebration</h4>
                             {/* kids image goes here */}
                             <div></div>
-                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue"> Learn More </button></a>
+                            <p className='event-info mb-1'>Memorial Park</p>
+                            <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
+                            <p className='event-info'>April 30th, 2023</p>
+                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
                         </div>
                         <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
-                            <h4>Cinco de Mayo Celebration</h4>
+                            <h4 className='mb-3'>Cinco de Mayo Celebration</h4>
                             {/* kids image goes here */}
                             <div></div>
-                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue"> Learn More </button></a>
+                            <p className='event-info mb-1'>Strawberry Park</p>
+                            <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
+                            <p className='event-info'>May 5th, 2023</p>
+                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +70,7 @@ function Hero() {
             <section class="py-4 py-lg-5">
                 <div class="container">
                     <h3 className='join-convo-text'>Past Work and Advocacy</h3>
-                    <span className='join-convo-text pb-4 event-header'>Upcoming Events</span>
+                    <span className='join-convo-text event-header'>Upcoming Events</span>
                 </div>
             </section>
         </>

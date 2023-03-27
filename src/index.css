@@ -385,6 +385,12 @@ h3, h4, h5, h6 {
   font-weight: 550;
 }
 
+.event-info {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  font-size: medium;
+}
+
 /* ~~~Button Styles~~~ */
 .btn {
   font-family: Arial, Helvetica, sans-serif;
@@ -502,7 +508,6 @@ h3, h4, h5, h6 {
 }
 
 .timeline .timeline-heading h4 {
-  margin-top: 22px;
   margin-bottom: 4px;
   color: #b3b3b3;
   padding: 0;
@@ -514,6 +519,11 @@ h3, h4, h5, h6 {
   color: #333;
   margin: 0;
   padding: 0;
+}
+
+.timeline-body, .priorities-modal, .said-quote {
+  font-family: 'Oswald', sans-serif!important;
+  font-weight: 200;
 }
 
 .timeline .timeline-body>p,
@@ -604,7 +614,6 @@ svg {
   list-style: none;
 }
 
-
 button.close {
   border: none;
   padding: 0;
@@ -614,6 +623,36 @@ button.close {
   position: absolute;
   top: 0.5rem;
   right: 0.8rem;
+}
+
+.priority-card-link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+
+.priority-card-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgb(158, 41, 135);
+  margin-top: 5px;
+  /* Adjust this value to change the distance between the text and the line */
+  margin-left: -5px;
+  /* Adjust this value to extend the line to the left */
+  margin-right: -5px;
+  /* Adjust this value to extend the line to the right */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.issues-container-margin-top {
+  margin-top: 1.375rem;
 }
 
 /* ========== END ISSUES SECTION STYLES ========== */
@@ -647,11 +686,9 @@ button.close {
   bottom: 0;
 }
 
-.community-care-section h3 {
-  font-size: 32px;
-  font-weight: 700;
+.community-care-section h4 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 2.5rem;
 }
 
 .community-care-section .border {
@@ -934,7 +971,11 @@ footer {
   .priority-dropdown-styles {
     width: 100%;
     min-width: fit-content;
-    font-size: clamp(0.8rem, 1.6vw, 1rem);
+    font-size: clamp(0.9rem, 1.6vw, 1rem);
+  }
+
+  .learn-more-btn-styles {
+    font-size: clamp(.9rem, 1.6vw, 1rem);
   }
 
   .dropdown-menu {
@@ -1161,6 +1202,18 @@ footer {
 
   .timeline>li:after {
     min-height: 0;
+  }
+
+  .timeline-image {
+    margin-bottom: 2rem!important;
+  }
+  
+  .timeline-panel {
+    margin-bottom: 0!important;
+  }
+
+  .vision-quote {
+    max-width: none;
   }
 }
 /* Media query for extra small screens (max-width: 575px) */

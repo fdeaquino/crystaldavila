@@ -47,11 +47,11 @@ const PriorityDropdown = ({ title, content, alignLeft }) => (
             </button>
             <ul className='p-4 mb-0'>
                 <li className='decoration-none'>
-                    <p>{content}</p>
+                    <p className='priorities-modal'>{content}</p>
                 </li>
                 <li className='decoration-none'>
                     <button className='dropdown-item' type='button'>
-                        <a className='dropdown-item' href='#'>
+                        <a className='priority-card-link' href='#'>
                             Learn more
                         </a>
                     </button>
@@ -82,16 +82,18 @@ function OnTheIssues() {
                             <h3 className="join-convo-text text-center">Crystal's Priorities</h3>
                         </div>
                     </div>
-                    <div className="row h-100 timeline-container">
-                        {/* PrioritiesDropdown component that takes in the title, content, and and alignLeft props to render each dropdown */}
-                        {priorities.map((priority, index) => (
-                            <PriorityDropdown
-                                key={index}
-                                title={priority.title}
-                                content={priority.content}
-                                alignLeft={index % 2 === 1}
-                            />
-                        ))}
+                    <div className="row h-100 timeline-container issues-container-margin-top">
+                        
+                                {/* PrioritiesDropdown component that takes in the title, content, and and alignLeft props to render each dropdown */}
+                                {priorities.map((priority, index) => (
+                                    <PriorityDropdown
+                                        key={index}
+                                        title={priority.title}
+                                        content={priority.content}
+                                        alignLeft={index % 2 === 1}
+                                    />
+                                ))}
+
                     </div>
                 </div>
             </section>

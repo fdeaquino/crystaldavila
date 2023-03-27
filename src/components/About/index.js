@@ -24,8 +24,8 @@ function About() {
                                 <li className='py-2'>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
-                                            <h4>Early Years</h4>
-                                            <h5 className="subheading">PISD Student</h5>
+                                            <h4 className='text-dark'>Early Years</h4>
+                                            <h5 className="text-muted">PISD Student</h5>
                                         </div>
                                         <div className="timeline-body">
                                             <p className="text-muted">
@@ -41,8 +41,8 @@ function About() {
                                 <li className="py-2 timeline-inverted">
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
-                                            <h4>College Years</h4>
-                                            <h5 className="subheading">UT Austin Student</h5>
+                                            <h4 className='text-dark'>College Years</h4>
+                                            <h5 className="text-muted">UT Austin Student</h5>
                                         </div>
                                         <div className="timeline-body">
                                             <p className="text-muted">
@@ -58,8 +58,8 @@ function About() {
                                 <li className='py-2'>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
-                                            <h4>Career Start</h4>
-                                            <h5 className="subheading">Teacher at PHS</h5>
+                                            <h4 className='text-dark'>Career Start</h4>
+                                            <h5 className="text-muted">Teacher at PHS</h5>
                                         </div>
                                         <div className="timeline-body">
                                             <p className="text-muted">
@@ -75,8 +75,8 @@ function About() {
                                 <li className="py-2 timeline-inverted">
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
-                                            <h4>Student Advocacy</h4>
-                                            <h5 className="subheading">PISD School Board Campaign</h5>
+                                            <h4 className='text-dark'>Student Advocacy</h4>
+                                            <h5 className="text-muted">PISD School Board Campaign</h5>
                                         </div>
                                         <div className="timeline-body">
                                             <p className="text-muted">
@@ -92,8 +92,8 @@ function About() {
                                 <li className='py-2'>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
-                                            <h4>Trustee</h4>
-                                            <h5 className="subheading">Current</h5>
+                                            <h4 className='text-dark'>Trustee</h4>
+                                            <h5 className="text-muted">Current</h5>
                                         </div>
                                         <div className="timeline-body">
                                             <p className="text-muted">
