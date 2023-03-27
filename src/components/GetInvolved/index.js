@@ -6,21 +6,42 @@ function GetInvolved() {
     const events = [
         {
             title: 'Town Hall Meeting',
-            date: 'April 10, 2023',
+            date: 'April 1, 2023',
             time: '6:00 PM',
             location: 'Community Center',
             imageUrl: 'town-hall-banner.jpg'
         },
         {
+            title: 'Café con Crystal',
+            date: 'April 4, 2023',
+            time: '11:00 AM',
+            location: 'Restaurant Name',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
             title: 'Fundraising Dinner',
-            date: 'April 20, 2023',
+            date: 'April 7, 2023',
             time: '7:00 PM',
             location: 'Local Restaurant',
             imageUrl: 'fundraising-dinner-banner.jpg'
         },
         {
+            title: 'Dia De Los Niños Celebration',
+            date: 'April 30, 2023',
+            time: '4:00 PM',
+            location: 'Memorial Park',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
+            title: 'Cinco de Mayo Celebration',
+            date: 'May 5, 2023',
+            time: '2:00 PM',
+            location: 'Strawberry Park',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
             title: 'Fundraising Dinner',
-            date: 'April 20, 2023',
+            date: 'May 20, 2023',
             time: '7:00 PM',
             location: 'Local Restaurant',
             imageUrl: 'fundraising-dinner-banner.jpg'
@@ -49,7 +70,7 @@ function GetInvolved() {
 
                             <h5 class="card-title text-uppercase">Your support and active participation are crucial to the success of our campaign.
                             </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">By joining our community-driven efforts, you can help make a lasting impact on the future of our schools. Let's work together to create positive change for our students, educators, and the entire community.</h6>
+                            <p class="card-subtitle mb-2 text-muted d-flex">By joining our community-driven efforts, you can help make a lasting impact on the future of our schools. Let's work together to create positive change for our students, educators, and the entire community.</p>
                         </div>
 
                     </div>
@@ -61,7 +82,7 @@ function GetInvolved() {
             <section className="volunteer-section py-4 py-lg-5">
                 <div className="container text-center h-100 rectangle-section bg-light-gray">
                     <h3>Volunteer with Us</h3>
-                    <p>Join our team and make a difference by participating in various volunteer activities:</p>
+                    <p className='volunteer-card-text'>Join our team and make a difference by participating in various volunteer activities:</p>
                     <div className="row mt-4 h-100 justify-content-center ">
                         <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                             <div className="volunteer-card volunteer-card-background card p-4">
@@ -78,7 +99,7 @@ function GetInvolved() {
                                     </svg>
                                 </div>
                                 <h4>Voter Outreach</h4>
-                                <p className="text-muted">Help us spread the word by going door-to-door in your neighborhood.</p>
+                                <p className="text-muted volunteer-card-text">Help us spread the word by going door-to-door in your neighborhood.</p>
                                 <a href="signup.html">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
                                 </a>
@@ -92,7 +113,7 @@ function GetInvolved() {
                                     </svg>
                                 </div>
                                 <h4>Phone Banking</h4>
-                                <p className="text-muted">Assist with calling potential supporters to discuss our campaign's goals and events.</p>
+                                <p className="text-muted volunteer-card-text">Assist with calling potential supporters to discuss our campaign's goals and events.</p>
                                 <a href="signup.html">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
                                 </a>
@@ -116,7 +137,7 @@ function GetInvolved() {
                                     </svg>
                                 </div>
                                 <h4>Social Media Outreach</h4>
-                                <p className="text-muted">Engage the community and expand our social media presence.</p>
+                                <p className="text-muted volunteer-card-text">Engage the community and expand our social media presence.</p>
                                 <a href="signup.html">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
                                 </a>
@@ -127,36 +148,38 @@ function GetInvolved() {
                 </div>
             </section>
             {/* Fourth section - Event Calendar */}
-            <section className="event-calendar py-5">
+            <section className="event-calendar py-4 py-lg-5 ">
                 <div className="container text-center">
-                    <h2>Upcoming Events</h2>
-                    <div className="row mt-4">
+                    <h3>Upcoming Events</h3>
+                    <div className="row mt-4 h-100 justify-content-center">
                         {events.map((event, index) => (
-                            <div key={index} className="col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
-                                <div className="card event-card">
-                                    <img src={event.imageUrl} alt={event.title} className="card-img-top" />
+                            <div key={index} className="col-md-6 col-lg-4 mb-4 event-styles py-3 my-2 rectangle-section bg-light-gray">
+                                <div className=" event-card">
+                                    <img src={event.imageUrl} alt={event.title} className="card-img-top my-2" />
                                     <div className="card-body">
-                                        <h3 className="card-title">{event.title}</h3>
-                                        <p>{event.date} at {event.time}</p>
-                                        <p>{event.location}</p>
+                                        <h4 className="card-title my-2">{event.title}</h4>
+                                        <p className='volunteer-card-text mt-3'>{event.date} at {event.time}</p>
+                                        <p className='volunteer-card-text'>{event.location}</p>
                                     </div>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <button className="btn btn-primary" onClick={() => window.location.href = 'full-event-calendar.html'}>View Full Calendar</button>
+                    <a>
+                        <button className="btn btn-primary btn-moving-gradient btn-moving-gradient--blue w-50 mt-3 mb-4">View Full Calendar</button>
+                    </a>
                 </div>
             </section>
             {/* Fifth section - Voter Registration Information */}
-            <section className="voter-registration py-5">
+            <section className="voter-registration py-4 py-lg-5 ">
                 <div className="container text-center">
-                    <h2>Register to Vote & Election Information</h2>
+                    <h3>Register to Vote & Election Information</h3>
                     <div className="row mt-4">
                         <div className="col-md-4 col-sm-6 mb-4">
                             <div className="voter-info">
                                 <img src="registration-icon.png" alt="Registration Icon" className="mb-3" />
-                                <h3>Voter Registration</h3>
-                                <p>Deadline: October 1, 2023</p>
+                                <h4 className="card-title my-2">Voter Registration</h4>
+                                <p className='volunteer-card-text mt-3'>Deadline: October 1, 2023</p>
                                 <a href="https://www.vote.org/register-to-vote/">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Register Now</button>
                                 </a>
@@ -165,15 +188,15 @@ function GetInvolved() {
                         <div className="col-md-4 col-sm-6 mb-4">
                             <div className="voter-info">
                                 <img src="early-voting-icon.png" alt="Early Voting Icon" className="mb-3" />
-                                <h3>Early Voting</h3>
-                                <p>October 15 - November 1, 2023</p>
+                                <h4 className="card-title my-2">Early Voting</h4>
+                                <p className='volunteer-card-text mt-3'>October 15 - November 1, 2023</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-6 mb-4">
                             <div className="voter-info">
                                 <img src="polling-location-icon.png" alt="Polling Location Icon" className="mb-3" />
-                                <h3>Polling Locations</h3>
-                                <p>Find your nearest polling location</p>
+                                <h4 className="card-title my-2">Polling Locations</h4>
+                                <p className='volunteer-card-text mt-3'>Find your nearest polling location</p>
                                 <a href="https://www.vote.org/polling-place-locator/">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Find Location</button>
                                 </a>
@@ -183,41 +206,43 @@ function GetInvolved() {
                 </div>
             </section>
             {/* Sixth section - Donations */}
-            <section className="donate-section py-5">
+            <section className="donate-section py-4 py-lg-5 ">
                 <div className="container text-center">
-                    <h2>Make a Contribution</h2>
-                    <p>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
+                    <h3>Make a Contribution</h3>
+                    <p className='volunteer-card-text mt-3'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
                     <a href="donation-page.html">
                         <button class="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Donate Today</button>
                     </a>
                 </div>
             </section>
             {/* Seventh section - Contact Information */}
-            <section className="contact-info py-5">
+            <section className="contact-info py-4 py-lg-5 ">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h2>Get in Touch</h2>
-                            <p>Phone: (123) 456-7890</p>
-                            <p>Email: info@campaignwebsite.com</p>
-                            <p>Address: 1234 Main St, Pasadena, TX 77506</p>
+                            <h3>Get in Touch</h3>
+                            <p className='volunteer-card-text mt-3'>Phone: (123) 456-7890</p>
+                            <p className='volunteer-card-text mt-3'>Email: info@campaignwebsite.com</p>
+                            <p className='volunteer-card-text mt-3'>Address: 1234 Main St, Pasadena, TX 77506</p>
                         </div>
                         <div className="col-md-6">
-                            <h2>Contact Us</h2>
+                            <h3>Contact Us</h3>
                             <form className="contact-form">
                                 <div className="form-group">
-                                    <label htmlFor="name">Name</label>
-                                    <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="name">Name</label>
+                                    <input type="text" className="form-control volunteer-card-text text-muted" id="name" placeholder="Your Name" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="email">Email</label>
-                                    <input type="email" className="form-control" id="email" placeholder="Your Email" />
+                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
+                                    <input type="email" className="form-control volunteer-card-text text-muted" id="email" placeholder="Your Email" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="message">Message</label>
-                                    <textarea className="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="message">Message</label>
+                                    <textarea className="form-control volunteer-card-text text-muted" id="message" rows="4" placeholder="Your Message"></textarea>
                                 </div>
-                                <button type="submit" className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
+                                <a>
+                                    <button className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
+                                </a>
                             </form>
                         </div>
                     </div>

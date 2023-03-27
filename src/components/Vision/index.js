@@ -8,10 +8,13 @@ const VisionCard = ({ title, items }) => (
         </h4>
         <div className='row'>
             {items.map((item, index) => (
-                <div key={index} className='col-sm-6 col-lg-6 mb-4'>
-                    <div className='border rounded p-3'>
-                        <p>{item}</p>
-                        <BsArrowRight className='float-end' />
+                <div key={index} className='col-sm-6 col-lg-6 mb-4 justify-content-center'>
+                    <div className='volunteer-card volunteer-card-background card p-4'>
+                        <p className='vision-box-text'>{item}</p>
+                        <div>
+                            <BsArrowRight className='float-center' />
+                        </div>
+
                     </div>
                 </div>
             ))}
@@ -94,8 +97,8 @@ function Vision() {
                 </div>
             </section>
             <section className="py-4 py-lg-5">
-                <div className="container h-100">
-                    <div className="row h-100 justify-content-center timeline-container">
+                <div className="container text-center h-100 rectangle-section bg-light-gray">
+                    <div className="row h-100 justify-content-center ">
                         {visionData.map((data, index) => (
                             <VisionCard key={index} title={data.title} items={data.items} />
                         ))}
