@@ -78,7 +78,7 @@ function GetInvolved() {
                                     </svg>
                                 </div>
                                 <h4>Voter Outreach</h4>
-                                <p>Help us spread the word by going door-to-door in your neighborhood.</p>
+                                <p className="text-muted">Help us spread the word by going door-to-door in your neighborhood.</p>
                                 <a href="signup.html">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
                                 </a>
@@ -92,7 +92,7 @@ function GetInvolved() {
                                     </svg>
                                 </div>
                                 <h4>Phone Banking</h4>
-                                <p>Assist with calling potential supporters to discuss our campaign's goals and events.</p>
+                                <p className="text-muted">Assist with calling potential supporters to discuss our campaign's goals and events.</p>
                                 <a href="signup.html">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
                                 </a>
@@ -116,7 +116,7 @@ function GetInvolved() {
                                     </svg>
                                 </div>
                                 <h4>Social Media Outreach</h4>
-                                <p>Engage the community and expand our social media presence.</p>
+                                <p className="text-muted">Engage the community and expand our social media presence.</p>
                                 <a href="signup.html">
                                     <button class="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
                                 </a>

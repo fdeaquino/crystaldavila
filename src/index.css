@@ -10,6 +10,8 @@ font-family: 'Oranienbaum', serif;
 font-family: 'Poiret One', cursive;
 font-family: 'Wire One', sans-serif;
 font-family: 'Oswald', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Noto Serif Display', serif;
  */
 
 /* * {
@@ -35,6 +37,12 @@ nav {
 
 .content-padding {
   padding-top: 115px;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Noto Serif Display', serif !important;
+  font-weight: 900;
+  
 }
 
 /* ========== START NAV STYLES ========== */
@@ -94,8 +102,9 @@ nav {
 
 .nav-link-custom-css {
   color: white;
-  font-size: clamp(.9rem, 1.6vw, 1rem);
+  font-size: clamp(.9rem, 1.6vw, 1.2rem);
   font-weight: 500 !important;
+  font-family: 'Aboreto', cursive;;
 }
 
 .actions .navigation-clean-button {
@@ -197,6 +206,7 @@ nav {
   visibility: hidden;
   transition: all 0.5s ease;
   font-family: 'Aboreto', cursive;
+  font-size: clamp(1.2rem, 1.6vw, 1.7rem);
 }
 
 .overlay-menu.d-flex {
@@ -370,7 +380,9 @@ nav {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-
+  text-align: center;
+  font-size: larger;
+  font-weight: 550;
 }
 
 /* ~~~Button Styles~~~ */
@@ -388,7 +400,6 @@ nav {
   height: 3rem;
   width: 10rem;
   font-size: 16px;
-  font-weight: 600;
   cursor: pointer;
   border: none;
   background-size: 300% 100%;
@@ -1121,7 +1132,6 @@ footer {
 
 }
 
-
 /* Media query for extra small screens (max-width: 767px) */
 @media (max-width: 767px) {
   .timeline>li:nth-child(odd) {
@@ -1151,6 +1161,12 @@ footer {
 
   .timeline>li:after {
     min-height: 0;
+  }
+}
+/* Media query for extra small screens (max-width: 575px) */
+@media (max-width: 575px) {
+  .rectangle-section {
+    border-radius: 0;
   }
 }
 
