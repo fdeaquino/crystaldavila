@@ -49,7 +49,7 @@ h6 {
 }
 
 .card {
-  border: none!important;
+  border: none !important;
 }
 
 /* ========== START NAV STYLES ========== */
@@ -292,7 +292,7 @@ h6 {
   margin-left: 2rem;
   max-height: 100%;
   width: 100%;
-  min-height: 50vh;
+  min-height: 80vh;
   transition: all 0.5s ease;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
 }
@@ -815,7 +815,12 @@ button.close {
   margin-bottom: 1.5rem;
 }
 
-.volunteer-title, .volunteer-content-text, .events-title, .voter-registration-title, .contribution-content-text, .contribution-title {
+.volunteer-title,
+.volunteer-content-text,
+.events-title,
+.voter-registration-title,
+.contribution-content-text,
+.contribution-title {
   color: white;
 }
 
@@ -853,6 +858,17 @@ footer {
     height: 9.25rem;
   }
 }
+/* media query specifically for iPad Pro 
+(min-width: 768px) and (max-width: 1024px) and (min-height: 800px) and (max-height: 1200px)
+*/
+@media (min-width: 1023px) and (max-width: 1024px) and (min-height: 1365px) and (max-height: 1366px) {
+  .cd-photo {
+    width: 70vw;
+    min-height: 55vh;
+    margin-left: -3.5rem;
+  }
+}
+
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -962,16 +978,16 @@ footer {
   }
 
   .cd-photo {
-    min-height: 35vh;
-    width: 100%;
-    margin-left: 1rem;
+    width: 70vw;
+    min-height: 40vh;
+    margin-left: -3.5rem;
   }
 
-  .hero-text {
-    font-size: clamp(1.5rem, 4vw, 4rem);
-    margin-right: 1rem;
+  .mb-10 {
+    margin-bottom: 8rem !important;
   }
 
+  /* TODO: uncomment to update card body on hero page and get involved page (upcoming events)*/
   /* .card-body {
     width: 80vw;
   } */
@@ -1081,6 +1097,11 @@ footer {
   .timeline.timeline-inverted .timeline-panel {
     padding-left: 40px;
   }
+
+  .hero-text {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-right: 1rem;
+  }
 }
 
 /* Media query for small screens (max-width: 768px) */
@@ -1092,8 +1113,7 @@ footer {
   }
 
   .cd-photo {
-    width: 100%;
-    min-height: 30vh;
+    margin-left: -0.5rem;
   }
 }
 
@@ -1254,6 +1274,34 @@ footer {
 @media (max-width: 575px) {
   .rectangle-section {
     border-radius: 0;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 541px) {
+  .hero-text {
+    font-size: clamp(1.8rem, 4vw, 4rem);
+  }
+
+  .mb-10 {
+    margin-bottom: 2.5rem !important
+  }
+}
+
+@media (max-width: 539px) {
+  .hero-text {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    margin-right: -0.5rem;
+  }
+}
+
+/* iPhoneSE */
+@media (max-width: 375px) {
+  .hero-text {
+    font-size: clamp(1.3em, 4vw, 4rem) !important;
+  }
+
+  .mb-10 {
+    margin-bottom: 6rem !important
   }
 }
 

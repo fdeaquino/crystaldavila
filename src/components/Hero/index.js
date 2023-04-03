@@ -10,7 +10,7 @@ function Hero() {
                             <div className='cd-photo'></div>
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 hero-text text-uppercase'>Fighting For a Better Future For Our Students</h2>
+                            <h2 className='mb-5 mb-10 hero-text text-uppercase'>Fighting For a Better Future For Our Students</h2>
                         </div>
                     </div>
                 </div>
