@@ -5,12 +5,12 @@ function About() {
         <>
             <section>
                 <div className='container h-100'>
-                    <div className='row h-100 justify-content-center hero-container'>
+                    <div className='row cd-about-photo h-100 justify-content-center hero-container'>
                         <div className='col my-auto photo-container'>
-                            <div className='cd-photo'></div>
+                            
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
+                            <h2 className='mb-5 mb-10 hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
                         </div>
                     </div>
                 </div>

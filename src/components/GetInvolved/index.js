@@ -66,7 +66,7 @@ function GetInvolved() {
                 <div class="container h-100 card custom-card-styles" >
                     <div className='row justify-content-center align-items-center stack-quote-photo'>
                         <div className='col-6 cd-volunteer-photo'></div>
-                        <div class="col-6 h-100 card-body">
+                        <div class="col-6 h-100 card-body text-center">
 
                             <h5 class="card-title text-uppercase">Your support and active participation are crucial to the success of our campaign.
                             </h5>
@@ -212,7 +212,7 @@ function GetInvolved() {
                         <h3 className='mb-5 contribution-title'>Make a Contribution</h3>
                         <p className='volunteer-card-text mt-3 contribution-content-text'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
                         <a href="donation-page.html">
-                            <button class="btn btn-moving-gradient btn-moving-gradient--green mt-3 mb-4">Donate Today</button>
+                            <button class="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
                         </a>
                     </div>
                 </section>

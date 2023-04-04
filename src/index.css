@@ -292,7 +292,7 @@ h6 {
   margin-left: 2rem;
   max-height: 100%;
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
   transition: all 0.5s ease;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
 }
@@ -424,20 +424,33 @@ h6 {
 }
 
 .btn-moving-gradient--blue {
-  background-image: linear-gradient(90deg, rgb(215 106 193), rgb(158, 41, 135), #8484f8, #4a4ab0);
-  ;
-  box-shadow: rgb(0, 0, 0) 0px 1px 2px 0px;
+  background-image: linear-gradient(90deg, #d76ac1, #9e2987, #8484f8, #4a4ab0);
+  box-shadow: #000000 0px 1px 2px 0px;
 }
 
-.btn-moving-gradient--green {
-  background-image: linear-gradient(90deg, #2DCD18, #00B762, #00d8e8, #00C1DB);
-  ;
-  box-shadow: rgb(0, 0, 0) 0px 1px 2px 0px;
-}
+.btn-moving-gradient--donate {
+  background-image: linear-gradient(90deg, #d76ac1, #9e2987, #8484f8, #4a4ab0);
+  box-shadow: #ffffff 0px 0px 15px 0px;
+} 
 
 /* ========== END HERO STYLES ========== */
 
 /* ========== START ABOUT SECTION STYLES ========== */
+.cd-about-photo {
+  background-image: url('./assets/images/cd-about-photo.png');
+  background-size: cover;
+  background-position: top;
+  animation: 1.8s ease 0s 1 zoomIn;
+  -webkit-animation: 1.8s ease 0s 1 zoomIn;
+  margin-left: 2rem;
+  max-height: 100%;
+  width: 100%;
+  min-height: 70vh;
+  transition: all 0.5s ease;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
+}
+
+
 .timeline {
   position: relative;
   margin-top: 22px;
@@ -858,6 +871,7 @@ footer {
     height: 9.25rem;
   }
 }
+
 /* media query specifically for iPad Pro 
 (min-width: 768px) and (max-width: 1024px) and (min-height: 800px) and (max-height: 1200px)
 */
@@ -926,6 +940,10 @@ footer {
 
 /* Medium and small devices (max-width: 992px) */
 @media (max-width: 992px) {
+  .card-body {
+    width: 80vw;
+  }
+
   .animated-mobile-menu {
     display: flex;
   }
@@ -988,9 +1006,7 @@ footer {
   }
 
   /* TODO: uncomment to update card body on hero page and get involved page (upcoming events)*/
-  /* .card-body {
-    width: 80vw;
-  } */
+
 
   .stack-quote-photo {
     display: flex;
