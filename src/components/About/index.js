@@ -10,7 +10,7 @@ function About() {
                             
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 mb-10 hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
+                            <h2 className='mb-5 about-photo-margins hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
                         </div>
                     </div>
                 </div>

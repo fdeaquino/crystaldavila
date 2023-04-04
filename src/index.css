@@ -1005,6 +1005,18 @@ footer {
     margin-bottom: 8rem !important;
   }
 
+  .about-photo-margins {
+    margin-bottom: 8rem !important;
+    margin-top: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  .cd-about-photo {
+    width: auto;
+    background-position: left;
+    min-height: auto;
+  }
+
   /* TODO: uncomment to update card body on hero page and get involved page (upcoming events)*/
 
 
