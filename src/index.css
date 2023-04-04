@@ -431,7 +431,7 @@ h6 {
 .btn-moving-gradient--donate {
   background-image: linear-gradient(90deg, #d76ac1, #9e2987, #8484f8, #4a4ab0);
   box-shadow: #ffffff 0px 0px 15px 0px;
-} 
+}
 
 /* ========== END HERO STYLES ========== */
 
@@ -450,6 +450,19 @@ h6 {
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
 }
 
+.about-hero-text {
+  font-family: 'Aboreto', cursive;
+  color: white;
+  /* letter-spacing: .2rem; */
+  font-weight: 300;
+  font-size: clamp(3rem, 1.6vw, 4rem);
+  margin-right: 2rem;
+  text-align: left;
+  border-radius: 10px;
+  align-self: flex-end;
+  text-align: right;
+  margin-bottom: 10px !important;
+}
 
 .timeline {
   position: relative;
@@ -606,6 +619,40 @@ svg {
 /* ========== END ABOUT SECTION STYLES ========== */
 
 /* ========== START ISSUES STYLES ========== */
+.cd-issues-photo {
+  background-image: url('./assets/images/cd-issues-photo.png');
+  background-size: cover;
+  background-position: top;
+  animation: 1.8s ease 0s 1 zoomIn;
+  -webkit-animation: 1.8s ease 0s 1 zoomIn;
+  margin-left: 2rem;
+  max-height: 100%;
+  width: 100%;
+  min-height: 70vh;
+  transition: all 0.5s ease;
+}
+
+.issues-hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.issues-hero-text {
+  font-family: 'Aboreto', cursive;
+  color: white;
+  /* letter-spacing: .2rem; */
+  font-weight: 300;
+  font-size: clamp(3rem, 1.6vw, 4rem);
+  margin-right: 2rem;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  align-self: flex-end;
+  text-align: left;
+  margin-bottom: 10px !important;
+}
+
 .issues-header-text {
   font-family: 'Aboreto', cursive;
   color: white;
@@ -886,7 +933,9 @@ footer {
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .cd-about-photo {
+
+  .cd-about-photo,
+  .cd-issues-photo {
     width: auto;
     background-position: left;
     min-height: auto;
@@ -958,6 +1007,13 @@ footer {
     width: auto;
     background-position: top;
     min-height: 50vh;
+    margin-left: auto;
+  }
+
+  .cd-issues-photo {
+    width: auto;
+    background-position: center;
+    min-height: 60vh;
     margin-left: auto;
   }
 
@@ -1047,8 +1103,14 @@ footer {
 
   .cd-about-photo {
     width: auto;
-    background-position: left;
+    background-position: top;
     min-height: auto;
+  }
+
+  .cd-issues-photo {
+    width: auto;
+    background-position: center;
+    min-height: 40vh;
   }
 
   /* TODO: uncomment to update card body on hero page and get involved page (upcoming events)*/
@@ -1072,6 +1134,16 @@ footer {
 
   .issues-header-text {
     font-size: clamp(1.5rem, 4vw, 4rem);
+  }
+
+  .about-hero-text {
+    font-size: clamp(1.8rem, 4vw, 4rem);
+    margin-right: 1rem;
+  }
+
+  .issues-hero-text {
+    font-size: clamp(1.8rem, 4vw, 4rem);
+    margin-top: 13rem!important;
   }
 
   .dropdown-left,
@@ -1333,7 +1405,11 @@ footer {
 
   .about-hero-text {
     font-size: clamp(1.8rem, 4vw, 4rem);
-    margin-bottom: 2rem!important;
+    margin-bottom: 2rem !important;
+  }
+
+  .issues-hero-text {
+    font-size: clamp(1.8rem, 4vw, 4rem);
   }
 }
 

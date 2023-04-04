@@ -66,11 +66,12 @@ function OnTheIssues() {
         <>
             {/* First section - Issues header */}
             <section>
-                <div className='container h-100'>
-                    <div className='row h-100 justify-content-center hero-container'>
-                        <div className='col my-auto'>
-                            <h2 className='mb-5 issues-header-text text-uppercase'>Issues</h2>
+                <div className='container container-padding h-100'>
+                    <div className='row cd-issues-photo h-100 justify-content-center hero-container issues-hero-container'>
+                        <div className='col my-auto d-flex'>
+                            <h2 className='mb-5  issues-hero-text text-uppercase'>On The Issues</h2>
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -83,16 +84,16 @@ function OnTheIssues() {
                         </div>
                     </div>
                     <div className="row h-100 timeline-container issues-container-margin-top">
-                        
-                                {/* PrioritiesDropdown component that takes in the title, content, and and alignLeft props to render each dropdown */}
-                                {priorities.map((priority, index) => (
-                                    <PriorityDropdown
-                                        key={index}
-                                        title={priority.title}
-                                        content={priority.content}
-                                        alignLeft={index % 2 === 1}
-                                    />
-                                ))}
+
+                        {/* PrioritiesDropdown component that takes in the title, content, and and alignLeft props to render each dropdown */}
+                        {priorities.map((priority, index) => (
+                            <PriorityDropdown
+                                key={index}
+                                title={priority.title}
+                                content={priority.content}
+                                alignLeft={index % 2 === 1}
+                            />
+                        ))}
 
                     </div>
                 </div>
