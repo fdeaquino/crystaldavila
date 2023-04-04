@@ -886,6 +886,23 @@ footer {
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .cd-about-photo {
+    width: auto;
+    background-position: left;
+    min-height: auto;
+    margin-left: auto;
+  }
+
+  .about-photo-margins {
+    margin-bottom: 8rem !important;
+    margin-top: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  .container-padding {
+    padding-left: 0;
+  }
+
   .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 100px 20px 30px;
   }
@@ -935,6 +952,23 @@ footer {
 
   .navMenu {
     display: flex !important;
+  }
+
+  .cd-about-photo {
+    width: auto;
+    background-position: top;
+    min-height: 50vh;
+    margin-left: auto;
+  }
+
+  .about-photo-margins {
+    margin-bottom: 8rem !important;
+    margin-top: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  .container-padding {
+    padding-left: 0;
   }
 }
 
@@ -1295,6 +1329,11 @@ footer {
 
   .vision-quote {
     max-width: none;
+  }
+
+  .about-hero-text {
+    font-size: clamp(1.8rem, 4vw, 4rem);
+    margin-bottom: 2rem!important;
   }
 }
 

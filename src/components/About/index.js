@@ -4,13 +4,13 @@ function About() {
     return (
         <>
             <section>
-                <div className='container h-100'>
+                <div className='container container-padding h-100'>
                     <div className='row cd-about-photo h-100 justify-content-center hero-container'>
                         <div className='col my-auto photo-container'>
                             
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 about-photo-margins hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
+                            <h2 className='mb-5 about-photo-margins hero-text about-hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
                         </div>
                     </div>
                 </div>
