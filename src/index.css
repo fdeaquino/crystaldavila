@@ -1087,13 +1087,13 @@ footer {
 
   .cd-photo {
     width: 70vw;
-    min-height: 40vh;
-    margin-left: -3.5rem;
+    /* min-height: 40vh; */
+    /* margin-left: -3.5rem; */
   }
 
-  .mb-10 {
+  /* .mb-10 {
     margin-bottom: 8rem !important;
-  }
+  } */
 
   .about-photo-margins {
     margin-bottom: 8rem !important;
@@ -1143,7 +1143,7 @@ footer {
 
   .issues-hero-text {
     font-size: clamp(1.8rem, 4vw, 4rem);
-    margin-top: 13rem!important;
+    margin-top: 13rem !important;
   }
 
   .dropdown-left,
@@ -1170,6 +1170,22 @@ footer {
 @media (max-width: 991px) {
   .navMenu {
     display: none;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 912px) and (min-height: 1180px) and (max-height: 1368px) {
+  .mb-10 {
+    margin-bottom: 16rem !important;
+  }
+
+  .cd-photo {
+    min-height: 50vh!important;
+    margin-left: -1.5rem;
+  }
+
+  .hero-text {
+    font-size: clamp(2.3rem, 4vw, 4rem)!important;
+    margin-left: 1rem;
   }
 }
 
@@ -1413,6 +1429,12 @@ footer {
   }
 }
 
+@media (min-width: 650px) and (max-width: 920px) {
+  .cd-photo {
+    min-height: 65vh;
+  }
+}
+
 /* Media query for extra small screens (max-width: 575px) */
 @media (max-width: 575px) {
   .rectangle-section {
@@ -1434,6 +1456,12 @@ footer {
   .hero-text {
     font-size: clamp(1.5rem, 4vw, 4rem);
     margin-right: -0.5rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 415px) {
+  .cd-photo {
+    min-height: 37vh;
   }
 }
 

@@ -1,16 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Hero() {
+    const [isHorizontal, setIsHorizontal] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const { width, height } = window.screen;
+            setIsHorizontal(width >= 550 && width <= 920 && height < width);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <>
             <section>
                 <div className='container h-100'>
                     <div className='row h-100 justify-content-center hero-container'>
-                        <div className='col my-auto photo-container'>
-                            <div className='cd-photo'></div>
+                        <div className={`col my-auto photo-container ${isHorizontal ? 'cd-photo' : ''}`}>
+                            <div className={isHorizontal ? 'hidden' : 'cd-photo'}></div>
+
+
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 mb-10 hero-text text-uppercase'>Fighting For a Better Future For Our Students</h2>
+                            <h2 className='mb-5 mb-10 hero-text text-uppercase about-hero-text'>Fighting For a Better Future For Our Students</h2>
                         </div>
                     </div>
                 </div>
