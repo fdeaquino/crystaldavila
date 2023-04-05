@@ -724,6 +724,20 @@ button.close {
 /* ========== END ISSUES SECTION STYLES ========== */
 
 /* ========== START VISION SECTION STYLES ========== */
+.cd-vision-photo {
+  background-image: url('./assets/images/cd-vision-photo.png');
+  background-size: cover;
+  background-position: left;
+  animation: 1.8s ease 0s 1 zoomIn;
+  -webkit-animation: 1.8s ease 0s 1 zoomIn;
+  margin-left: 2rem;
+  max-height: 100%;
+  width: 100%;
+  min-height: 70vh;
+  transition: all 0.5s ease;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
+}
+
 .vision-quote {
   max-width: calc(619px + 371 * ((100vw - 1280px) / 720));
 }
@@ -935,7 +949,7 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .cd-about-photo,
-  .cd-issues-photo {
+  .cd-issues-photo, .cd-vision-photo {
     width: auto;
     background-position: left;
     min-height: auto;
@@ -1003,17 +1017,17 @@ footer {
     display: flex !important;
   }
 
-  .cd-about-photo {
+  .cd-about-photo, .cd-vision-photo {
     width: auto;
     background-position: top;
-    min-height: 50vh;
+    min-height: 80vh;
     margin-left: auto;
   }
 
   .cd-issues-photo {
     width: auto;
     background-position: center;
-    min-height: 60vh;
+    min-height: 80vh;
     margin-left: auto;
   }
 
@@ -1101,7 +1115,7 @@ footer {
     padding-right: 0.5rem;
   }
 
-  .cd-about-photo {
+  .cd-about-photo, .cd-vision-photo {
     width: auto;
     background-position: top;
     min-height: auto;

@@ -58,14 +58,14 @@ function Vision() {
     return (
         <>
             <section>
-                <div className='container h-100'>
-                    <div className='row h-100 justify-content-center hero-container'>
+                <div className='container container-padding h-100'>
+                    <div className='row cd-vision-photo h-100 justify-content-center hero-container'>
                         <div className='col my-auto photo-container'>
                             {/* TODO: Replace with a different photo */}
-                            <div className='cd-photo'></div>
+                            <div className=''></div>
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 mb-10 hero-text text-uppercase'>Crystal's vision for a better future for us all.</h2>
+                            <h2 className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>Crystal's vision for a better future for us all.</h2>
                         </div>
                     </div>
                 </div>
