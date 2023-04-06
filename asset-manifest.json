@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/crystaldavila/static/css/main.e8cdec75.css",
-    "main.js": "/crystaldavila/static/js/main.9a60e25b.js",
+    "main.css": "/crystaldavila/static/css/main.e20a0d28.css",
+    "main.js": "/crystaldavila/static/js/main.ea436f58.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-issues-photo.png": "/crystaldavila/static/media/cd-issues-photo.967deb132ccd03456e39.png",
+    "static/media/cd-getinvolved-photo.png": "/crystaldavila/static/media/cd-getinvolved-photo.eb42272c66a74ed6764f.png",
     "static/media/cd-photo-hero.png": "/crystaldavila/static/media/cd-photo-hero.fe6f1f20833ae283aea3.png",
     "static/media/cd-about-photo.png": "/crystaldavila/static/media/cd-about-photo.b71d4e5a3bd075151c33.png",
     "static/media/cd-vision-photo.png": "/crystaldavila/static/media/cd-vision-photo.24bfdd9c4d67cd4eae4d.png",
     "static/media/cd-group-photo.jpeg": "/crystaldavila/static/media/cd-group-photo.32e4fa04ef20f61bfdab.jpeg",
     "static/media/cd-volunteer-photo.jpeg": "/crystaldavila/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
     "index.html": "/crystaldavila/index.html",
-    "main.e8cdec75.css.map": "/crystaldavila/static/css/main.e8cdec75.css.map",
-    "main.9a60e25b.js.map": "/crystaldavila/static/js/main.9a60e25b.js.map",
+    "main.e20a0d28.css.map": "/crystaldavila/static/css/main.e20a0d28.css.map",
+    "main.ea436f58.js.map": "/crystaldavila/static/js/main.ea436f58.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8cdec75.css",
-    "static/js/main.9a60e25b.js"
+    "static/css/main.e20a0d28.css",
+    "static/js/main.ea436f58.js"
   ]
 }
