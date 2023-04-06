@@ -69,7 +69,7 @@ function OnTheIssues() {
                 <div className='container container-padding h-100'>
                     <div className='row cd-issues-photo h-100 justify-content-center hero-container issues-hero-container'>
                         <div className='col my-auto d-flex'>
-                            <h2 className='mb-5  issues-hero-text text-uppercase'>On The Issues</h2>
+                            <h2 className='mb-5 p-1  issues-hero-text text-uppercase'>On The Issues</h2>
                         </div>
                         
                     </div>

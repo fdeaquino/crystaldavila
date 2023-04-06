@@ -65,7 +65,7 @@ function Vision() {
                             <div className=''></div>
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>Crystal's vision for a better future for us all.</h2>
+                            <h2 className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>Crystal's Vision of an improved future for us all.</h2>
                         </div>
                     </div>
                 </div>

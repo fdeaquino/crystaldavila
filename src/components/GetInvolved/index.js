@@ -52,11 +52,15 @@ function GetInvolved() {
         <>
             {/* First section - Get Involved header */}
             <section>
-                <div className='container h-100'>
-                    <div className='row h-100 justify-content-center hero-container'>
+                <div className='container container-padding h-100'>
+                    <div className='row cd-getinvolved-photo h-100 justify-content-center hero-container'>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 issues-header-text text-uppercase'>Get Involved<span><p>Stand With Us</p></span></h2>
+                            <h2 className='mb-5 mb-10 about-photo-margins getinvolved-hero-text text-uppercase'>Get Involved.<span><p>Let's Take a Stand Together.</p></span></h2>
                         </div>
+                        <div className='col my-auto photo-container'>
+                            <div className=''></div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -65,7 +69,7 @@ function GetInvolved() {
             <section class="py-4 py-lg-5">
                 <div class="container h-100 card custom-card-styles" >
                     <div className='row justify-content-center align-items-center stack-quote-photo'>
-                        <div className='col-6 cd-volunteer-photo'></div>
+                        
                         <div class="col-6 h-100 card-body text-center">
 
                             <h5 class="card-title text-uppercase">Your support and active participation are crucial to the success of our campaign.
@@ -216,42 +220,42 @@ function GetInvolved() {
                         </a>
                     </div>
                 </section>
-                
+
             </div>
-            
+
             {/* Seventh section - Contact Information */}
             <section className="contact-info py-4 py-lg-5 ">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <h3 className='mb-4'>Get in Touch</h3>
-                                <p className='volunteer-card-text mt-3'>Phone: (123) 456-7890</p>
-                                <p className='volunteer-card-text mt-3'>Email: info@campaignwebsite.com</p>
-                                <p className='volunteer-card-text mt-3'>Address: 1234 Main St, Pasadena, TX 77506</p>
-                            </div>
-                            <div className="col-md-6">
-                                <h3 className='mb-4'>Contact Us</h3>
-                                <form className="contact-form">
-                                    <div className="form-group">
-                                        <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">Name</label>
-                                        <input type="text" className="form-control volunteer-card-text text-muted" id="name" placeholder="Your Name" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
-                                        <input type="email" className="form-control volunteer-card-text text-muted" id="email" placeholder="Your Email" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="message">Message</label>
-                                        <textarea className="form-control volunteer-card-text text-muted" id="message" rows="4" placeholder="Your Message"></textarea>
-                                    </div>
-                                    <a>
-                                        <button className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
-                                    </a>
-                                </form>
-                            </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h3 className='mb-4'>Get in Touch</h3>
+                            <p className='volunteer-card-text mt-3'>Phone: (123) 456-7890</p>
+                            <p className='volunteer-card-text mt-3'>Email: info@campaignwebsite.com</p>
+                            <p className='volunteer-card-text mt-3'>Address: 1234 Main St, Pasadena, TX 77506</p>
+                        </div>
+                        <div className="col-md-6">
+                            <h3 className='mb-4'>Contact Us</h3>
+                            <form className="contact-form">
+                                <div className="form-group">
+                                    <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">Name</label>
+                                    <input type="text" className="form-control volunteer-card-text text-muted" id="name" placeholder="Your Name" />
+                                </div>
+                                <div className="form-group">
+                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
+                                    <input type="email" className="form-control volunteer-card-text text-muted" id="email" placeholder="Your Email" />
+                                </div>
+                                <div className="form-group">
+                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="message">Message</label>
+                                    <textarea className="form-control volunteer-card-text text-muted" id="message" rows="4" placeholder="Your Message"></textarea>
+                                </div>
+                                <a>
+                                    <button className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
+                                </a>
+                            </form>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
 
         </>
