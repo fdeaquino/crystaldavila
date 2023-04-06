@@ -70,7 +70,7 @@ function GetInvolved() {
                 <div class="container h-100 card custom-card-styles" >
                     <div className='row justify-content-center align-items-center stack-quote-photo'>
                         
-                        <div class="col-6 h-100 card-body text-center">
+                        <div class="col-6 h-100 card-body card-width text-center">
 
                             <h5 class="card-title text-uppercase">Your support and active participation are crucial to the success of our campaign.
                             </h5>

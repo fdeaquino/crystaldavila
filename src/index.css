@@ -1086,9 +1086,9 @@ footer {
 
 /* Medium and small devices (max-width: 992px) */
 @media (max-width: 992px) {
-  /* .card-body {
-    width: 80vw;
-  } */
+  .card-width {
+    width: 70vw;
+  }
 
 
 
@@ -1504,6 +1504,10 @@ footer {
 @media (max-width: 575px) {
   .rectangle-section {
     border-radius: 0;
+  }
+
+  .card-width {
+    width: 80vw;
   }
 }
 
