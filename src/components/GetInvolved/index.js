@@ -55,7 +55,7 @@ function GetInvolved() {
                 <div className='container container-padding h-100'>
                     <div className='row cd-getinvolved-photo h-100 justify-content-center hero-container'>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 mb-10 about-photo-margins getinvolved-hero-text text-uppercase'>Get Involved.<span><p>Let's Take a Stand Together.</p></span></h2>
+                            <h2 id='text-padding' className='mb-5 mb-10 about-photo-margins getinvolved-hero-text text-uppercase'>Get Involved.<span><p>Let's Take a Stand Together.</p></span></h2>
                         </div>
                         <div className='col my-auto photo-container'>
                             <div className=''></div>

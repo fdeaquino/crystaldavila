@@ -22,7 +22,7 @@ function Hero() {
                 <div className='container h-100'>
                     <div className='row h-100 justify-content-center hero-container'>
                         <div className={`col my-auto photo-container ${isHorizontal ? 'cd-photo' : ''}`}>
-                            <div className={isHorizontal ? 'hidden' : 'cd-photo'}></div>
+                            <div id={isHorizontal ? 'horizontal-cd-photo' : ''} className={isHorizontal ? 'hidden' : 'cd-photo'}></div>
 
 
                         </div>
