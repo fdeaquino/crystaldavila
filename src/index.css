@@ -378,7 +378,7 @@ h6 {
 
 }
 
-.event-styles {
+.event-styles, .work-styles {
   border: 1px solid #243E8C;
   border-radius: 10px;
   margin: 0 1rem 0 1rem;
@@ -553,7 +553,8 @@ h6 {
 .priorities-modal,
 .said-quote,
 .vision-box-text,
-.volunteer-card-text {
+.volunteer-card-text,
+.work-card-text {
   font-family: 'Oswald', sans-serif !important;
   font-weight: 200;
   font-size: medium;
@@ -914,7 +915,7 @@ button.close {
   font-weight: 400;
 }
 
-.volunteer-title {
+.volunteer-title, .work-title {
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -924,7 +925,9 @@ button.close {
 .events-title,
 .voter-registration-title,
 .contribution-content-text,
-.contribution-title {
+.contribution-title,
+.work-title, 
+.work-content-text {
   color: white;
 }
 

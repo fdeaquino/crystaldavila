@@ -1,6 +1,35 @@
 import React, { useEffect, useState } from 'react';
 
 function Hero() {
+    // Replace this sample data
+    const pastworks = [
+        {
+            title: 'Example 1',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
+            imageUrl: 'town-hall-banner.jpg'
+        },
+        {
+            title: 'Example 2',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
+            title: 'Example 3',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
+            title: 'Example 4',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
+            title: 'Example 5',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        }
+    ];
+
     const [isHorizontal, setIsHorizontal] = useState(false);
 
     useEffect(() => {
@@ -47,49 +76,73 @@ function Hero() {
                 </div>
 
             </section>
-
-            <section class="py-4 py-lg-5 ">
-                <div class="container text-center h-100 rectangle-section bg-light-gray">
-                    <h3>Join The Conversation</h3>
-                    <p className='join-convo-text text-dark event-header'>Upcoming Events</p>
-                    <div className='row mt-4 h-100 justify-content-center'>
-                        <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
-                            <h4 className='mb-3'>Café con Crystal</h4>
-                            {/* kids image goes here */}
-                            <div></div>
-                            <p className='event-info mb-1'>Restaurant Name</p>
-                            <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
-                            <p className='event-info'>April 4th, 2023</p>
-                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
-                        </div>
-                        <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
-                            <h4 className='mb-3'>Dia De Los Niños Celebration</h4>
-                            {/* kids image goes here */}
-                            <div></div>
-                            <p className='event-info mb-1'>Memorial Park</p>
-                            <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
-                            <p className='event-info'>April 30th, 2023</p>
-                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
-                        </div>
-                        <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
-                            <h4 className='mb-3'>Cinco de Mayo Celebration</h4>
-                            {/* kids image goes here */}
-                            <div></div>
-                            <p className='event-info mb-1'>Strawberry Park</p>
-                            <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
-                            <p className='event-info'>May 5th, 2023</p>
-                            <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
+            <div className='blue-wrapper rectangle-section container h-100 py-4 py-lg-5'>
+                <section class="py-4 py-lg-5 ">
+                    <div class="container text-center h-100 rectangle-section">
+                        <h3 className='volunteer-title'>Join The Conversation</h3>
+                        <p className='volunteer-content-text volunteer-card-text'>Upcoming Events</p>
+                        <div className='row mt-4 h-100 justify-content-center'>
+                            <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
+                                <h4 className='mb-3'>Café con Crystal</h4>
+                                {/* kids image goes here */}
+                                <div></div>
+                                <p className='event-info mb-1'>Restaurant Name</p>
+                                <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
+                                <p className='event-info'>April 4th, 2023</p>
+                                <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
+                            </div>
+                            <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
+                                <h4 className='mb-3'>Dia De Los Niños Celebration</h4>
+                                {/* kids image goes here */}
+                                <div></div>
+                                <p className='event-info mb-1'>Memorial Park</p>
+                                <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
+                                <p className='event-info'>April 30th, 2023</p>
+                                <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
+                            </div>
+                            <div class="col h-100 event-styles volunteer-card-background py-3 my-2">
+                                <h4 className='mb-3'>Cinco de Mayo Celebration</h4>
+                                {/* kids image goes here */}
+                                <div></div>
+                                <p className='event-info mb-1'>Strawberry Park</p>
+                                <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
+                                <p className='event-info'>May 5th, 2023</p>
+                                <a><button class="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="py-4 py-lg-5">
-                <div class="container">
-                    <h3 className='join-convo-text'>Past Work and Advocacy</h3>
-                    <span className='join-convo-text event-header'>Upcoming Events</span>
-                </div>
-            </section>
+                <section class="py-4 py-lg-5 ">
+                    <div class="container text-center h-100 rectangle-section">
+                        <h3 className='work-title'>Past Work and Advocacy</h3>
+                        <p className='work-content-text work-card-text'>Progress in Pasadena I.S.D.</p>
+                        <div className="row mt-4 h-100 justify-content-center">
+                            {pastworks.map((work, index) => (
+                                <div key={index} className="col-md-6 col-lg-4 py-3 ">
+                                    <div className=" bg-light-gray work-styles">
+                                        <img src={work.imageUrl} alt={work.title} className="card-img-top my-2" />
+                                        <div className="card-body">
+                                            <h4 className="card-title my-2">{work.title}</h4>
+                                            <p className='work-card-text p-2'>{work.description}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                <section className="donate-section py-4 py-lg-5 ">
+                    <div className="container text-center">
+                        <h3 className='mb-5 contribution-title'>Make a Contribution</h3>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
+                        <a href="donation-page.html">
+                            <button class="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
+                        </a>
+                    </div>
+                </section>
+            </div>
         </>
     )
 }
