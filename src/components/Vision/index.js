@@ -2,13 +2,13 @@ import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 
 const VisionCard = ({ title, items }) => (
-    <div className='community-care-section mb-4'>
-        <h4 className='text-uppercase'>
+    <div className='community-care-section py-4 py-lg-5'>
+        <h3 className='work-title'>
             {title}
-        </h4>
-        <div className='row'>
+        </h3>
+        <div className='row mt-4 h-100 justify-content-center'>
             {items.map((item, index) => (
-                <div key={index} className='col-sm-6 col-lg-6 mb-4 justify-content-center'>
+                <div key={index} className='col-sm-6 col-lg-6 mb-4 py-2 justify-content-center'>
                     <div className='volunteer-card volunteer-card-background card p-4'>
                         <p className='vision-box-text'>{item}</p>
                         <div>
@@ -19,7 +19,7 @@ const VisionCard = ({ title, items }) => (
                 </div>
             ))}
         </div>
-        <div className='line-vision-sections'></div>
+        {/* <div className='line-vision-sections'></div> */}
     </div>
 );
 
@@ -96,15 +96,17 @@ function Vision() {
                     </div>
                 </div>
             </section>
-            <section className="py-4 py-lg-5">
-                <div className="container text-center h-100 rectangle-section bg-light-gray">
-                    <div className="row h-100 justify-content-center ">
-                        {visionData.map((data, index) => (
-                            <VisionCard key={index} title={data.title} items={data.items} />
-                        ))}
+            <div className='blue-wrapper rectangle-section container h-100'>
+                <section>
+                    <div className="container text-center h-100 rectangle-section">
+                        <div className="row h-100 justify-content-center ">
+                            {visionData.map((data, index) => (
+                                <VisionCard key={index} title={data.title} items={data.items} />
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </>
     )
 }
