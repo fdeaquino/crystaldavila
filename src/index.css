@@ -64,10 +64,13 @@ h6 {
   z-index: 1000;
 }
 
-.navbar-scrolled {
+.navbar-scrolled:not(.animated-mobile-menu)  {
   background-color: #243E8C;
-  transition: background-color 0.3s;
+  transition: all 0.7s ease;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+
 
 
 .navigation-clean-button {
@@ -107,6 +110,12 @@ h6 {
   justify-content: center;
 }
 
+.activeComponent {
+  border-bottom: 2px solid #9e2987;
+  padding-bottom: 10px;
+
+}
+
 .nav-link-custom-css {
   color: white;
   font-size: clamp(.9rem, 1.6vw, 1.2rem);
@@ -140,15 +149,20 @@ h6 {
   z-index: 1000;
   display: none;
   position: absolute;
-  top: -80px;
-  right: 12px;
+  transition-duration: 0.7s!important;
+  transition-timing-function: none!important;
+  transition-delay: 0s!important;
+  transition-property: none!important;
+  /* not needed any longer because of the inline styling condition */
+  /* top: -80px; */
+  /* right: 12px; */
 }
 
 .menu {
   width: 40px;
   height: 40px;
   margin: 8px;
-  background-image: linear-gradient(to right, #e91e63, #f44336);
+  background-image: radial-gradient(circle at center, #9e2987, #ce3b84);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -229,9 +243,9 @@ h6 {
   color: white;
 }
 
-.overlay-menu ul li.active a {
+/* .overlay-menu ul li.active a {
   text-decoration: underline;
-}
+} */
 
 .overlay-menu li {
   padding: 1rem;
@@ -318,7 +332,7 @@ h6 {
 }
 
 .card-title {
-  color: rgb(158, 41, 135);
+  color: #9e2987;
   font-weight: bold;
 }
 
@@ -1241,6 +1255,11 @@ footer {
 
   .animated-mobile-menu {
     display: flex;
+  }
+
+  .activeComponent {
+    padding-bottom: 5px;
+  
   }
 }
 
