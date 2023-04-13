@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/crystaldavila/static/css/main.edc3aa5a.css",
+    "main.css": "/crystaldavila/static/css/main.b5316408.css",
     "main.js": "/crystaldavila/static/js/main.ba4f8014.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-issues-photo.png": "/crystaldavila/static/media/cd-issues-photo.967deb132ccd03456e39.png",
@@ -11,12 +11,12 @@
     "static/media/cd-group-photo.jpeg": "/crystaldavila/static/media/cd-group-photo.32e4fa04ef20f61bfdab.jpeg",
     "static/media/cd-volunteer-photo.jpeg": "/crystaldavila/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
     "index.html": "/crystaldavila/index.html",
-    "main.edc3aa5a.css.map": "/crystaldavila/static/css/main.edc3aa5a.css.map",
+    "main.b5316408.css.map": "/crystaldavila/static/css/main.b5316408.css.map",
     "main.ba4f8014.js.map": "/crystaldavila/static/js/main.ba4f8014.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edc3aa5a.css",
+    "static/css/main.b5316408.css",
     "static/js/main.ba4f8014.js"
   ]
 }
