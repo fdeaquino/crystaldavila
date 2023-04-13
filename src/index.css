@@ -64,7 +64,7 @@ h6 {
   z-index: 1000;
 }
 
-.navbar-scrolled:not(.animated-mobile-menu)  {
+.navbar-scrolled:not(.animated-mobile-menu) {
   background-color: #243E8C;
   transition: all 0.7s ease;
   margin: 0 !important;
@@ -149,10 +149,10 @@ h6 {
   z-index: 1000;
   display: none;
   position: absolute;
-  transition-duration: 0.7s!important;
-  transition-timing-function: none!important;
-  transition-delay: 0s!important;
-  transition-property: none!important;
+  transition-duration: 0.7s !important;
+  transition-timing-function: none !important;
+  transition-delay: 0s !important;
+  transition-property: none !important;
   /* not needed any longer because of the inline styling condition */
   /* top: -80px; */
   /* right: 12px; */
@@ -282,6 +282,12 @@ h6 {
   transition-delay: 0.4s;
 }
 
+.overlay-menu li:nth-child(5),
+.overlay-menu li:nth-child(6),
+.overlay-menu li:nth-child(7) {
+  transition-delay: 0.5s;
+}
+
 /* ========== END ANIMATED MOBILE MENU STYLES ========== */
 
 /* ========== START HERO STYLES ========== */
@@ -392,7 +398,8 @@ h6 {
 
 }
 
-.event-styles, .work-styles {
+.event-styles,
+.work-styles {
   border: 1px solid #243E8C;
   border-radius: 10px;
   margin: 0 1rem 0 1rem;
@@ -929,7 +936,8 @@ button.close {
   font-weight: 400;
 }
 
-.volunteer-title, .work-title {
+.volunteer-title,
+.work-title {
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -940,7 +948,7 @@ button.close {
 .voter-registration-title,
 .contribution-content-text,
 .contribution-title,
-.work-title, 
+.work-title,
 .work-content-text {
   color: white;
 }
@@ -960,6 +968,8 @@ button.close {
 /* ========== START FOOTER STYLES ========== */
 footer {
   color: white;
+  font-family: 'Aboreto', cursive;
+  font-weight: 100;
 }
 
 /* ========== START FOOTER STYLES ========== */
@@ -1259,11 +1269,11 @@ footer {
 
   .activeComponent {
     padding-bottom: 5px;
-  
+
   }
 
   .w-50 {
-    width: 70%!important;
+    width: 70% !important;
   }
 }
 
@@ -1548,8 +1558,8 @@ footer {
   }
 
   .my-auto {
-    margin-top: none!important;
-    margin-bottom: none!important;
+    margin-top: none !important;
+    margin-bottom: none !important;
   }
 
   /* .about-hero-text {
@@ -1558,13 +1568,14 @@ footer {
 
   .about-hero-text {
     margin-top: 1rem !important;
-    margin-bottom: 1rem!important;
+    margin-bottom: 1rem !important;
   }
 
-  .hero-text, .getinvolved-hero-text {
+  .hero-text,
+  .getinvolved-hero-text {
     font-size: clamp(1.5rem, 4vw, 4rem);
     margin-right: 1rem;
-    margin-bottom: 1rem!important;
+    margin-bottom: 1rem !important;
 
   }
 }
@@ -1633,19 +1644,20 @@ footer {
   }
 
   .my-auto {
-    margin-top: auto!important;
+    margin-top: auto !important;
     /* margin-bottom: 0!important; */
   }
 
   .about-hero-text {
     margin-top: 1rem !important;
-    margin-bottom: 1rem!important;
+    margin-bottom: 1rem !important;
   }
 
-  .hero-text, .getinvolved-hero-text {
+  .hero-text,
+  .getinvolved-hero-text {
     font-size: clamp(2rem, 4vw, 4rem);
     margin-right: 1rem;
-    margin-bottom: 0rem!important;
+    margin-bottom: 0rem !important;
   }
 
   #text-padding {
