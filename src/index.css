@@ -288,6 +288,30 @@ h6 {
   transition-delay: 0.5s;
 }
 
+.social-links {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-inline-item {
+  padding: 0 1rem;
+}
+
+
 /* ========== END ANIMATED MOBILE MENU STYLES ========== */
 
 /* ========== START HERO STYLES ========== */
