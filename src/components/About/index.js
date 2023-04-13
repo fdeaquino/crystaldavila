@@ -42,7 +42,9 @@ function About() {
                                     <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                                         {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
                                     </div>
-                                    <div className="line"></div>
+                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                        <div className="line"></div>
+                                    </div>
                                 </li>
                                 <li className="py-2 timeline-inverted">
                                     <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -59,7 +61,9 @@ function About() {
                                     <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                                         {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
                                     </div>
-                                    <div className="line"></div>
+                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                        <div className="line"></div>
+                                    </div>
                                 </li>
                                 <li className='py-2'>
                                     <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -76,7 +80,9 @@ function About() {
                                     <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                                         {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
                                     </div>
-                                    <div className="line"></div>
+                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                        <div className="line"></div>
+                                    </div>
                                 </li>
                                 <li className="py-2 timeline-inverted">
                                     <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -93,7 +99,9 @@ function About() {
                                     <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                                         {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
                                     </div>
-                                    <div className="line"></div>
+                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                        <div className="line"></div>
+                                    </div>
                                 </li>
                                 <li className='py-2'>
                                     <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -110,7 +118,9 @@ function About() {
                                     <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                                         {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
                                     </div>
-                                    {/* <div className="line"></div> */}
+                                    {/* <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                        <div className="line"></div>
+                                    </div> */}
                                 </li>
                             </ul>
                         </div>
