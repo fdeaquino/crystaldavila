@@ -530,9 +530,9 @@ h6 {
   z-index: 100;
   position: absolute;
   left: 50%;
-  border: 7px solid #bf164d;
+  border: 7px solid #aa2e83;
   border-radius: 100%;
-  background-color: #bf164d;
+  background-color: #aa2e83;
   /* box-shadow: 0 0 5px #ccc; */
   width: 12.5rem;
   height: 12.5rem;
@@ -595,7 +595,7 @@ h6 {
   left: 43.125rem;
   width: 4px;
   height: 11.25rem;
-  background-color: #bf164d;
+  background-color: #aa2e83;
   -ms-transform: rotate(-44deg);
   -webkit-transform: rotate(-44deg);
   transform: rotate(-44deg);
@@ -610,7 +610,7 @@ h6 {
   left: 33.125rem;
   width: 4px;
   height: 11.25rem;
-  background-color: #bf164d;
+  background-color: #aa2e83;
   -ms-transform: rotate(44deg);
   -webkit-transform: rotate(44deg);
   transform: rotate(44deg);
