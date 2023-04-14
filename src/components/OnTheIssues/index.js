@@ -3,7 +3,7 @@ import React from 'react';
 // the priorities array stores the data for each dropdown
 const priorities = [
     {
-        title: 'School District Transparency',
+        title: 'Preparing Students for the World',
         content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
     },
     {
@@ -11,21 +11,13 @@ const priorities = [
         content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
     },
     {
-        title: 'Teacher Burnout',
-        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
-    },
-    {
-        title: 'College Readiness',
-        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
-    },
-    {
-        title: 'Early Childhood Education',
+        title: 'Teacher Work-Life Balance',
         content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
     },
     {
         title: 'School Safety',
         content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
-    }
+    },
 
 ];
 
@@ -69,7 +61,7 @@ function OnTheIssues() {
                 <div className='container container-padding h-100'>
                     <div className='row cd-issues-photo h-100 justify-content-center hero-container issues-hero-container'>
                         <div className='col my-auto d-flex'>
-                            <h2 className='mb-5 p-1  issues-hero-text text-uppercase'>On The Issues</h2>
+                            <h2 className='mb-5 p-1  issues-hero-text text-uppercase'>On The Job</h2>
                         </div>
                         
                     </div>

@@ -108,7 +108,7 @@ function Nav(props) {
                                 setActiveMenuItem('');
                             }}>
                                 <Link to='/crystaldavila'>
-                                    Crystal Davila
+                                    Crystal Dávila
                                 </Link>
                             </h1>
 
@@ -151,7 +151,7 @@ function Nav(props) {
                                                 setActiveMenuItem('OnTheIssues');
                                             }}
                                         >
-                                            On The Issues
+                                            On The Job
                                         </Link>
                                     </li>
                                     <li className='nav-item nav-link-custom-css me-4'>
@@ -213,7 +213,7 @@ function Nav(props) {
                             }}
                             className={activeMenuItem === 'OnTheIssues' ? 'activeComponent' : ''}
                         >
-                            On The Issues
+                            On The Job
                         </Link>
                     </li>
                     <li className={currentComponent === 'Vision' ? 'activeComponent' : ''}>

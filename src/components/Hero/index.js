@@ -4,30 +4,20 @@ function Hero() {
     // Replace this sample data
     const pastworks = [
         {
-            title: 'Example 1',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
+            title: 'District Level: Fostering Student Leadership in PISD',
+            description: 'Supported PISD students as they presented on school safety at the TASB Governance Conference in Galveston, providing them with opportynities to engage with School Board Members and develop leadership skills.',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
+            title: 'Local Level: Women in Politics Panel',
+            description: 'Participated in a panel discussion with women in elected office to share their experiences and accomplishments. The event aimed to promote diversity, equity, and inclusion in leadership and foster a welcoming community for all. The panel provided a platform for women to share insights and inpire others to pursue leadership roles.',
+            imageUrl: 'fundraising-dinner-banner.jpg'
+        },
+        {
+            title: 'State Level: Advocated for Increasing Funding to Public Schools',
+            description: 'Proposed increasing funding to improve the quality of education provided to students. Worked with educators and school administrators to identify areas where additional funding could be most effectively utilized.',
             imageUrl: 'town-hall-banner.jpg'
         },
-        {
-            title: 'Example 2',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
-            imageUrl: 'fundraising-dinner-banner.jpg'
-        },
-        {
-            title: 'Example 3',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
-            imageUrl: 'fundraising-dinner-banner.jpg'
-        },
-        {
-            title: 'Example 4',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
-            imageUrl: 'fundraising-dinner-banner.jpg'
-        },
-        {
-            title: 'Example 5',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ut aliquip ex ea commodo consequat.',
-            imageUrl: 'fundraising-dinner-banner.jpg'
-        }
     ];
 
     const [isHorizontal, setIsHorizontal] = useState(false);
@@ -67,7 +57,7 @@ function Hero() {
                         <div class="col-6 h-100 card-body card-width">
                             <span class="tm--quote_icon icon_quote">
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" fill="#003468" viewBox="0 0 34.01 30.64"><defs><style>.cls-1</style></defs><title>quotes</title><path class="cls-1" d="M14.56,0C4.24,2.17,0,9.45,0,18.91V30.64H12.6V17.93H7.28c0-7.28,2.17-11.84,8.91-13.69Z"></path><path class="cls-1" d="M32.38,0C22.06,2.17,17.82,9.45,17.82,18.91V30.64h12.6V17.93H25.1c0-7.28,2.17-11.84,8.91-13.69Z"></path></svg>				</span>
-                            <h5 class="card-title text-uppercase">Card title with a quote Card title with a quote</h5>
+                            <h5 class="card-title text-uppercase">Join me in creating a brighter future for pasadena, by prioritizing education that prepares students for the world.</h5>
                             <p class="card-subtitle mb-2 text-muted">Card subtitle What we are trying to do is What we are trying to do is What we are trying to do is</p>
                             <a href="/crystaldavila/vision" class="card-link card-link-style">Learn About Crystal's Vision</a>
                         </div>
