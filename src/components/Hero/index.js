@@ -3,20 +3,13 @@ import Popup from '../Popup/index.js';
 
 
 function Hero() {
+    const [showForm, setShowForm] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
+    const [isHorizontal, setIsHorizontal] = useState(false);
 
     const closePopup = () => {
         setShowPopup(false);
     };
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowPopup(true);
-        }, 1500);
-
-        return () => clearTimeout(timer);
-    }, []);
-
 
     const pastworks = [
         {
@@ -36,7 +29,13 @@ function Hero() {
         },
     ];
 
-    const [isHorizontal, setIsHorizontal] = useState(false);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowPopup(true);
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -51,6 +50,20 @@ function Hero() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            setShowForm(width >= 992);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
     return (
         <>
             <section>
@@ -62,7 +75,30 @@ function Hero() {
 
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 mb-10 hero-text text-uppercase about-hero-text'>Fighting For a Better Future For Our Students</h2>
+                            <h2 className={`mb-5 mb-10 hero-text text-uppercase about-hero-text ${showForm ? 'centered-h2' : ''}`}>Fighting For a Better Future For Our Students</h2>
+                            {showForm && (
+                                <div className='col my-auto text-center'>
+                                    <div className="col-10 mx-auto">
+                                        <h3 className='mt-4'>Join Our Campaign!</h3>
+                                        <form className="contact-form d-block mx-auto" autoComplete="off">
+                                            <div className="form-group">
+                                                <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">Name</label>
+                                                <input type="text" className="form-control volunteer-card-text text-muted" id="name" placeholder="Your Name" required />
+                                            </div>
+                                            <div className="form-group">
+                                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
+                                                <input type="email" className="form-control volunteer-card-text text-muted" id="email" placeholder="Your Email" required />
+                                            </div>
+                                            <div className="form-group">
+                                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="phone">Phone Number</label>
+                                                <input type="tel" className="form-control volunteer-card-text text-muted" id="phone" placeholder="Your Phone Number" required />
+                                            </div>
+                                            <p className='text-muted disclosure mt-3'>By submitting your cell phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply.</p>
+                                            <button className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
