@@ -989,13 +989,79 @@ button.close {
 /* ========== END GET INVOLVED SECTION STYLES ========== */
 
 /* ========== START FOOTER STYLES ========== */
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.popup-photo {
+  background-image: url('./assets/images/cd-popup-photo.png');
+  background-size: cover;
+  background-position: bottom;
+  animation: 1.8s ease 0s 1 zoomIn;
+  -webkit-animation: 1.8s ease 0s 1 zoomIn;
+  min-height: 20vh;
+  width: 100%;
+  /* min-width: 60vw; */
+  transition: all 0.5s ease;
+}
+
+.close-button {
+  font-size: small;
+  border: none;
+
+}
+
+.close-button-container {
+  position: relative;
+}
+
+.circular-close-button {
+  position: absolute;
+  top: -10px; /* Adjust these values to position the button exactly where you want it */
+  right: -10px;
+  width: 30px; /* Adjust the size of the button */
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff; /* Adjust the background color */
+  color: #000; /* Adjust the text color */
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disclosure {
+  font-size: x-small;
+}
+
+
+/* ========== END FOOTER STYLES ========== */
+
+/* ========== START FOOTER STYLES ========== */
 footer {
   color: white;
   font-family: 'Aboreto', cursive;
   font-weight: 100;
 }
 
-/* ========== START FOOTER STYLES ========== */
+/* ========== END FOOTER STYLES ========== */
 
 /* ========== START MEDIA QUERIES ========== */
 

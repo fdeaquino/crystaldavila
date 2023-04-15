@@ -1,7 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import Popup from '../Popup/index.js';
+
 
 function Hero() {
-    // Replace this sample data
+    const [showPopup, setShowPopup] = useState(false);
+
+    const closePopup = () => {
+        setShowPopup(false);
+    };
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowPopup(true);
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+
     const pastworks = [
         {
             title: 'District Level: Fostering Student Leadership in PISD',
@@ -133,6 +149,9 @@ function Hero() {
                     </div>
                 </section>
             </div>
+
+            {showPopup && <Popup onClose={closePopup} />}
+
         </>
     )
 }
