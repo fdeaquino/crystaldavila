@@ -335,7 +335,7 @@ h6 {
   -webkit-animation: 1.8s ease 0s 1 zoomIn;
   margin-left: 1rem;
   max-height: 100%;
-  min-height: 80vh;
+  min-height: 81vh;
   width: 100%;
   /* min-width: 60vw; */
   transition: all 0.5s ease;
@@ -455,9 +455,9 @@ h6 {
 }
 
 .btn-moving-gradient {
-  height: 3rem;
-  width: 10rem;
-  font-size: 16px;
+  height: clamp(2.6rem, 1.6vw, 3rem);
+  width: clamp(9.5rem, 1.6vw, 10rem);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
   cursor: pointer;
   border: none;
   background-size: 300% 100%;
@@ -480,7 +480,8 @@ h6 {
 }
 
 .centered-h2 {
-  text-align: center!important;
+  text-align: center !important;
+  margin-right: 0 !important;
 }
 
 /* ========== END HERO STYLES ========== */
@@ -505,7 +506,7 @@ h6 {
   color: white;
   /* letter-spacing: .2rem; */
   font-weight: 300;
-  font-size: clamp(3rem, 1.6vw, 4rem);
+  font-size: clamp(2.3rem, 1.6vw, 4rem);
   margin-right: 2rem;
   text-align: left;
   border-radius: 10px;
@@ -994,7 +995,7 @@ button.close {
 
 /* ========== START FOOTER STYLES ========== */
 .popup-container {
-  display: none!important;
+  display: none !important;
 }
 
 .popup-background {
@@ -1024,7 +1025,7 @@ button.close {
   background-position: bottom;
   animation: 1.8s ease 0s 1 zoomIn;
   -webkit-animation: 1.8s ease 0s 1 zoomIn;
-  min-height: 20vh;
+  min-height: clamp(10rem, 50vh, 20rem);
   width: 100%;
   /* min-width: 60vw; */
   transition: all 0.5s ease;
@@ -1042,13 +1043,17 @@ button.close {
 
 .circular-close-button {
   position: absolute;
-  top: -10px; /* Adjust these values to position the button exactly where you want it */
+  top: -10px;
+  /* Adjust these values to position the button exactly where you want it */
   right: -10px;
-  width: 30px; /* Adjust the size of the button */
+  width: 30px;
+  /* Adjust the size of the button */
   height: 30px;
   border-radius: 50%;
-  background-color: #fff; /* Adjust the background color */
-  color: #000; /* Adjust the text color */
+  background-color: #fff;
+  /* Adjust the background color */
+  color: #000;
+  /* Adjust the text color */
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -1389,7 +1394,7 @@ footer {
   }
 
   .popup-container {
-    display: flex!important;
+    display: flex !important;
   }
 }
 
@@ -1730,6 +1735,59 @@ footer {
   .getinvolved-hero-text {
     font-size: clamp(1.4rem, 4vw, 4rem);
     margin-right: 0rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .popup-photo {
+    min-height: clamp(8rem, 50vh, 8.8rem) !important;
+    border-radius: 10px;
+    background-position: center;
+  }
+
+  .input-form-title {
+    font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+  }
+
+  .input-form-subtitle {
+    display: none !important;
+
+  }
+
+  .input-form-link {
+    font-size: clamp(0.8rem, 1.6vw, 1rem);
+    margin-bottom: 1rem;
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 1px !important;
+    border-radius: 10px;
+    width: 90%;
+    max-height: 95vh;
+  }
+
+
+  .form-control {
+    justify-content: center;
+  }
+
+  .popup-text-margins {
+    margin-top: 1 !important;
+    margin-bottom: 0 !important
+  }
+
+  .disclosure {
+    font-size: xx-small;
+  }
+
+  .circular-close-button {
+    margin-right: -.5rem;
+  }
+
+  .btn-moving-gradient {
+    height: clamp(2.4rem, 1.6vw, 3rem);
+
   }
 }
 
