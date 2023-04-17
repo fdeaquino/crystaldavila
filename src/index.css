@@ -394,7 +394,7 @@ h6 {
 .cd-group-photo {
   background-image: url('./assets/images/cd-group-photo.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   animation: 1.8s ease 0s 1 zoomIn;
   -webkit-animation: 1.8s ease 0s 1 zoomIn;
   max-height: 100%;
@@ -456,7 +456,7 @@ h6 {
 
 .btn-moving-gradient {
   height: clamp(2.6rem, 1.6vw, 3rem);
-  width: clamp(9.5rem, 1.6vw, 10rem);
+  width: clamp(11rem, 1.6vw, 10rem);
   font-size: clamp(1rem, 1.6vw, 1.2rem);
   cursor: pointer;
   border: none;
@@ -482,6 +482,16 @@ h6 {
 .centered-h2 {
   text-align: center !important;
   margin-right: 0 !important;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0px 0px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.card-img-top:hover {
+  opacity: 0.8;
 }
 
 /* ========== END HERO STYLES ========== */
@@ -896,7 +906,7 @@ button.close {
 
 .rectangle-section {
   border: 4px rgba(250, 250, 250, 0.859);
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 4px;
 }
 
@@ -1078,6 +1088,18 @@ footer {
 
 /* ========== START MEDIA QUERIES ========== */
 
+@media (min-width: 1450px) {
+  .cd-photo {
+    min-height: 85vh;
+  }
+}
+
+@media (min-width: 2050px) {
+  .cd-photo {
+    min-height: 89vh;
+  }
+}
+
 @media (min-width: 1400px) {
   .timeline>li:nth-child(odd) .line:before {
     top: clamp(0rem, 9rem, 13rem);
@@ -1090,6 +1112,10 @@ footer {
     left: clamp(33rem, 29rem, 35rem);
     height: 9.25rem;
   }
+
+  /* .large-screen-mb-2 {
+    margin-bottom: 2rem;
+  } */
 }
 
 /* Large devices (min-width: 1200px) */
@@ -1329,8 +1355,8 @@ footer {
   }
 
   .cd-group-photo {
-    min-height: 25vh;
-    background-position: center;
+    min-height: 60vh;
+    /* background-position: center; */
     width: 80vw;
   }
 
@@ -1657,6 +1683,10 @@ footer {
   .issues-hero-text {
     font-size: clamp(1.7rem, 4vw, 4rem);
   }
+
+  .cd-group-photo {
+    min-height: 40vh;
+  }
 }
 
 /* media query specifically for ipad, ipad pro 10.5" and ipad pro 11" */
@@ -1838,6 +1868,15 @@ footer {
 
   #text-padding {
     padding-bottom: 5rem;
+  }
+
+  
+
+}
+
+@media (min-width: 500px) and (max-width: 932px) and (min-height: 250px) and (max-height: 430px) {
+  .cd-group-photo {
+    min-height: 77vh;
   }
 }
 
