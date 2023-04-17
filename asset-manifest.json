@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/crystaldavila/static/css/main.0b54fac2.css",
-    "main.js": "/crystaldavila/static/js/main.9c48700c.js",
+    "main.css": "/crystaldavila/static/css/main.b9f098d8.css",
+    "main.js": "/crystaldavila/static/js/main.1e2a5dde.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-issues-photo.png": "/crystaldavila/static/media/cd-issues-photo.967deb132ccd03456e39.png",
     "static/media/cd-getinvolved-photo.png": "/crystaldavila/static/media/cd-getinvolved-photo.eb42272c66a74ed6764f.png",
     "static/media/cd-photo-hero.png": "/crystaldavila/static/media/cd-photo-hero.fe6f1f20833ae283aea3.png",
     "static/media/cd-about-photo.png": "/crystaldavila/static/media/cd-about-photo.b71d4e5a3bd075151c33.png",
     "static/media/cd-vision-photo.png": "/crystaldavila/static/media/cd-vision-photo.24bfdd9c4d67cd4eae4d.png",
-    "static/media/cd-group-photo.jpeg": "/crystaldavila/static/media/cd-group-photo.32e4fa04ef20f61bfdab.jpeg",
     "static/media/cd-popup-photo.png": "/crystaldavila/static/media/cd-popup-photo.216bebe68e407e675239.png",
     "static/media/cd-volunteer-photo.jpeg": "/crystaldavila/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
+    "static/media/cd-photo-advocacyatcapitol.jpeg": "/crystaldavila/static/media/cd-photo-advocacyatcapitol.53b80d0e3b5ec6fa98e6.jpeg",
+    "static/media/cd-group-photo.jpeg": "/crystaldavila/static/media/cd-group-photo.5f6e40b2e8999b3c86b6.jpeg",
+    "static/media/cd-photo-tasb-conference.jpeg": "/crystaldavila/static/media/cd-photo-tasb-conference.9a9ee15a4cdd45d36777.jpeg",
+    "static/media/cd-photo-womeninpolitics.jpeg": "/crystaldavila/static/media/cd-photo-womeninpolitics.1ad9e2c7f0b98d583b76.jpeg",
     "index.html": "/crystaldavila/index.html",
-    "main.0b54fac2.css.map": "/crystaldavila/static/css/main.0b54fac2.css.map",
-    "main.9c48700c.js.map": "/crystaldavila/static/js/main.9c48700c.js.map",
+    "main.b9f098d8.css.map": "/crystaldavila/static/css/main.b9f098d8.css.map",
+    "main.1e2a5dde.js.map": "/crystaldavila/static/js/main.1e2a5dde.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b54fac2.css",
-    "static/js/main.9c48700c.js"
+    "static/css/main.b9f098d8.css",
+    "static/js/main.1e2a5dde.js"
   ]
 }
