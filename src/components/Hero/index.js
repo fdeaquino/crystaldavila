@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Popup from '../Popup/index.js';
+
+import { submitVoterInfo, submitContactForm } from '../../api';
+
 import tasbConferenceImage from '../../assets/images/cd-photo-tasb-conference.jpeg';
 import womenInPoliticsImage from '../../assets/images/cd-photo-womeninpolitics.jpeg';
 import advocacyAtCapitolImage from '../../assets/images/cd-photo-advocacyatcapitol.jpeg';
@@ -10,6 +13,20 @@ function Hero() {
     const [showForm, setShowForm] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
     const [isHorizontal, setIsHorizontal] = useState(false);
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phoneNumber: '',
+    });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        await submitVoterInfo(formData.name, formData.phoneNumber, formData.email);
+        // Reset the form data after successful submission
+        setFormData({ name: '', email: '', phoneNumber: '' });
+    };
+
 
     const closePopup = () => {
         setShowPopup(false);
@@ -84,18 +101,43 @@ function Hero() {
                                 <div className='col my-auto text-center'>
                                     <div className="col-10 mx-auto">
                                         <h3 className='mt-4'>Join Our Campaign!</h3>
-                                        <form className="contact-form d-block mx-auto" autoComplete="off">
+                                        <form 
+                                        className="contact-form d-block mx-auto" 
+                                        autoComplete="off"
+                                        onSubmit={handleSubmit}
+                                        >
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">Name</label>
-                                                <input type="text" className="form-control volunteer-card-text text-muted" id="name" placeholder="Your Name" required />
+                                                <input type="text"
+                                                    className="form-control volunteer-card-text text-muted"
+                                                    id="name"
+                                                    placeholder="Your Name"
+                                                    required
+                                                    value={formData.name}
+                                                    onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                                             </div>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
-                                                <input type="email" className="form-control volunteer-card-text text-muted" id="email" placeholder="Your Email" required />
+                                                <input
+                                                    type="email"
+                                                    className="form-control volunteer-card-text text-muted"
+                                                    id="email"
+                                                    placeholder="Your Email"
+                                                    required
+                                                    value={formData.email}
+                                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                                />
                                             </div>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="phone">Phone Number</label>
-                                                <input type="tel" className="form-control volunteer-card-text text-muted" id="phone" placeholder="Your Phone Number" required />
+                                                <input type="tel"
+                                                    className="form-control volunteer-card-text text-muted"
+                                                    id="phone"
+                                                    placeholder="Your Phone Number"
+                                                    required
+                                                    value={formData.phoneNumber}
+                                                    onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
+                                                />
                                             </div>
                                             <p className='text-muted disclosure mt-3'>By submitting your cell phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply.</p>
                                             <button className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">Submit</button>
