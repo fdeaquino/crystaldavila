@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { submitContactForm } from '../../api';
 
 function GetInvolved() {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        await submitContactForm(formData.name, formData.email, formData.message);
+        // Resets the form data after successful submission
+        setFormData({ name: '', email: '', message: '' });
+    };
 
     // Replace this sample data
     const events = [
@@ -69,7 +83,7 @@ function GetInvolved() {
             <section className="py-4 py-lg-5">
                 <div className="container h-100 card custom-card-styles" >
                     <div className='row justify-content-center align-items-center stack-quote-photo'>
-                        
+
                         <div className="col-6 h-100 card-body card-width text-center">
 
                             <h5 className="card-title text-uppercase">Your support and active participation are crucial to the success of our campaign.
@@ -236,18 +250,57 @@ function GetInvolved() {
                         </div>
                         <div className="col-md-6">
                             <h3 className='mb-4'>Contact Us</h3>
-                            <form className="contact-form">
+                            <form className="contact-form"
+                                autoComplete='off'
+                                onSubmit={handleSubmit}>
                                 <div className="form-group">
-                                    <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">Name</label>
-                                    <input type="text" className="form-control volunteer-card-text text-muted" id="name" placeholder="Your Name" />
+                                    <label 
+                                    className='volunteer-card-text mb-1 bold-form-label' 
+                                    htmlFor="name">
+                                        Name
+                                        </label>
+                                    <input 
+                                    type="text" 
+                                    className="form-control volunteer-card-text text-muted" 
+                                    id="name" 
+                                    placeholder="Your Name"
+                                    required
+                                    value={formData.name}
+                                    onChange={(e) => setFormData({ ...formData, name: e.target.value })} 
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
-                                    <input type="email" className="form-control volunteer-card-text text-muted" id="email" placeholder="Your Email" />
+                                    <label 
+                                    className='volunteer-card-text mt-3 mb-1 bold-form-label' 
+                                    htmlFor="email">
+                                        Email
+                                        </label>
+                                    <input 
+                                    type="email" 
+                                    className="form-control volunteer-card-text text-muted" 
+                                    id="email" 
+                                    placeholder="Your Email" 
+                                    required
+                                    value={formData.email}
+                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="message">Message</label>
-                                    <textarea className="form-control volunteer-card-text text-muted" id="message" rows="4" placeholder="Your Message"></textarea>
+                                    <label 
+                                    className='volunteer-card-text mt-3 mb-1 bold-form-label' 
+                                    htmlFor="message">
+                                        Message
+                                        </label>
+                                    <textarea 
+                                    className="form-control volunteer-card-text text-muted" 
+                                    id="message" 
+                                    rows="4" 
+                                    placeholder="Your Message"
+                                    required
+                                    value={formData.message}
+                                    onChange={(e) => setFormData({ ...formData, message: e.target.value})}>
+                                        
+                                    </textarea>
                                 </div>
                                 {/* TODO: Add working href */}
                                 <a>

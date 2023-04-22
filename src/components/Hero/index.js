@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Popup from '../Popup/index.js';
 
-import { submitVoterInfo, submitContactForm } from '../../api';
+import { submitVoterInfo } from '../../api';
 
 import tasbConferenceImage from '../../assets/images/cd-photo-tasb-conference.jpeg';
 import womenInPoliticsImage from '../../assets/images/cd-photo-womeninpolitics.jpeg';
