@@ -22,7 +22,7 @@ function Hero() {
         phoneNumber: '',
     });
 
-    const handleSubmit = async (e) => {
+    const handleHeroFormSubmit = async (e) => {
         e.preventDefault();
         await submitVoterInfo(formData.name, formData.phoneNumber, formData.email);
         // Reset the form data after successful submission
@@ -105,10 +105,10 @@ function Hero() {
                                 <div className='col my-auto text-center'>
                                     <div className="col-10 mx-auto">
                                         <h3 className='mt-4'>Join Our Campaign!</h3>
-                                        <form 
-                                        className="contact-form d-block mx-auto" 
-                                        autoComplete="off"
-                                        onSubmit={handleSubmit}
+                                        <form
+                                            className="contact-form d-block mx-auto"
+                                            autoComplete="off"
+                                            onSubmit={handleHeroFormSubmit}
                                         >
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">Name</label>
@@ -239,7 +239,14 @@ function Hero() {
                 </section>
             </div>
 
-            {showPopup && <Popup onClose={closePopup} />}
+            {showPopup && (
+                <Popup
+                    onClose={closePopup}
+                    formData={formData}
+                    setFormData={setFormData}
+                    handleHeroFormSubmit={handleHeroFormSubmit}
+                />
+            )}
 
         </>
     )

@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ConfirmationPopup from '../ConfirmationPopup';
 
-function Popup({ onClose }) {
+function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handlePopupFormSubmit = (e) => {
+        e.preventDefault();
+        setIsSubmitted(true);
+    };
+
+
     return (
         <>
             <div className="popup-background popup-container">
@@ -17,14 +26,27 @@ function Popup({ onClose }) {
                     <div className='col my-auto text-center'>
                         <div className="col mx-1">
                             <h3 className='my-3 input-form-title'>Join Our Campaign!</h3>
-                            <form className="contact-form d-block mx-auto" autoComplete="off">
+                            <form className="contact-form d-block mx-auto" autoComplete="off" onSubmit={handlePopupFormSubmit}>
                                 <div className="form-group mx-1">
                                     <label className='volunteer-card-text input-form-subtitle mb-1 bold-form-label' htmlFor="name">Name</label>
-                                    <input type="text" className="form-control volunteer-card-text text-muted input-form-link" id="name" placeholder="Your Name" required />
+                                    <input type="text"
+                                        className="form-control volunteer-card-text text-muted input-form-link"
+                                        id="name"
+                                        placeholder="Your Name"
+                                        required
+                                        value={formData.name}
+                                        onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                                 </div>
                                 <div className="form-group mx-1">
                                     <label className='volunteer-card-text input-form-subtitle mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
-                                    <input type="email" className="form-control volunteer-card-text text-muted input-form-link" id="email" placeholder="Your Email" required />
+                                    <input type="tel"
+                                        className="form-control volunteer-card-text text-muted input-form-link"
+                                        id="phone"
+                                        placeholder="Your Phone Number"
+                                        required
+                                        value={formData.phoneNumber}
+                                        onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
+                                    />
                                 </div>
                                 <div className="form-group mx-1">
                                     <label className='volunteer-card-text input-form-subtitle mt-3 mb-1 bold-form-label' htmlFor="phone">Phone Number</label>
@@ -37,6 +59,7 @@ function Popup({ onClose }) {
                     </div>
                 </div>
             </div>
+            {isSubmitted && <ConfirmationPopup onClose={() => { setIsSubmitted(false); onClose(); }} />}
         </>
     );
 }
