@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Popup from '../Popup/index.js';
+import ConfirmationPopup from '../ConfirmationPopup/index.js';
 
 import { submitVoterInfo } from '../../api';
 
@@ -13,6 +14,7 @@ function Hero() {
     const [showForm, setShowForm] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
     const [isHorizontal, setIsHorizontal] = useState(false);
+    const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
 
     const [formData, setFormData] = useState({
         name: '',
@@ -25,6 +27,7 @@ function Hero() {
         await submitVoterInfo(formData.name, formData.phoneNumber, formData.email);
         // Reset the form data after successful submission
         setFormData({ name: '', email: '', phoneNumber: '' });
+        setSubmissionSuccessful(true);
     };
 
 
@@ -87,6 +90,7 @@ function Hero() {
 
     return (
         <>
+            {submissionSuccessful && <ConfirmationPopup onClose={() => setSubmissionSuccessful(false)} />}
             <section className='large-screen-mb-2'>
                 <div className='container h-100'>
                     <div className='row h-100 justify-content-center hero-container'>
