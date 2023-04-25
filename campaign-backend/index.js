@@ -6,7 +6,12 @@ const uri = process.env.MONGODB_URI;
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://fdeaquino.github.io',
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 const PORT = process.env.PORT || 3001;
