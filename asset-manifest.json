@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crystaldavila/static/css/main.b40e86ee.css",
-    "main.js": "/crystaldavila/static/js/main.69c50047.js",
+    "main.js": "/crystaldavila/static/js/main.05f2bc5f.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-issues-photo.png": "/crystaldavila/static/media/cd-issues-photo.967deb132ccd03456e39.png",
     "static/media/cd-getinvolved-photo.png": "/crystaldavila/static/media/cd-getinvolved-photo.eb42272c66a74ed6764f.png",
@@ -16,11 +16,11 @@
     "static/media/cd-photo-womeninpolitics.jpeg": "/crystaldavila/static/media/cd-photo-womeninpolitics.1ad9e2c7f0b98d583b76.jpeg",
     "index.html": "/crystaldavila/index.html",
     "main.b40e86ee.css.map": "/crystaldavila/static/css/main.b40e86ee.css.map",
-    "main.69c50047.js.map": "/crystaldavila/static/js/main.69c50047.js.map",
+    "main.05f2bc5f.js.map": "/crystaldavila/static/js/main.05f2bc5f.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b40e86ee.css",
-    "static/js/main.69c50047.js"
+    "static/js/main.05f2bc5f.js"
   ]
 }
