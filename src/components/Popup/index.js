@@ -4,8 +4,9 @@ import ConfirmationPopup from '../ConfirmationPopup';
 function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handlePopupFormSubmit = (e) => {
+    const handlePopupFormSubmit = async (e) => {
         e.preventDefault();
+        await handleHeroFormSubmit(e);
         setIsSubmitted(true);
     };
 
@@ -26,7 +27,7 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
                     <div className='col my-auto text-center'>
                         <div className="col mx-1">
                             <h3 className='my-3 input-form-title'>Join Our Campaign!</h3>
-                            <form className="contact-form d-block mx-auto" autoComplete="off" onSubmit={handlePopupFormSubmit}>
+                            <form className="contact-form d-block mx-auto" autoComplete="off" onSubmit={(e) => handleHeroFormSubmit(e)}>
                                 <div className="form-group mx-1">
                                     <label className='volunteer-card-text input-form-subtitle mb-1 bold-form-label' htmlFor="name">Name</label>
                                     <input type="text"
@@ -39,6 +40,16 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
                                 </div>
                                 <div className="form-group mx-1">
                                     <label className='volunteer-card-text input-form-subtitle mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
+                                    <input type="email"
+                                        className="form-control volunteer-card-text text-muted input-form-link"
+                                        id="email"
+                                        placeholder="Your Email"
+                                        required
+                                        value={formData.email}
+                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                                </div>
+                                <div className="form-group mx-1">
+                                    <label className='volunteer-card-text input-form-subtitle mt-3 mb-1 bold-form-label' htmlFor="phone">Phone Number</label>
                                     <input type="tel"
                                         className="form-control volunteer-card-text text-muted input-form-link"
                                         id="phone"
@@ -47,10 +58,6 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
                                         value={formData.phoneNumber}
                                         onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                                     />
-                                </div>
-                                <div className="form-group mx-1">
-                                    <label className='volunteer-card-text input-form-subtitle mt-3 mb-1 bold-form-label' htmlFor="phone">Phone Number</label>
-                                    <input type="tel" className="form-control volunteer-card-text text-muted input-form-link" id="phone" placeholder="Your Phone Number" required />
                                 </div>
                                 <p className='text-muted disclosure my-2'>By submitting your cell phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply.</p>
                                 <button className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">Submit</button>
