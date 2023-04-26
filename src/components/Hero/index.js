@@ -244,7 +244,7 @@ function Hero() {
                     <div className="container text-center">
                         <h3 className='mb-5 contribution-title'>Make a Contribution</h3>
                         <p className='volunteer-card-text mt-3 contribution-content-text'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
-                        <a href="donation-page.html">
+                        <a href="https://secure.actblue.com/donate/crystal-davila-1">
                             <button className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
                         </a>
                     </div>

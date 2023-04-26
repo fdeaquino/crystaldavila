@@ -1005,7 +1005,7 @@ button.close {
 
 /* ========== START POPUPS STYLES ========== */
 .popup-container {
-  display: none;
+  display: none!important;
 }
 
 .popup-background, .success-popup-overlay {
@@ -1027,6 +1027,10 @@ button.close {
   border-radius: 10px;
   width: 80%;
   max-width: 600px;
+}
+
+.success-popup-container {
+  text-align: center;
 }
 
 .success-popup-overlay {
@@ -1429,7 +1433,7 @@ footer {
   }
 
   .popup-container {
-    display: flex;
+    display: flex!important;
   }
 }
 
