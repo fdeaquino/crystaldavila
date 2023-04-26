@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crystaldavila/static/css/main.0c6c6115.css",
-    "main.js": "/crystaldavila/static/js/main.3c21390c.js",
+    "main.css": "/crystaldavila/static/css/main.84ba0bdd.css",
+    "main.js": "/crystaldavila/static/js/main.7567dda3.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-issues-photo.png": "/crystaldavila/static/media/cd-issues-photo.967deb132ccd03456e39.png",
     "static/media/cd-getinvolved-photo.png": "/crystaldavila/static/media/cd-getinvolved-photo.eb42272c66a74ed6764f.png",
@@ -15,12 +15,12 @@
     "static/media/cd-photo-tasb-conference.jpeg": "/crystaldavila/static/media/cd-photo-tasb-conference.9a9ee15a4cdd45d36777.jpeg",
     "static/media/cd-photo-womeninpolitics.jpeg": "/crystaldavila/static/media/cd-photo-womeninpolitics.1ad9e2c7f0b98d583b76.jpeg",
     "index.html": "/crystaldavila/index.html",
-    "main.0c6c6115.css.map": "/crystaldavila/static/css/main.0c6c6115.css.map",
-    "main.3c21390c.js.map": "/crystaldavila/static/js/main.3c21390c.js.map",
+    "main.84ba0bdd.css.map": "/crystaldavila/static/css/main.84ba0bdd.css.map",
+    "main.7567dda3.js.map": "/crystaldavila/static/js/main.7567dda3.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c6c6115.css",
-    "static/js/main.3c21390c.js"
+    "static/css/main.84ba0bdd.css",
+    "static/js/main.7567dda3.js"
   ]
 }
