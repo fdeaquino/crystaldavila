@@ -33,6 +33,7 @@ function Hero() {
 
     const closePopup = () => {
         setShowPopup(false);
+        setSubmissionSuccessful(false);
     };
 
     const pastworks = [
@@ -90,7 +91,18 @@ function Hero() {
 
     return (
         <>
-            {submissionSuccessful && <ConfirmationPopup onClose={() => setSubmissionSuccessful(false)} />}
+            {submissionSuccessful && (
+                <ConfirmationPopup onClose={() => setSubmissionSuccessful(false)} />
+            )}
+            {showPopup && !submissionSuccessful && (
+                <Popup
+                    onClose={closePopup}
+                    formData={formData}
+                    setFormData={setFormData}
+                    handleHeroFormSubmit={handleHeroFormSubmit}
+                />
+            )}
+
             <section className='large-screen-mb-2'>
                 <div className='container h-100'>
                     <div className='row h-100 justify-content-center hero-container'>

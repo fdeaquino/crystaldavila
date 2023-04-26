@@ -10,10 +10,13 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
         setIsSubmitted(true);
     };
 
+    const popupContainerClass = isSubmitted
+    ? "popup-background popup-hidden"
+    : "popup-background popup-container";
 
     return (
         <>
-            <div className="popup-background popup-container">
+            <div className={popupContainerClass}>
                 <div className="popup-content">
                     <div className="close-button-container">
                         <div className="popup-photo"></div>
@@ -27,7 +30,7 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
                     <div className='col my-auto text-center'>
                         <div className="col mx-1">
                             <h3 className='my-3 input-form-title'>Join Our Campaign!</h3>
-                            <form className="contact-form d-block mx-auto" autoComplete="off" onSubmit={(e) => handleHeroFormSubmit(e)}>
+                            <form className="contact-form d-block mx-auto" autoComplete="off" onSubmit={(e) => handlePopupFormSubmit(e)}>
                                 <div className="form-group mx-1">
                                     <label className='volunteer-card-text input-form-subtitle mb-1 bold-form-label' htmlFor="name">Name</label>
                                     <input type="text"
@@ -66,7 +69,14 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
                     </div>
                 </div>
             </div>
-            {isSubmitted && <ConfirmationPopup onClose={() => { setIsSubmitted(false); onClose(); }} />}
+            {isSubmitted && (
+                <ConfirmationPopup
+                    onClose={() => {
+                        setIsSubmitted(false);
+                        onClose(false);
+                    }}
+                />
+            )}
         </>
     );
 }

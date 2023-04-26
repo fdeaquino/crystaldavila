@@ -9,7 +9,9 @@ function ConfirmationPopup({ onClose }) {
                         
                         <button
                             className="circular-close-button"
-                            onClick={onClose}
+                            onClick={() => {
+                                onClose();
+                            }}
                         >
                             X
                         </button>

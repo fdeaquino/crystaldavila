@@ -1005,7 +1005,7 @@ button.close {
 
 /* ========== START POPUPS STYLES ========== */
 .popup-container {
-  display: none !important;
+  display: none;
 }
 
 .popup-background, .success-popup-overlay {
@@ -1018,7 +1018,7 @@ button.close {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  /* z-index: 9999; */
 }
 
 .popup-content, .success-popup-container {
@@ -1030,7 +1030,8 @@ button.close {
 }
 
 .success-popup-overlay {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 10000;
 }
 
 
@@ -1079,9 +1080,9 @@ button.close {
   font-size: x-small;
 }
 
-
-
-
+.popup-hidden {
+  display: none!important;
+}
 
 /* ========== END POPUP STYLES ========== */
 
@@ -1428,7 +1429,7 @@ footer {
   }
 
   .popup-container {
-    display: flex !important;
+    display: flex;
   }
 }
 
