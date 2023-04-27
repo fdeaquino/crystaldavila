@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crystaldavila/static/css/main.84ba0bdd.css",
-    "main.js": "/crystaldavila/static/js/main.7567dda3.js",
+    "main.css": "/crystaldavila/static/css/main.730ee46b.css",
+    "main.js": "/crystaldavila/static/js/main.724ae376.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-issues-photo.png": "/crystaldavila/static/media/cd-issues-photo.967deb132ccd03456e39.png",
     "static/media/cd-getinvolved-photo.png": "/crystaldavila/static/media/cd-getinvolved-photo.eb42272c66a74ed6764f.png",
@@ -10,17 +10,22 @@
     "static/media/cd-vision-photo.png": "/crystaldavila/static/media/cd-vision-photo.24bfdd9c4d67cd4eae4d.png",
     "static/media/cd-popup-photo.png": "/crystaldavila/static/media/cd-popup-photo.216bebe68e407e675239.png",
     "static/media/cd-volunteer-photo.jpeg": "/crystaldavila/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
-    "static/media/cd-photo-advocacyatcapitol.jpeg": "/crystaldavila/static/media/cd-photo-advocacyatcapitol.53b80d0e3b5ec6fa98e6.jpeg",
+    "static/media/cd-photo-student.jpg": "/crystaldavila/static/media/cd-photo-student.3b0e9f06570be5e92776.jpg",
     "static/media/cd-group-photo.jpeg": "/crystaldavila/static/media/cd-group-photo.5f6e40b2e8999b3c86b6.jpeg",
-    "static/media/cd-photo-tasb-conference.jpeg": "/crystaldavila/static/media/cd-photo-tasb-conference.9a9ee15a4cdd45d36777.jpeg",
-    "static/media/cd-photo-womeninpolitics.jpeg": "/crystaldavila/static/media/cd-photo-womeninpolitics.1ad9e2c7f0b98d583b76.jpeg",
+    "static/media/cd-photo-firstcampaign.jpeg": "/crystaldavila/static/media/cd-photo-firstcampaign.50fd2b5cf6fb8f6fa1c6.jpeg",
+    "static/media/cd-photo-teacher.jpeg": "/crystaldavila/static/media/cd-photo-teacher.e29a9b29cdb70a7fbb45.jpeg",
+    "static/media/cd-photo-advocacyatcapitol.jpeg": "/crystaldavila/static/media/cd-photo-advocacyatcapitol.ff6ca17c63f85d8b7dbf.jpeg",
+    "static/media/cd-photo-womeninpolitics.jpeg": "/crystaldavila/static/media/cd-photo-womeninpolitics.16408ea97d19395a614a.jpeg",
+    "static/media/cd-photo-tasb-conference.jpeg": "/crystaldavila/static/media/cd-photo-tasb-conference.6dd81c913f5db9ac6258.jpeg",
+    "static/media/cd-photo-collegeyears.jpeg": "/crystaldavila/static/media/cd-photo-collegeyears.b870e977cd1779376629.jpeg",
+    "static/media/cd-photo-sb-swearing-in.jpeg": "/crystaldavila/static/media/cd-photo-sb-swearing-in.670dccd912477b2a0441.jpeg",
     "index.html": "/crystaldavila/index.html",
-    "main.84ba0bdd.css.map": "/crystaldavila/static/css/main.84ba0bdd.css.map",
-    "main.7567dda3.js.map": "/crystaldavila/static/js/main.7567dda3.js.map",
+    "main.730ee46b.css.map": "/crystaldavila/static/css/main.730ee46b.css.map",
+    "main.724ae376.js.map": "/crystaldavila/static/js/main.724ae376.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84ba0bdd.css",
-    "static/js/main.7567dda3.js"
+    "static/css/main.730ee46b.css",
+    "static/js/main.724ae376.js"
   ]
 }
