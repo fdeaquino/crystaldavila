@@ -1,19 +1,3 @@
-/* THESE ARE THE MAIN FONTS FOR THE PROJECT */
-/* 
-font-family: 'Aboreto', cursive;
-font-family: 'Aguafina Script', cursive;
-font-family: 'Alegreya SC', serif;
-font-family: 'Bilbo', cursive;
-font-family: 'Cookie', cursive;
-font-family: 'Moon Dance', cursive;
-font-family: 'Oranienbaum', serif;
-font-family: 'Poiret One', cursive;
-font-family: 'Wire One', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Great Vibes', cursive;
-font-family: 'Noto Serif Display', serif;
- */
-
 /* * {
   border: blue dotted;
 } */
@@ -92,7 +76,7 @@ h6 {
 }
 
 .brand {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes';
   letter-spacing: .1rem;
   margin-top: 1rem;
   font-size: clamp(2.5rem, 1.6vw, 3.5rem);
@@ -105,7 +89,7 @@ h6 {
 }
 
 .secondary-brand-styles {
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   font-weight: 100;
   justify-content: center;
 }
@@ -120,7 +104,7 @@ h6 {
   color: white;
   font-size: clamp(.9rem, 1.6vw, 1.2rem);
   font-weight: 500 !important;
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   ;
 }
 
@@ -227,7 +211,7 @@ h6 {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   font-size: clamp(1.2rem, 1.6vw, 1.7rem);
 }
 
@@ -346,7 +330,7 @@ h6 {
 }
 
 .hero-text {
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   color: white;
   /* letter-spacing: .2rem; */
   font-weight: 300;
@@ -517,7 +501,7 @@ h6 {
 }
 
 .about-hero-text {
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   color: white;
   /* letter-spacing: .2rem; */
   font-weight: 300;
@@ -713,7 +697,7 @@ svg {
 }
 
 .issues-hero-text {
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   color: white;
   /* letter-spacing: .2rem; */
   font-weight: 300;
@@ -728,7 +712,7 @@ svg {
 }
 
 .issues-header-text {
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   color: white;
   /* letter-spacing: .2rem; */
   font-weight: 300;
@@ -889,7 +873,7 @@ button.close {
 }
 
 .getinvolved-hero-text {
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   color: white;
   font-weight: 300;
   font-size: clamp(3rem, 1.6vw, 4rem);
@@ -1106,7 +1090,7 @@ button.close {
 /* ========== START FOOTER STYLES ========== */
 footer {
   color: white;
-  font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto';
   font-weight: 100;
 }
 
