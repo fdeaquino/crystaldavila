@@ -1,11 +1,62 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import earlyYears from '../../assets/images/cd-photo-student.jpg';
+import collegeYears from '../../assets/images/cd-photo-collegeyears.jpeg';
+import workTeacher from '../../assets/images/cd-photo-teacher.jpeg';
+import firstCampaign from '../../assets/images/cd-photo-firstcampaign.jpeg';
+import trusteeSwearingIn from '../../assets/images/cd-photo-sb-swearing-in.jpeg';
+
+
+
+
+
 
 function About() {
     useEffect(() => {
         AOS.init();
     }, []);
+
+    const timelineData = [
+        {
+            title: 'Early Years',
+            subtitle: 'PISD Student',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            imageUrl: earlyYears,
+            inverted: false
+        },
+        {
+            title: 'College Years',
+            subtitle: 'UT Austin Student',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            imageUrl: collegeYears,
+            inverted: true
+        },
+        {
+            title: 'Career Start',
+            subtitle: 'Teacher at PHS',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            imageUrl: workTeacher,
+            inverted: false
+        },
+        {
+            title: 'Student Advocacy',
+            subtitle: 'PISD School Board Campaign',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            imageUrl: firstCampaign,
+            inverted: true
+        },
+        {
+            title: 'Trustee',
+            subtitle: 'PISD School Board Member',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            imageUrl: trusteeSwearingIn,
+            inverted: false
+        },
+    ]
+
+    const [selectedImage, setSelectedImage] = useState(null);
 
     return (
         <>
@@ -27,106 +78,53 @@ function About() {
                         <div className="col-lg-12">
                             <h3 className="join-convo-text text-center">Crystal's Story</h3>
                             <ul className="timeline">
-                                <li className='py-2'>
-                                    <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="timeline-heading">
-                                            <h4 className='text-dark'>Early Years</h4>
-                                            <h5 className="text-muted">PISD Student</h5>
+                                {timelineData.map((item, index) => (
+                                    <li className={`py-2 ${item.inverted ? ' timeline-inverted' : ''}`} key={index}>
+                                        <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <div className="timeline-heading">
+                                                <h4 className='text-dark'>{item.title}</h4>
+                                                <h5 className="text-muted">{item.subtitle}</h5>
+                                            </div>
+                                            <div className="timeline-body">
+                                                <p className="text-muted">{item.text}</p>
+                                            </div>
                                         </div>
-                                        <div className="timeline-body">
-                                            <p className="text-muted">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            </p>
+                                        {/* Container for image */}
+                                        <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                                            {/* circle with image inside it */}
+                                            <img className="circle-image" src={item.imageUrl} alt="" onClick={() => setSelectedImage(item.imageUrl)}/>
                                         </div>
-                                    </div>
-                                    <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
-                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
-                                    </div>
-                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="line"></div>
-                                    </div>
-                                </li>
-                                <li className="py-2 timeline-inverted">
-                                    <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="timeline-heading">
-                                            <h4 className='text-dark'>College Years</h4>
-                                            <h5 className="text-muted">UT Austin Student</h5>
-                                        </div>
-                                        <div className="timeline-body">
-                                            <p className="text-muted">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
-                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
-                                    </div>
-                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="line"></div>
-                                    </div>
-                                </li>
-                                <li className='py-2'>
-                                    <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="timeline-heading">
-                                            <h4 className='text-dark'>Career Start</h4>
-                                            <h5 className="text-muted">Teacher at PHS</h5>
-                                        </div>
-                                        <div className="timeline-body">
-                                            <p className="text-muted">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
-                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
-                                    </div>
-                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="line"></div>
-                                    </div>
-                                </li>
-                                <li className="py-2 timeline-inverted">
-                                    <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="timeline-heading">
-                                            <h4 className='text-dark'>Student Advocacy</h4>
-                                            <h5 className="text-muted">PISD School Board Campaign</h5>
-                                        </div>
-                                        <div className="timeline-body">
-                                            <p className="text-muted">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
-                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
-                                    </div>
-                                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="line"></div>
-                                    </div>
-                                </li>
-                                <li className='py-2'>
-                                    <div className="timeline-panel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="timeline-heading">
-                                            <h4 className='text-dark'>Trustee</h4>
-                                            <h5 className="text-muted">Current</h5>
-                                        </div>
-                                        <div className="timeline-body">
-                                            <p className="text-muted">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
-                                        {/* <img className="img-circle img-responsive" src="https://via.placeholder.com/300/09f/fff.png" alt="" /> */}
-                                    </div>
-                                    {/* <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div className="line"></div>
-                                    </div> */}
-                                </li>
+                                        {index !== timelineData.length - 1 && (
+                                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                                <div className="line"></div>
+                                            </div>
+                                        )}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
+
+            {selectedImage && (
+                <div className="modal show d-block" tabIndex="-1">
+                    <div className="modal-dialog modal-dialog-centered modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-body">
+                                <img src={selectedImage} alt="" className="img-fluid" />
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" onClick={() => setSelectedImage(null)}>
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="show" onClick={() => setSelectedImage(null)}></div>
+                </div>
+            )}
+
         </>
     )
 }

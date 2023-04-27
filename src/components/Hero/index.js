@@ -230,7 +230,7 @@ function Hero() {
                                     <div className=" bg-light-gray work-styles">
                                         <img src={work.imageUrl} alt={work.title} className="card-img-top mb-2" />
                                         <div className="card-body">
-                                            <h4 className="card-title my-2">{work.title}</h4>
+                                            <h4 className="card-title my-2 px-1">{work.title}</h4>
                                             <p className='work-card-text p-2'>{work.description}</p>
                                         </div>
                                     </div>

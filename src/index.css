@@ -677,9 +677,17 @@ svg {
   vertical-align: middle;
 }
 
+.circle-image {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 /* ========== END ABOUT SECTION STYLES ========== */
 
-/* ========== START ISSUES STYLES ========== */
+/* ========== START ON THE JOB STYLES ========== */
 .cd-issues-photo {
   background-image: url('./assets/images/cd-issues-photo.png');
   background-size: cover;
@@ -1132,6 +1140,13 @@ footer {
 }
 
 /* Large devices (min-width: 1200px) */
+@media (min-width: 1200px) and (max-width: 1420px) {
+  .priority-dropdown-styles {
+    width: 45vw;
+  }
+}
+
+/* Large devices (min-width: 1200px) */
 @media (min-width: 1200px) and (max-width: 1399px) {
   .timeline>li:nth-child(odd) .line:before {
     top: clamp(10rem, 9rem, 13rem);
@@ -1159,7 +1174,6 @@ footer {
 
 
 }
-
 
 
 
@@ -1212,7 +1226,7 @@ footer {
   }
 
   .priority-dropdown-styles {
-    width: 34vw;
+    width: 40vw;
   }
 }
 
@@ -1586,6 +1600,7 @@ footer {
     text-align: left;
     left: 0;
   }
+
 }
 
 /* Media query for small to medium screens (min-width: 768px) and (max-width: 991px) */
@@ -1676,7 +1691,7 @@ footer {
   }
 
   .timeline-image {
-    margin-bottom: 2rem !important;
+    margin-bottom: 5rem !important;
   }
 
   .timeline-panel {
@@ -1850,6 +1865,10 @@ footer {
 
   .mb-10 {
     margin-bottom: 6rem !important
+  }
+
+  .priority-dropdown-styles {
+    min-width: 90vw;
   }
 }
 
