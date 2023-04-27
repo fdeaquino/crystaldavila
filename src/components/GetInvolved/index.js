@@ -24,6 +24,20 @@ function GetInvolved() {
         setShowPopup(false);
     };
 
+    const handleFormButtonClick = (e) => {
+        e.preventDefault();
+        setTimeout(() => {
+            handleSubmit(e);
+        }, 700); // 700 milliseconds (0.7 second) delay
+    };
+
+    const handleButtonClick = (e, url) => {
+        e.preventDefault();
+        setTimeout(() => {
+            window.location.href = url;
+        }, 700); // 700 milliseconds (0.7 second) delay
+    };
+
     // Replace this sample data
     const events = [
         {
@@ -111,6 +125,8 @@ function GetInvolved() {
                     <div className="container text-center h-100 ">
                         <h3 className='volunteer-title'>Volunteer with Us</h3>
                         <p className='volunteer-content-text volunteer-card-text'>Join our team and make a difference by participating in various volunteer activities:</p>
+                        {/* TODO: Add working url */}
+                        <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
                         <div className="row mt-4 h-100 justify-content-center ">
                             <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                                 <div className="volunteer-card volunteer-card-background card p-4">
@@ -128,9 +144,6 @@ function GetInvolved() {
                                     </div>
                                     <h4>Voter Outreach</h4>
                                     <p className="text-muted volunteer-card-text">Help us spread the word by going door-to-door in your neighborhood.</p>
-                                    <a href="signup.html">
-                                        <button className="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
-                                    </a>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
@@ -142,9 +155,6 @@ function GetInvolved() {
                                     </div>
                                     <h4>Phone Banking</h4>
                                     <p className="text-muted volunteer-card-text">Assist with calling potential supporters to discuss our campaign's goals and events.</p>
-                                    <a href="signup.html">
-                                        <button className="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
-                                    </a>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
@@ -166,9 +176,6 @@ function GetInvolved() {
                                     </div>
                                     <h4>Social Media Outreach</h4>
                                     <p className="text-muted volunteer-card-text">Engage the community and expand our social media presence.</p>
-                                    <a href="signup.html">
-                                        <button className="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
-                                    </a>
                                 </div>
                             </div>
                             {/* Add more volunteer cards as needed */}
@@ -193,10 +200,10 @@ function GetInvolved() {
                                 </div>
                             ))}
                         </div>
-                        {/* TODO: Add working href */}
-                        <a>
-                            <button className="btn btn-primary btn-moving-gradient btn-moving-gradient--blue w-50 mt-3 mb-4">View Full Calendar</button>
-                        </a>
+                        {/* TODO: Add working url */}
+
+                        <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-primary btn-moving-gradient btn-moving-gradient--blue w-50 mt-3 mb-4">View Full Calendar</button>
+
                     </div>
                 </section>
                 {/* Fifth section - Voter Registration Information */}
@@ -209,8 +216,8 @@ function GetInvolved() {
                                     <img src="registration-icon.png" alt="Registration Icon" className="mb-3" />
                                     <h4 className="my-2">Voter Registration</h4>
                                     <p className='volunteer-card-text mt-3'>Deadline: October 1, 2023</p>
-                                    <a href="https://www.vote.org/register-to-vote/">
-                                        <button className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Register Now</button>
+                                    <a href="">
+                                        <button onClick={(e) => handleButtonClick(e, "https://www.vote.org/register-to-vote/")} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Register Now</button>
                                     </a>
                                 </div>
                             </div>
@@ -226,8 +233,8 @@ function GetInvolved() {
                                     <img src="polling-location-icon.png" alt="Polling Location Icon" className="mb-3" />
                                     <h4 className="my-2">Polling Locations</h4>
                                     <p className='volunteer-card-text mt-3'>Find your nearest polling location</p>
-                                    <a href="https://www.vote.org/polling-place-locator/">
-                                        <button className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Find Location</button>
+                                    <a>
+                                        <button onClick={(e) => handleButtonClick(e, "https://www.vote.org/polling-place-locator/")} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Find Location</button>
                                     </a>
                                 </div>
                             </div>
@@ -239,9 +246,9 @@ function GetInvolved() {
                     <div className="container text-center">
                         <h3 className='mb-5 contribution-title'>Make a Contribution</h3>
                         <p className='volunteer-card-text mt-3 contribution-content-text'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
-                        <a href="https://secure.actblue.com/donate/crystal-davila-1">
-                            <button className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
-                        </a>
+
+                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
+
                     </div>
                 </section>
 
@@ -312,9 +319,9 @@ function GetInvolved() {
                                     </textarea>
                                 </div>
                                 {/* TODO: Add working href */}
-                                <a>
-                                    <button className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
-                                </a>
+
+                                <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
+
                             </form>
                         </div>
                     </div>

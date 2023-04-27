@@ -88,6 +88,19 @@ function Hero() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const handleFormButtonClick = (e) => {
+        e.preventDefault();
+        setTimeout(() => {
+            handleHeroFormSubmit(e);
+        }, 700); // 700 milliseconds (0.7 second) delay
+    };
+
+    const handleButtonClick = (e, url) => {
+        e.preventDefault();
+        setTimeout(() => {
+            window.location.href = url;
+        }, 700); // 700 milliseconds (0.7 second) delay
+    };
 
     return (
         <>
@@ -156,7 +169,7 @@ function Hero() {
                                                 />
                                             </div>
                                             <p className='text-muted disclosure mt-3'>By submitting your cell phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply.</p>
-                                            <button className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">Submit</button>
+                                            <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">Submit</button>
                                         </form>
                                     </div>
                                 </div>
@@ -194,7 +207,7 @@ function Hero() {
                                 <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
                                 <p className='event-info'>April 4th, 2023</p>
                                 {/* TODO: Add working href */}
-                                <a><button className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
+                                <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button>
                             </div>
                             <div className="col h-100 event-styles volunteer-card-background py-3 my-2">
                                 <h4 className='mb-3'>Dia De Los Niños Celebration</h4>
@@ -204,7 +217,7 @@ function Hero() {
                                 <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
                                 <p className='event-info'>April 30th, 2023</p>
                                 {/* TODO: Add working href */}
-                                <a><button className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
+                                <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button>
                             </div>
                             <div className="col h-100 event-styles volunteer-card-background py-3 my-2">
                                 <h4 className='mb-3'>Cinco de Mayo Celebration</h4>
@@ -214,7 +227,7 @@ function Hero() {
                                 <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
                                 <p className='event-info'>May 5th, 2023</p>
                                 {/* TODO: Add working href */}
-                                <a><button className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button></a>
+                                <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button>
                             </div>
                         </div>
                     </div>
@@ -244,9 +257,9 @@ function Hero() {
                     <div className="container text-center">
                         <h3 className='mb-5 contribution-title'>Make a Contribution</h3>
                         <p className='volunteer-card-text mt-3 contribution-content-text'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
-                        <a href="https://secure.actblue.com/donate/crystal-davila-1">
-                            <button className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
-                        </a>
+
+                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
+
                     </div>
                 </section>
             </div>
