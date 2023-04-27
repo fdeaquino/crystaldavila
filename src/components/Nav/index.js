@@ -166,7 +166,7 @@ function Nav(props) {
                                             Vision
                                         </Link>
                                     </li>
-                                    <li className='nav-item nav-link-custom-css'>
+                                    <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
                                             className={activeMenuItem === 'GetInvolved' ? 'activeComponent' : ''}
                                             to='/crystaldavila/get-involved'
@@ -178,6 +178,13 @@ function Nav(props) {
                                             Get Involved
                                         </Link>
                                     </li>
+                                    <li className='nav-item nav-link-custom-css donate-color'>
+                                        <Link
+                                            to="https://secure.actblue.com/donate/crystal-davila-1"
+                                        >
+                                            Donate
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -187,7 +194,7 @@ function Nav(props) {
             </header>
 
             <div className={`overlay-menu${menuVisible ? ' d-flex' : ''}${openMenu ? ' open' : ''}`}>
-                <ul>
+                <ul className=''>
                     <li className={currentComponent === 'About' ? 'activeComponent' : ''}>
                         <Link
                             to="/crystaldavila/about"
@@ -242,6 +249,13 @@ function Nav(props) {
                             className={activeMenuItem === 'GetInvolved' ? 'activeComponent' : ''}
                         >
                             Get Involved
+                        </Link>
+                    </li>
+                    <li className='donate-color'>
+                        <Link
+                            to="https://secure.actblue.com/donate/crystal-davila-1"
+                        >
+                            Donate
                         </Link>
                     </li>
 

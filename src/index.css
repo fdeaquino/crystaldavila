@@ -311,6 +311,9 @@ h6 {
   padding: 0 1rem;
 }
 
+.donate-color {
+  text-shadow: 0 0 5px #ffffff;
+}
 
 /* ========== END ANIMATED MOBILE MENU STYLES ========== */
 
@@ -362,8 +365,10 @@ h6 {
 }
 
 .card-title {
-  color: #9e2987;
+  color: #000000;
   font-weight: bold;
+    letter-spacing: .1rem;
+
 }
 
 .card-subtitle {
