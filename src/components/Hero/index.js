@@ -125,11 +125,11 @@ function Hero() {
 
                         </div>
                         <div className='col my-auto'>
-                            <h2 className={`mb-5 mb-10 hero-text text-uppercase about-hero-text ${showForm ? 'centered-h2' : ''}`}>Fighting For a Better Future For Our Students</h2>
+                            <h2 id='about-hero-text' className={`mb-5 mb-10 hero-text text-uppercase about-hero-text ${showForm ? 'centered-h2' : ''}`}>Fighting For a Better Future For Our Students</h2>
                             {showForm && (
                                 <div className='col my-auto text-center'>
                                     <div className="col-10 mx-auto">
-                                        <h3 className='mt-4'>Join Our Campaign!</h3>
+                                        <h3 id='about-hero-text' className='mt-4'>Join Our Campaign!</h3>
                                         <form
                                             className="contact-form d-block mx-auto"
                                             autoComplete="off"
