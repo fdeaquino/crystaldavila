@@ -691,6 +691,20 @@ svg {
   cursor: pointer;
 }
 
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
+.modal-content {
+  z-index: 1041;
+}
+
 /* ========== END ABOUT SECTION STYLES ========== */
 
 /* ========== START ON THE JOB STYLES ========== */
@@ -1202,7 +1216,7 @@ footer {
   }
 
   #horizontal-cd-photo {
-    min-height: auto!important;
+    min-height: auto !important;
   }
 }
 
@@ -1281,7 +1295,9 @@ footer {
 
 /* Medium devices (min-width: 992px) */
 @media (min-width: 992px) {
-  .card-title {}
+  .card-title {
+    font-size: clamp(1.5rem, 1.6vw, 2rem);
+  }
 
   .card-subtitle {
     font-size: clamp(1.25rem, 1.6vw, 1.75rem);

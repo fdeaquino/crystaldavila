@@ -92,7 +92,7 @@ function About() {
                                         {/* Container for image */}
                                         <div className="timeline-image d-flex justify-content-center" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                                             {/* circle with image inside it */}
-                                            <img className="circle-image" src={item.imageUrl} alt="" onClick={() => setSelectedImage(item.imageUrl)}/>
+                                            <img className="circle-image" src={item.imageUrl} alt="" onClick={() => setSelectedImage(item.imageUrl)} />
                                         </div>
                                         {index !== timelineData.length - 1 && (
                                             <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -108,20 +108,20 @@ function About() {
             </section>
 
             {selectedImage && (
-                <div className="modal show d-block" tabIndex="-1">
-                    <div className="modal-dialog modal-dialog-centered modal-lg">
-                        <div className="modal-content">
+                <div className="modal show d-block" tabIndex="-1" onClick={() => setSelectedImage(null)}>
+                    <div className="modal-dialog modal-dialog-centered modal-lg" onClick={(e) => e.stopPropagation()}>
+                        <div className="modal-content ms-2 me-2">
+                            <div className="close-button-container">
+                                <button type="button" className="circular-close-button" onClick={() => setSelectedImage(null)}>
+                                    X
+                                </button>
+                            </div>
                             <div className="modal-body">
                                 <img src={selectedImage} alt="" className="img-fluid" />
                             </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" onClick={() => setSelectedImage(null)}>
-                                    Close
-                                </button>
-                            </div>
                         </div>
                     </div>
-                    <div className="show" onClick={() => setSelectedImage(null)}></div>
+                    <div className="modal-backdrop show"></div>
                 </div>
             )}
 
