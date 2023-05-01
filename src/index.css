@@ -1254,6 +1254,19 @@ footer {
   }
 }
 
+@media screen 
+  and (orientation: landscape)
+  and ((width: 820px) and (height: 1180px)),
+  (width: 1024px) and (height: 768px),
+  (width: 1024px) and (height: 1366px),
+  (width: 1024px) and (height: 600px) {
+
+  .nav-link-custom-css {
+    font-size: clamp(.8rem, 1.6vw, 0.9rem)!important;
+  }
+}
+
+
 /* media query specifically for iPad Pro 
 (min-width: 768px) and (max-width: 1024px) and (min-height: 800px) and (max-height: 1200px)
 */
@@ -1265,7 +1278,6 @@ footer {
     margin-left: -1rem;
   }
 
-
 }
 
 /* media query specifically for iPad Air 
@@ -1273,8 +1285,7 @@ footer {
 */
 @media (min-width: 1180px) and (max-height: 820px) {
   .nav-link-custom-css {
-
-    font-size: clamp(.8rem, 1.6vw, 1rem);
+    font-size: clamp(.8rem, 1.6vw, 0.9rem);
   }
 }
 

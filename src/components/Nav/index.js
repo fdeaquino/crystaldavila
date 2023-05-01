@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 
 function Nav(props) {
     const [currentComponent, setCurrentComponent] = useState('');
@@ -8,6 +10,7 @@ function Nav(props) {
     const [scrolled, setScrolled] = useState(false);
     const [activeMenuItem, setActiveMenuItem] = useState('');
     const location = useLocation();
+    const { t } = useTranslation();
 
 
     useEffect(() => {
@@ -139,7 +142,7 @@ function Nav(props) {
                                                 setActiveMenuItem('About');
                                             }}
                                         >
-                                            Meet Crystal
+                                            {t('meet_crystal')}
                                         </Link>
                                     </li>
                                     <li className='nav-item nav-link-custom-css me-4'>
@@ -151,7 +154,7 @@ function Nav(props) {
                                                 setActiveMenuItem('OnTheIssues');
                                             }}
                                         >
-                                            On The Job
+                                            {t('on_the_job')}
                                         </Link>
                                     </li>
                                     <li className='nav-item nav-link-custom-css me-4'>
@@ -163,7 +166,7 @@ function Nav(props) {
                                                 setActiveMenuItem('Vision');
                                             }}
                                         >
-                                            Vision
+                                            {t('vision')}
                                         </Link>
                                     </li>
                                     <li className='nav-item nav-link-custom-css me-4'>
@@ -175,14 +178,14 @@ function Nav(props) {
                                                 setActiveMenuItem('GetInvolved');
                                             }}
                                         >
-                                            Get Involved
+                                            {t('get_involved')}
                                         </Link>
                                     </li>
                                     <li className='nav-item nav-link-custom-css donate-color'>
                                         <Link
                                             to="https://secure.actblue.com/donate/crystal-davila-1"
                                         >
-                                            Donate
+                                            {t('donate')}
                                         </Link>
                                     </li>
                                 </ul>
@@ -206,7 +209,7 @@ function Nav(props) {
                             }}
                             className={activeMenuItem === 'About' ? 'activeComponent' : ''}
                         >
-                            Meet Crystal
+                            {t('meet_crystal')}
                         </Link>
                     </li>
                     <li className={currentComponent === 'OnTheIssues' ? 'activeComponent' : ''}>
@@ -220,7 +223,7 @@ function Nav(props) {
                             }}
                             className={activeMenuItem === 'OnTheIssues' ? 'activeComponent' : ''}
                         >
-                            On The Job
+                            {t('on_the_job')}
                         </Link>
                     </li>
                     <li className={currentComponent === 'Vision' ? 'activeComponent' : ''}>
@@ -234,7 +237,7 @@ function Nav(props) {
                             }}
                             className={activeMenuItem === 'Vision' ? 'activeComponent' : ''}
                         >
-                            Vision
+                            {t('vision')}
                         </Link>
                     </li>
                     <li className={currentComponent === 'GetInvolved' ? 'activeComponent' : ''}>
@@ -248,14 +251,14 @@ function Nav(props) {
                             }}
                             className={activeMenuItem === 'GetInvolved' ? 'activeComponent' : ''}
                         >
-                            Get Involved
+                            {t('get_involved')}
                         </Link>
                     </li>
                     <li className='donate-color'>
                         <Link
                             to="https://secure.actblue.com/donate/crystal-davila-1"
                         >
-                            Donate
+                            {t('donate')}
                         </Link>
                     </li>
 
