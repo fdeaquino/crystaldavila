@@ -8,9 +8,7 @@ import workTeacher from '../../assets/images/cd-photo-teacher.jpeg';
 import firstCampaign from '../../assets/images/cd-photo-firstcampaign.jpeg';
 import trusteeSwearingIn from '../../assets/images/cd-photo-sb-swearing-in.jpeg';
 
-
-
-
+import { useTranslation } from 'react-i18next';
 
 
 function About() {
@@ -58,6 +56,8 @@ function About() {
 
     const [selectedImage, setSelectedImage] = useState(null);
 
+    const { t } = useTranslation();
+
     return (
         <>
             <section>
@@ -68,6 +68,9 @@ function About() {
                         </div>
                         <div className='col my-auto'>
                             <h2 id='text-padding' className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
+                        </div>
+                        <div>
+                            <p>{t('welcome')}</p>
                         </div>
                     </div>
                 </div>

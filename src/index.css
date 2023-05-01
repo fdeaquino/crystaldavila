@@ -36,6 +36,77 @@ h6 {
   border: none !important;
 }
 
+/* ========== START LANGUAGE SWITCHER AND LANGUAGE SWITCHER WRAPPER STYLES ========== */
+.language-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.language-name {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.language-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 5px 2px;
+  font-size: 14px;
+  border-radius: 4px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  width: 5rem;
+  text-align: center;
+}
+
+.language-switcher:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(255, 255, 255, 0.8); */
+  padding: 5px;
+  border-radius: 4px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  width: 5rem;
+  text-align: center;
+}
+
+/* .language-options button {
+  background-color: rgba(255, 255, 255, 0.8)!important;
+} */
+
+.language-switcher:hover .language-options,
+.language-switcher .language-options.show {
+  display: block;
+}
+
+.language-options button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.language-options button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ========== END LANGUAGE SWITCHER AND LANGUAGE SWITCHER WRAPPER STYLES ========== */
+
+
 /* ========== START NAV STYLES ========== */
 .navbar-custom-css {
   border-style: none;
