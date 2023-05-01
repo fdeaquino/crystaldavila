@@ -8,5 +8,7 @@
     "phone_number": "Phone Number",
     "your_phone_number": "Your Phone Number",
     "disclosure": "By submitting your cell phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply.",
-    "submit": "Submit"
+    "submit": "Submit",
+    "submission_successful": "Your submission was successful!"
+
 }

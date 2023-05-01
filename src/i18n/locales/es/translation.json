@@ -3,10 +3,11 @@
     "join_campaign": "¡Únete a Nuestra Campaña!",
     "name": "Nombre",
     "your_name": "Su Nombre",
-    "email": "Correo Electronico",
-    "your_email": "Su Correo Electronico",
-    "phone_number": "Numero de Telefono",
-    "your_phone_number": "Su Numero de Telefono",
+    "email": "Correo Electrónico",
+    "your_email": "Su Correo Electrónico",
+    "phone_number": "Numero de Teléfono",
+    "your_phone_number": "Su Numero de Teléfono",
     "disclosure": "Al enviar su número de teléfono celular, usted acepta recibir mensajes de texto periódicos de esta organización. Se pueden aplicar tarifas de mensajes y datos.",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "submission_successful": "¡Su envío fue exitoso!"
 }
