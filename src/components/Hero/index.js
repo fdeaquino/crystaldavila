@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Popup from '../Popup/index.js';
 import ConfirmationPopup from '../ConfirmationPopup/index.js';
+import { useTranslation } from 'react-i18next';
+
 
 import { submitVoterInfo } from '../../api';
 
@@ -16,6 +18,9 @@ function Hero() {
     const [isHorizontal, setIsHorizontal] = useState(false);
     const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
 
+    const { t } = useTranslation();
+
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -30,29 +35,10 @@ function Hero() {
         setSubmissionSuccessful(true);
     };
 
-
     const closePopup = () => {
         setShowPopup(false);
         setSubmissionSuccessful(false);
     };
-
-    const pastworks = [
-        {
-            title: 'District Level: Fostering Student Leadership in PISD',
-            description: 'Supported PISD students as they presented on school safety at the TASB Governance Conference in Galveston, providing them with opportynities to engage with School Board Members and develop leadership skills.',
-            imageUrl: tasbConferenceImage
-        },
-        {
-            title: 'Local Level: Women in Politics Panel',
-            description: 'Participated in a panel discussion with women in elected office to share their experiences and accomplishments. The event aimed to promote diversity, equity, and inclusion in leadership and foster a welcoming community for all. The panel provided a platform for women to share insights and inpire others to pursue leadership roles.',
-            imageUrl: womenInPoliticsImage
-        },
-        {
-            title: 'State Level: Advocated for Increasing Funding to Public Schools',
-            description: 'Proposed increasing funding to improve the quality of education provided to students. Worked with educators and school administrators to identify areas where additional funding could be most effectively utilized.',
-            imageUrl: advocacyAtCapitolImage
-        },
-    ];
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -125,51 +111,51 @@ function Hero() {
 
                         </div>
                         <div className='col my-auto'>
-                            <h2 id='about-hero-text' className={`mb-5 mb-10 hero-text text-uppercase about-hero-text ${showForm ? 'centered-h2' : ''}`}>Fighting For a Better Future For Our Students</h2>
+                            <h2 id='about-hero-text' className={`mb-5 mb-10 hero-text text-uppercase about-hero-text ${showForm ? 'centered-h2' : ''}`}>{t('h2_title_hero')}</h2>
                             {showForm && (
                                 <div className='col my-auto text-center'>
                                     <div className="col-10 mx-auto">
-                                        <h3 id='about-hero-text' className='mt-4'>Join Our Campaign!</h3>
+                                        <h3 id='about-hero-text' className='mt-4'>{t('join_campaign')}</h3>
                                         <form
                                             className="contact-form d-block mx-auto"
                                             autoComplete="off"
                                             onSubmit={handleHeroFormSubmit}
                                         >
                                             <div className="form-group">
-                                                <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">Name</label>
+                                                <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">{t('name')}</label>
                                                 <input type="text"
                                                     className="form-control volunteer-card-text text-muted"
                                                     id="name"
-                                                    placeholder="Your Name"
+                                                    placeholder={t('your_name')}
                                                     required
                                                     value={formData.name}
                                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                                             </div>
                                             <div className="form-group">
-                                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">Email</label>
+                                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">{t('email')}</label>
                                                 <input
                                                     type="email"
                                                     className="form-control volunteer-card-text text-muted"
                                                     id="email"
-                                                    placeholder="Your Email"
+                                                    placeholder={t('your_email')}
                                                     required
                                                     value={formData.email}
                                                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="phone">Phone Number</label>
+                                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="phone">{t('phone_number')}</label>
                                                 <input type="tel"
                                                     className="form-control volunteer-card-text text-muted"
                                                     id="phone"
-                                                    placeholder="Your Phone Number"
+                                                    placeholder={t('your_phone_number')}
                                                     required
                                                     value={formData.phoneNumber}
                                                     onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                                                 />
                                             </div>
-                                            <p className='text-muted disclosure mt-3'>By submitting your cell phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply.</p>
-                                            <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">Submit</button>
+                                            <p className='text-muted disclosure mt-3'>{t('disclosure')}</p>
+                                            <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">{t('submit')}</button>
                                         </form>
                                     </div>
                                 </div>
@@ -184,9 +170,9 @@ function Hero() {
                         <div className="col-6 h-100 card-body card-width">
                             <span className="tm--quote_icon icon_quote">
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" fill="##000000" viewBox="0 0 34.01 30.64"><defs><style>.cls-1</style></defs><title>quotes</title><path className="cls-1" d="M14.56,0C4.24,2.17,0,9.45,0,18.91V30.64H12.6V17.93H7.28c0-7.28,2.17-11.84,8.91-13.69Z"></path><path className="cls-1" d="M32.38,0C22.06,2.17,17.82,9.45,17.82,18.91V30.64h12.6V17.93H25.1c0-7.28,2.17-11.84,8.91-13.69Z"></path></svg>				</span>
-                            <h5 className="card-title text-uppercase">Join me in creating a brighter future for pasadena, by prioritizing education that prepares students for the world.</h5>
+                            <h5 className="card-title text-uppercase">{t('h5_title_hero')}</h5>
                             {/* <p className="card-subtitle mb-2 text-muted">Card subtitle What we are trying to do is What we are trying to do is What we are trying to do is</p> */}
-                            <a href="/crystaldavila/vision" className="card-link card-link-style">Learn About Crystal's Vision</a>
+                            <a href="/crystaldavila/vision" className="card-link card-link-style">{t('learn_about_cd_vision')}</a>
                         </div>
                         <div className='col-6 cd-group-photo'></div>
                     </div>
@@ -196,8 +182,8 @@ function Hero() {
             <div className='blue-wrapper rectangle-section container h-100 py-4 py-lg-5'>
                 <section className="py-4 py-lg-5 ">
                     <div className="container text-center h-100 rectangle-section">
-                        <h3 className='volunteer-title'>Join The Conversation</h3>
-                        <p className='volunteer-content-text volunteer-card-text'>Upcoming Events</p>
+                        <h3 className='volunteer-title'>{t('h3_title_join_convo')}</h3>
+                        <p className='volunteer-content-text volunteer-card-text'>{t('subtitle_upcoming_events')}</p>
                         <div className='row mt-4 h-100 justify-content-center'>
                             <div className="col h-100 event-styles volunteer-card-background py-3 my-2">
                                 <h4 className='mb-3'>Café con Crystal</h4>
@@ -235,30 +221,47 @@ function Hero() {
 
                 <section className="py-4 py-lg-5 ">
                     <div className="container text-center h-100 rectangle-section">
-                        <h3 className='work-title'>Past Work and Advocacy</h3>
-                        <p className='work-content-text work-card-text'>Progress in Pasadena I.S.D.</p>
+                        <h3 className='work-title'>{t('h3_title_pastwork_advocacy')}</h3>
+                        <p className='work-content-text work-card-text'>{t('subtitle_pisd_progress')}</p>
                         <div className="row mt-4 h-100 justify-content-center">
-                            {pastworks.map((work, index) => (
-                                <div key={index} className="col-md-6 col-lg-4 py-3 ">
-                                    <div className=" bg-light-gray work-styles">
-                                        <img src={work.imageUrl} alt={work.title} className="card-img-top mb-2" />
-                                        <div className="card-body">
-                                            <h4 className="card-title my-2 px-1">{work.title}</h4>
-                                            <p className='work-card-text p-2'>{work.description}</p>
-                                        </div>
+
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={tasbConferenceImage} alt={t('past_works_title_1')} className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">{t('past_works_title_1')}</h4>
+                                        <p className='work-card-text p-2'>{t('past_works_description_1')}</p>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={womenInPoliticsImage} alt={t('past_works_title_2')} className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">{t('past_works_title_2')}</h4>
+                                        <p className='work-card-text p-2'>{t('past_works_description_2')}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={advocacyAtCapitolImage} alt={t('past_works_title_3')} className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">{t('past_works_title_3')}</h4>
+                                        <p className='work-card-text p-2'>{t('past_works_description_3')}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section className="donate-section py-4 py-lg-5 ">
                     <div className="container text-center">
-                        <h3 className='mb-5 contribution-title'>Make a Contribution</h3>
-                        <p className='volunteer-card-text mt-3 contribution-content-text'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
+                        <h3 className='mb-5 contribution-title'>{t('h3_title_make_a_contribution')}</h3>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_contribution')}</p>
 
-                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
+                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">{t('donate_today_btn')}</button>
 
                     </div>
                 </section>
