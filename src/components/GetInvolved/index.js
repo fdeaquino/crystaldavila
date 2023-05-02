@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { submitContactForm } from '../../api';
 import ConfirmationPopup from '../ConfirmationPopup';
+import communityMeeting from '../../assets/images/community-meeting.jpg';
+import coffeeCrystal from '../../assets/images/coffee-crystal.jpg';
+import fundraisingDinner from '../../assets/images/fundraising-dinner.jpg';
+import walkingAtPark from '../../assets/images/walking-at-park.jpg';
+import runAtPark from '../../assets/images/run-at-park.jpg';
+import cdBdayCelebration from '../../assets/images/cd-bday-celebration.jpg';
+import voterRegistration from '../../assets/images/voter-registration.jpg';
+import earlyVoting from '../../assets/images/early-voting.jpg';
+import pollingLocation from '../../assets/images/polling-location.jpg';
+
+
+
 
 import { useTranslation } from 'react-i18next';
 
@@ -48,45 +60,45 @@ function GetInvolved() {
             date: t('getinvolved_event_data_title_1'),
             time: '6:00 PM',
             location: t('getinvolved_event_data_title_1'),
-            imageUrl: 'town-hall-banner.jpg'
+            imageUrl: communityMeeting
         },
         {
             title: t('getinvolved_event_data_title_2'),
             date: t('getinvolved_event_date_2'),
             time: '11:00 AM',
             location: t('getinvolved_event_location_2'),
-            imageUrl: 'fundraising-dinner-banner.jpg'
+            imageUrl: coffeeCrystal
         },
         {
             title: t('getinvolved_event_data_title_3'),
             date: t('getinvolved_event_date_3'),
             time: '7:00 PM',
             location: t('getinvolved_event_location_3'),
-            imageUrl: 'fundraising-dinner-banner.jpg'
+            imageUrl: fundraisingDinner
         },
         {
             title: t('getinvolved_event_data_title_4'),
             date: t('getinvolved_event_date_4'),
             time: '4:00 PM',
             location: t('getinvolved_event_location_4'),
-            imageUrl: 'fundraising-dinner-banner.jpg'
+            imageUrl: walkingAtPark
         },
         {
             title: t('getinvolved_event_data_title_5'),
             date: t('getinvolved_event_date_5'),
             time: '2:00 PM',
             location: t('getinvolved_event_location_5'),
-            imageUrl: 'fundraising-dinner-banner.jpg'
+            imageUrl: runAtPark
         },
         {
             title: t('getinvolved_event_data_title_6'),
             date: t('getinvolved_event_date_6'),
             time: '7:00 PM',
             location: t('getinvolved_event_location_6'),
-            imageUrl: 'fundraising-dinner-banner.jpg'
+            imageUrl: cdBdayCelebration
         }
     ];
-    
+
 
     return (
         <>
@@ -194,7 +206,7 @@ function GetInvolved() {
                             {events.map((event, index) => (
                                 <div key={index} className="col-md-6 col-lg-4 py-3 ">
                                     <div className=" event-card bg-light-gray event-styles">
-                                        <img src={event.imageUrl} alt={event.title} className="card-img-top my-2" />
+                                        <img src={event.imageUrl} alt={event.title} className="card-img-top mb-2" />
                                         <div className="card-body">
                                             <h4 className="card-title my-2">{event.title}</h4>
                                             <p className='volunteer-card-text mt-3'>{event.date} at {event.time}</p>
@@ -215,9 +227,9 @@ function GetInvolved() {
                     <div className="container text-center">
                         <h3 className='mb-5 voter-registration-title'>{t('h3_title_voter_and_election')}</h3>
                         <div className="row mt-4 h-100 justify-content-center">
-                            <div className="col-md-4 col-sm-6 mb-4 justify-content-center">
-                                <div className="volunteer-card election-registration-information-background card p-4 voter-info h-100">
-                                    <img src="registration-icon.png" alt="Registration Icon" className="mb-3" />
+                            <div className='col-md-6 col-lg-4 py-3 justify-content-center'>
+                                <div className="volunteer-card election-registration-information-background voter-reg-election-info card h-100 voter-info">
+                                    <img src={voterRegistration} alt="Registration Icon" className="card-img-top mb-2" id='voting-info-photos' />
                                     <h4 className="my-2">{t('getinvolved_voter_and_election_data_title_1')}</h4>
                                     <p className='volunteer-card-text mt-3'>{t('getinvolved_voter_and_election_data_content_1')}</p>
                                     <a href="">
@@ -225,16 +237,17 @@ function GetInvolved() {
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-sm-6 mb-4 justify-content-center">
-                                <div className="volunteer-card election-registration-information-background card p-4 voter-info h-100">
-                                    <img src="early-voting-icon.png" alt="Early Voting Icon" className="mb-3" />
+                            <div className='col-md-6 col-lg-4 py-3 justify-content-center'>
+                                <div className="volunteer-card election-registration-information-background voter-reg-election-info card h-100 voter-info">
+                                    <img src={earlyVoting} alt="Early Voting Icon" className="card-img-top mb-2" id='voting-info-photos' />
                                     <h4 className="my-2">{t('getinvolved_voter_and_election_data_title_2')}</h4>
                                     <p className='volunteer-card-text mt-3'>{t('getinvolved_voter_and_election_data_content_2')}</p>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-sm-6 mb-4 justify-content-center">
-                                <div className="volunteer-card election-registration-information-background card p-4 h-100 voter-info">
-                                    <img src="polling-location-icon.png" alt="Polling Location Icon" className="mb-3" />
+
+                            <div className='col-md-6 col-lg-4 py-3 justify-content-center'>
+                                <div className="volunteer-card election-registration-information-background voter-reg-election-info card h-100 voter-info">
+                                    <img src={pollingLocation} alt="Polling Location Icon" className="card-img-top mb-2" id='voting-info-photos' />
                                     <h4 className="my-2">{t('getinvolved_voter_and_election_data_title_3')}</h4>
                                     <p className='volunteer-card-text mt-3'>{t('getinvolved_voter_and_election_data_content_3')}</p>
                                     <a>
