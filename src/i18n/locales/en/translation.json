@@ -25,12 +25,27 @@
     "h3_title_make_a_contribution": "Make a Contribution",
     "subtitle_contribution": "Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.",
     "donate_today_btn": "Donate Today",
-
-
     "past_works_title_1": "District Level: Fostering Student Leadership in PISD",
     "past_works_description_1": "Supported PISD students as they presented on school safety at the TASB Governance Conference in Galveston, providing them with opportynities to engage with School Board Members and develop leadership skills.",
     "past_works_title_2": "Local Level: Women in Politics Panel",
     "past_works_description_2": "Participated in a panel discussion with women in elected office to share their experiences and accomplishments. The event aimed to promote diversity, equity, and inclusion in leadership and foster a welcoming community for all. The panel provided a platform for women to share insights and inpire others to pursue leadership roles.",
     "past_works_title_3": "State Level: Advocated for Increasing Funding to Public Schools",
-    "past_works_description_3": "Proposed increasing funding to improve the quality of education provided to students. Worked with educators and school administrators to identify areas where additional funding could be most effectively utilized."
+    "past_works_description_3": "Proposed increasing funding to improve the quality of education provided to students. Worked with educators and school administrators to identify areas where additional funding could be most effectively utilized.", 
+    "h2_title_about": "Latina. Woman. Educator. Mexican American. Texan.", 
+    "h3_title_crystals_story": "Crystal's Story",
+    "timeline_data_title_1": "Early Years",
+    "timeline_data_subtitle_1": "PISD Student",
+    "timeline_data_text_1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "timeline_data_title_2": "College Years",
+    "timeline_data_subtitle_2": "UT Austin Student",
+    "timeline_data_text_2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "timeline_data_title_3": "Career Start",
+    "timeline_data_subtitle_3": "Teacher at PHS",
+    "timeline_data_text_3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "timeline_data_title_4": "Student Advocacy",
+    "timeline_data_subtitle_4": "PISD School Board Campaign",
+    "timeline_data_text_4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "timeline_data_title_5": "Trustee",
+    "timeline_data_subtitle_5": "PISD School Board Member",
+    "timeline_data_text_5": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 }

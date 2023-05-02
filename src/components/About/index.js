@@ -16,47 +16,48 @@ function About() {
         AOS.init();
     }, []);
 
+    const { t } = useTranslation();
+
     const timelineData = [
         {
-            title: 'Early Years',
-            subtitle: 'PISD Student',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: t('timeline_data_title_1'),
+            subtitle: t('timeline_data_subtitle_1'),
+            text: t('timeline_data_text_1'),
             imageUrl: earlyYears,
             inverted: false
         },
+
         {
-            title: 'College Years',
-            subtitle: 'UT Austin Student',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: t('timeline_data_title_2'),
+            subtitle: t('timeline_data_subtitle_2'),
+            text: t('timeline_data_text_2'),
             imageUrl: collegeYears,
             inverted: true
         },
         {
-            title: 'Career Start',
-            subtitle: 'Teacher at PHS',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: t('timeline_data_title_3'),
+            subtitle: t('timeline_data_subtitle_3'),
+            text: t('timeline_data_text_3'),
             imageUrl: workTeacher,
             inverted: false
         },
         {
-            title: 'Student Advocacy',
-            subtitle: 'PISD School Board Campaign',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: t('timeline_data_title_4'),
+            subtitle: t('timeline_data_subtitle_4'),
+            text: t('timeline_data_text_4'),
             imageUrl: firstCampaign,
             inverted: true
         },
         {
-            title: 'Trustee',
-            subtitle: 'PISD School Board Member',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            title: t('timeline_data_title_5'),
+            subtitle: t('timeline_data_subtitle_5'),
+            text: t('timeline_data_text_5'),
             imageUrl: trusteeSwearingIn,
             inverted: false
         },
     ]
 
     const [selectedImage, setSelectedImage] = useState(null);
-
-    const { t } = useTranslation();
 
     return (
         <>
@@ -67,10 +68,7 @@ function About() {
 
                         </div>
                         <div className='col my-auto'>
-                            <h2 id='text-padding' className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>Latina. Woman. Educator. Mexican American. Texan.</h2>
-                        </div>
-                        <div>
-                            <p>{t('welcome')}</p>
+                            <h2 id='text-padding' className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>{t('h2_title_about')}</h2>
                         </div>
                     </div>
                 </div>
@@ -79,7 +77,7 @@ function About() {
                 <div className="container h-100">
                     <div className="row h-100 justify-content-center timeline-container">
                         <div className="col-lg-12">
-                            <h3 className="join-convo-text text-center">Crystal's Story</h3>
+                            <h3 className="join-convo-text text-center">{t('h3_title_crystals_story')}</h3>
                             <ul className="timeline">
                                 {timelineData.map((item, index) => (
                                     <li className={`py-2 ${item.inverted ? ' timeline-inverted' : ''}`} key={index}>
