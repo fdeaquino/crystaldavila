@@ -75,7 +75,7 @@ function Vision() {
                             <div className=''></div>
                         </div>
                         <div className='col my-auto'>
-                            <h2 className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>{t('h2_title_vision')}</h2>
+                            <h2 id='vision-hero-text' className='mb-5 mb-10 about-photo-margins hero-text about-hero-text text-uppercase'>{t('h2_title_vision')}</h2>
                         </div>
                     </div>
                 </div>

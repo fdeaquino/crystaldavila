@@ -51,7 +51,7 @@ function Hero() {
     useEffect(() => {
         const handleResize = () => {
             const { width, height } = window.screen;
-            setIsHorizontal(width >= 550 && width <= 920 && height < width);
+            setIsHorizontal(width === 1366 && height === 1024);
         };
 
         handleResize();
@@ -60,6 +60,7 @@ function Hero() {
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
 
     useEffect(() => {
         const handleResize = () => {
