@@ -18,7 +18,7 @@
     "get_involved": "Get Involved",
     "donate": "Donate",
     "h2_title_hero": "Fighting For a Better Future For Our Students",
-    "h5_title_hero": "Join me in creating a brighter future for pasadena, by prioritizing education that prepares students for the world.",
+    "h5_title_hero": "Join me in creating a brighter future for Pasadena, by prioritizing education that prepares students for the world.",
     "learn_about_cd_vision": "Learn About Crystal's Vision",
     "h3_title_join_convo": "Join the Conversation",
     "subtitle_upcoming_events": "Upcoming Events",
@@ -115,5 +115,28 @@
     "subtitle_get_in_touch_address": "Address",
 
 
-    "h3_title_contact_us": "Contact Us"
+    "h3_title_contact_us": "Contact Us",
+
+
+    "h2_title_vision": "Crystal's vision of an improved future for us all.",
+    "h3_title_crystals_vision": "Crystal's Vision",
+    "h5_title_vision": "EXAMPLE QUOTE: THERE'S AN OPPORTUNITY FOR US TO BE VISIONARY, BOLD AND LOUD ABOUT WHAT OUR BETTER TOMORROW LOOKS LIKE. REPLACE WITH AN ACTUAL QUOTE FROM CRYSTAL.",
+
+    "getinvolved_vision_card_data_title1": "1. Care For Community",
+    "getinvolved_vision_card_1_1": "First Example: Fight For LGBTQIA+ Rights",
+    "getinvolved_vision_card_1_2": "Second Example: Create A Just Immigration System",
+    "getinvolved_vision_card_1_3": "Third Example: Invest in Arts and Humanities",
+    "getinvolved_vision_card_1_4": "Fourth Example: Establish Economic Justice For Working Families",
+
+    "getinvolved_vision_card_data_title2": "2. Social Programs",
+    "getinvolved_vision_card_2_1": "First Example: Fight For LGBTQIA+ Rights",
+    "getinvolved_vision_card_2_2": "Second Example: Create A Just Immigration System",
+    "getinvolved_vision_card_2_3": "Third Example: Invest in Arts and Humanities",
+    "getinvolved_vision_card_2_4": "Fourth Example: Establish Economic Justice For Working Families",
+    "getinvolved_vision_card_2_5": "Fifth Example: Investment in Social Emotional School Curriculums",
+
+    "getinvolved_vision_card_data_title3": "3. For The Future",
+    "getinvolved_vision_card_3_1": "First Example: Fight For LGBTQIA+ Rights",
+    "getinvolved_vision_card_3_2": "Second Example: Create A Just Immigration System",
+    "getinvolved_vision_card_3_3": "Third Example: Invest in Arts and Humanities"
 }

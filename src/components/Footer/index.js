@@ -28,7 +28,7 @@ function Footer() {
                             </a>
                         </li>
                     </ul>
-                    <p className="mb-0">© 2023 Crystal Davila</p>
+                    <p className="mb-0">© 2023 Crystal Dávila</p>
                 </div>
             </footer>
         </section>
