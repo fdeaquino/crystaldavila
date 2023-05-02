@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { submitContactForm } from '../../api';
 import ConfirmationPopup from '../ConfirmationPopup';
 
+import { useTranslation } from 'react-i18next';
+
 function GetInvolved() {
+    const { t } = useTranslation();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -41,48 +44,49 @@ function GetInvolved() {
     // Replace this sample data
     const events = [
         {
-            title: 'Town Hall Meeting',
-            date: 'April 1, 2023',
+            title: t('getinvolved_event_data_title_1'),
+            date: t('getinvolved_event_data_title_1'),
             time: '6:00 PM',
-            location: 'Community Center',
+            location: t('getinvolved_event_data_title_1'),
             imageUrl: 'town-hall-banner.jpg'
         },
         {
-            title: 'Café con Crystal',
-            date: 'April 4, 2023',
+            title: t('getinvolved_event_data_title_2'),
+            date: t('getinvolved_event_date_2'),
             time: '11:00 AM',
-            location: 'Restaurant Name',
+            location: t('getinvolved_event_location_2'),
             imageUrl: 'fundraising-dinner-banner.jpg'
         },
         {
-            title: 'Fundraising Dinner',
-            date: 'April 7, 2023',
+            title: t('getinvolved_event_data_title_3'),
+            date: t('getinvolved_event_date_3'),
             time: '7:00 PM',
-            location: 'Local Restaurant',
+            location: t('getinvolved_event_location_3'),
             imageUrl: 'fundraising-dinner-banner.jpg'
         },
         {
-            title: 'Dia De Los Niños Celebration',
-            date: 'April 30, 2023',
+            title: t('getinvolved_event_data_title_4'),
+            date: t('getinvolved_event_date_4'),
             time: '4:00 PM',
-            location: 'Memorial Park',
+            location: t('getinvolved_event_location_4'),
             imageUrl: 'fundraising-dinner-banner.jpg'
         },
         {
-            title: 'Cinco de Mayo Celebration',
-            date: 'May 5, 2023',
+            title: t('getinvolved_event_data_title_5'),
+            date: t('getinvolved_event_date_5'),
             time: '2:00 PM',
-            location: 'Strawberry Park',
+            location: t('getinvolved_event_location_5'),
             imageUrl: 'fundraising-dinner-banner.jpg'
         },
         {
-            title: 'Fundraising Dinner',
-            date: 'May 20, 2023',
+            title: t('getinvolved_event_data_title_6'),
+            date: t('getinvolved_event_date_6'),
             time: '7:00 PM',
-            location: 'Local Restaurant',
+            location: t('getinvolved_event_location_6'),
             imageUrl: 'fundraising-dinner-banner.jpg'
         }
     ];
+    
 
     return (
         <>
@@ -92,7 +96,7 @@ function GetInvolved() {
                 <div className='container container-padding h-100'>
                     <div className='row cd-getinvolved-photo h-100 justify-content-center hero-container'>
                         <div className='col my-auto'>
-                            <h2 id='text-padding' className='mb-5 mb-10 about-photo-margins getinvolved-hero-text text-uppercase'>Get Involved.<span><p>Let's Take a Stand Together.</p></span></h2>
+                            <h2 id='text-padding' className='mb-5 mb-10 about-photo-margins getinvolved-hero-text text-uppercase'>{t('h2_title_getinvolved1')}<span><p>{t('h2_title_getinvolved2')}</p></span></h2>
                         </div>
                         <div className='col my-auto photo-container'>
                             <div className=''></div>
@@ -109,9 +113,9 @@ function GetInvolved() {
 
                         <div className="col-6 h-100 card-body card-width text-center">
 
-                            <h5 className="card-title text-uppercase">Your support and active participation are crucial to the success of our campaign.
+                            <h5 className="card-title text-uppercase">{t('h5_title_active_participation')}
                             </h5>
-                            <p className="card-subtitle mb-2 text-muted d-flex">By joining our community-driven efforts, you can help make a lasting impact on the future of our schools. Let's work together to create positive change for our students, educators, and the entire community.</p>
+                            <p className="card-subtitle mb-2 text-muted d-flex">{t('subtitle_active_participation')}</p>
                         </div>
 
                     </div>
@@ -123,10 +127,10 @@ function GetInvolved() {
                 {/* Third section - Volunteer With Us */}
                 <section className="volunteer-section py-4 py-lg-5">
                     <div className="container text-center h-100 ">
-                        <h3 className='volunteer-title'>Volunteer with Us</h3>
-                        <p className='volunteer-content-text volunteer-card-text'>Join our team and make a difference by participating in various volunteer activities:</p>
+                        <h3 className='volunteer-title'>{t('h3_title_volunteer_with_us')}</h3>
+                        <p className='volunteer-content-text volunteer-card-text'>{t('subtitle_volunteer_with_us')}</p>
                         {/* TODO: Add working url */}
-                        <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue"> Sign Up</button>
+                        <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue">{t('sign_up_btn')}</button>
                         <div className="row mt-4 h-100 justify-content-center ">
                             <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                                 <div className="volunteer-card volunteer-card-background card p-4">
@@ -142,8 +146,8 @@ function GetInvolved() {
                                             <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
                                         </svg>
                                     </div>
-                                    <h4>Voter Outreach</h4>
-                                    <p className="text-muted volunteer-card-text">Help us spread the word by going door-to-door in your neighborhood.</p>
+                                    <h4>{t('volunteer_card_title_1')}</h4>
+                                    <p className="text-muted volunteer-card-text">{t('volunteer_card_subtitle_1')}</p>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
@@ -153,8 +157,8 @@ function GetInvolved() {
                                             <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
                                         </svg>
                                     </div>
-                                    <h4>Phone Banking</h4>
-                                    <p className="text-muted volunteer-card-text">Assist with calling potential supporters to discuss our campaign's goals and events.</p>
+                                    <h4>{t('volunteer_card_title_2')}</h4>
+                                    <p className="text-muted volunteer-card-text">{t('volunteer_card_subtitle_2')}</p>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
@@ -174,8 +178,8 @@ function GetInvolved() {
                                             <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
                                         </svg>
                                     </div>
-                                    <h4>Social Media Outreach</h4>
-                                    <p className="text-muted volunteer-card-text">Engage the community and expand our social media presence.</p>
+                                    <h4>{t('volunteer_card_title_3')}</h4>
+                                    <p className="text-muted volunteer-card-text">{t('volunteer_card_subtitle_3')}.</p>
                                 </div>
                             </div>
                             {/* Add more volunteer cards as needed */}
@@ -185,7 +189,7 @@ function GetInvolved() {
                 {/* Fourth section - Event Calendar */}
                 <section className="event-calendar py-4 py-lg-5">
                     <div className="container text-center ">
-                        <h3 className='mb-5 events-title'>Upcoming Events</h3>
+                        <h3 className='mb-5 events-title'>{t('h3_title_upcoming_events')}</h3>
                         <div className="row mt-4 h-100 justify-content-center">
                             {events.map((event, index) => (
                                 <div key={index} className="col-md-6 col-lg-4 py-3 ">
@@ -202,39 +206,39 @@ function GetInvolved() {
                         </div>
                         {/* TODO: Add working url */}
 
-                        <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-primary btn-moving-gradient btn-moving-gradient--blue w-50 mt-3 mb-4">View Full Calendar</button>
+                        <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-primary btn-moving-gradient btn-moving-gradient--blue w-50 mt-3 mb-4">{t('view_calendar_btn')}</button>
 
                     </div>
                 </section>
                 {/* Fifth section - Voter Registration Information */}
                 <section className="voter-registration py-4 py-lg-5 ">
                     <div className="container text-center">
-                        <h3 className='mb-5 voter-registration-title'>Register to Vote & Election Information</h3>
+                        <h3 className='mb-5 voter-registration-title'>{t('h3_title_voter_and_election')}</h3>
                         <div className="row mt-4 h-100 justify-content-center">
                             <div className="col-md-4 col-sm-6 mb-4 justify-content-center">
                                 <div className="volunteer-card election-registration-information-background card p-4 voter-info h-100">
                                     <img src="registration-icon.png" alt="Registration Icon" className="mb-3" />
-                                    <h4 className="my-2">Voter Registration</h4>
-                                    <p className='volunteer-card-text mt-3'>Deadline: October 1, 2023</p>
+                                    <h4 className="my-2">{t('getinvolved_voter_and_election_data_title_1')}</h4>
+                                    <p className='volunteer-card-text mt-3'>{t('getinvolved_voter_and_election_data_content_1')}</p>
                                     <a href="">
-                                        <button onClick={(e) => handleButtonClick(e, "https://www.vote.org/register-to-vote/")} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Register Now</button>
+                                        <button onClick={(e) => handleButtonClick(e, "https://www.vote.org/register-to-vote/")} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">{t('register_now_btn')}</button>
                                     </a>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 mb-4 justify-content-center">
                                 <div className="volunteer-card election-registration-information-background card p-4 voter-info h-100">
                                     <img src="early-voting-icon.png" alt="Early Voting Icon" className="mb-3" />
-                                    <h4 className="my-2">Early Voting</h4>
-                                    <p className='volunteer-card-text mt-3'>October 15 - November 1, 2023</p>
+                                    <h4 className="my-2">{t('getinvolved_voter_and_election_data_title_2')}</h4>
+                                    <p className='volunteer-card-text mt-3'>{t('getinvolved_voter_and_election_data_content_2')}</p>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 mb-4 justify-content-center">
                                 <div className="volunteer-card election-registration-information-background card p-4 h-100 voter-info">
                                     <img src="polling-location-icon.png" alt="Polling Location Icon" className="mb-3" />
-                                    <h4 className="my-2">Polling Locations</h4>
-                                    <p className='volunteer-card-text mt-3'>Find your nearest polling location</p>
+                                    <h4 className="my-2">{t('getinvolved_voter_and_election_data_title_3')}</h4>
+                                    <p className='volunteer-card-text mt-3'>{t('getinvolved_voter_and_election_data_content_3')}</p>
                                     <a>
-                                        <button onClick={(e) => handleButtonClick(e, "https://www.vote.org/polling-place-locator/")} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4"> Find Location</button>
+                                        <button onClick={(e) => handleButtonClick(e, "https://www.vote.org/polling-place-locator/")} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">{t('find_polling_location_btn')}</button>
                                     </a>
                                 </div>
                             </div>
@@ -244,10 +248,10 @@ function GetInvolved() {
                 {/* Sixth section - Donations */}
                 <section className="donate-section py-4 py-lg-5 ">
                     <div className="container text-center">
-                        <h3 className='mb-5 contribution-title'>Make a Contribution</h3>
-                        <p className='volunteer-card-text mt-3 contribution-content-text'>Your financial support will help us reach more voters, print campaign materials, and fuel our grassroots efforts. Every dollar makes a difference in ensuring a successful campaign.</p>
+                        <h3 className='mb-5 contribution-title'>{t('h3_title_make_a_contribution')}</h3>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_contribution')}</p>
 
-                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">Donate Today</button>
+                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">{t('donate_today_btn')}</button>
 
                     </div>
                 </section>
@@ -259,13 +263,13 @@ function GetInvolved() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h3 className='mb-4'>Get in Touch</h3>
-                            <p className='volunteer-card-text mt-3'>Phone: (123) 456-7890</p>
-                            <p className='volunteer-card-text mt-3'>Email: info@campaignwebsite.com</p>
-                            <p className='volunteer-card-text mt-3'>Address: 1234 Main St, Pasadena, TX 77506</p>
+                            <h3 className='mb-4'>{t('h3_title_get_in_touch')}</h3>
+                            <p className='volunteer-card-text mt-3'>{t('subtitle_get_in_touch_phone')}: (123) 456-7890</p>
+                            <p className='volunteer-card-text mt-3'>{t('email')}: info@campaignwebsite.com</p>
+                            <p className='volunteer-card-text mt-3'>{t('subtitle_get_in_touch_address')}: 1234 Main St, Pasadena, TX 77506</p>
                         </div>
                         <div className="col-md-6">
-                            <h3 className='mb-4'>Contact Us</h3>
+                            <h3 className='mb-4'>{t('h3_title_contact_us')}</h3>
                             <form className="contact-form"
                                 autoComplete='off'
                                 onSubmit={handleSubmit}>
@@ -273,13 +277,13 @@ function GetInvolved() {
                                     <label
                                         className='volunteer-card-text mb-1 bold-form-label'
                                         htmlFor="name">
-                                        Name
+                                        {t('name')}
                                     </label>
                                     <input
                                         type="text"
                                         className="form-control volunteer-card-text text-muted"
                                         id="name"
-                                        placeholder="Your Name"
+                                        placeholder={t('your_name')}
                                         required
                                         value={formData.name}
                                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -289,13 +293,13 @@ function GetInvolved() {
                                     <label
                                         className='volunteer-card-text mt-3 mb-1 bold-form-label'
                                         htmlFor="email">
-                                        Email
+                                        {t('email')}
                                     </label>
                                     <input
                                         type="email"
                                         className="form-control volunteer-card-text text-muted"
                                         id="email"
-                                        placeholder="Your Email"
+                                        placeholder={t('your_email')}
                                         required
                                         value={formData.email}
                                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -305,13 +309,13 @@ function GetInvolved() {
                                     <label
                                         className='volunteer-card-text mt-3 mb-1 bold-form-label'
                                         htmlFor="message">
-                                        Message
+                                        {t('message')}
                                     </label>
                                     <textarea
                                         className="form-control volunteer-card-text text-muted"
                                         id="message"
                                         rows="4"
-                                        placeholder="Your Message"
+                                        placeholder={t('your_message')}
                                         required
                                         value={formData.message}
                                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}>
@@ -320,7 +324,7 @@ function GetInvolved() {
                                 </div>
                                 {/* TODO: Add working href */}
 
-                                <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">Submit</button>
+                                <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">{t('submit')}</button>
 
                             </form>
                         </div>

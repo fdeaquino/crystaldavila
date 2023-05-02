@@ -1,25 +1,27 @@
 {
     "welcome": "Welcome to our website!",
-    "join_campaign": "¡Únete a Nuestra Campaña!",
+    "join_campaign": "¡Únase a Nuestra Campaña!",
     "name": "Nombre",
     "your_name": "Su Nombre",
     "email": "Correo Electrónico",
     "your_email": "Su Correo Electrónico",
     "phone_number": "Numero de Teléfono",
     "your_phone_number": "Su Numero de Teléfono",
+    "message": "Mensaje",
+    "your_message": "Su Mensaje",
     "disclosure": "Al enviar su número de teléfono celular, usted acepta recibir mensajes de texto periódicos de esta organización. Se pueden aplicar tarifas de mensajes y datos.",
     "submit": "Enviar",
     "submission_successful": "¡Su envío fue exitoso!",
-    "meet_crystal": "Conóceme",
+    "meet_crystal": "Conózcame",
     "on_the_job": "Mi Trabajo",
     "vision": "Visión",
-    "get_involved": "Involúcrate",
+    "get_involved": "Involúcrese",
     "donate": "Donaciones",
     "h2_title_hero": "Luchando por un futuro mejor para nuestros estudiantes",
-    "h5_title_hero": "Acompáñame a crear un futuro más brillante para Pasadena, priorizando la educación que prepare a los estudiantes para el mundo.",
-    "learn_about_cd_vision": "Aprende acerca de la visión de Crystal",
-    "h3_title_join_convo": "Únete a la conversación",
-    "subtitle_upcoming_events": "Próximos eventos",
+    "h5_title_hero": "Acompáñeme a crear un futuro más brillante para Pasadena, priorizando la educación que prepare a los estudiantes para el mundo.",
+    "learn_about_cd_vision": "Aprenda acerca de la visión de Crystal",
+    "h3_title_join_convo": "Únase a la conversación",
+    "subtitle_upcoming_events": "Próximos Eventos",
     "h3_title_pastwork_advocacy": "Trabajo y Activismo del Pasado",
     "subtitle_pisd_progress": "Avances en Pasadena I.S.D",
     "h3_title_make_a_contribution": "Haga una Contribución",
@@ -47,5 +49,71 @@
     "timeline_data_text_4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "timeline_data_title_5": "Fideicomisaria",
     "timeline_data_subtitle_5": "Miembra de la Junta Escolar de PISD",
-    "timeline_data_text_5": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "timeline_data_text_5": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+
+
+    "h2_title_getinvolved1": "Participe.",
+    "h2_title_getinvolved2": "Luchemos Juntos.",
+    "h5_title_active_participation": "Su apoyo y participación activa son cruciales para el éxito de nuestra campaña.",
+    "subtitle_active_participation": "Al unirse a nuestros esfuerzos, puede ayudar a tener un impacto duradero en el futuro de nuestras escuelas. Trabajemos juntos para crear un cambio positivo para nuestros estudiantes, educadores y toda la comunidad.",
+
+    "h3_title_volunteer_with_us": "Hágase Voluntario",
+    "subtitle_volunteer_with_us": "Únase a nuestro equipo y marca la diferencia participando en diversas actividades de voluntariado:",
+    "sign_up_btn": "INSCRIBIR",
+    "volunteer_card_title_1": "Alcance de Votantes",
+    "volunteer_card_subtitle_1": "Ayúdenos a correr la voz yendo de puerta a puerta en su vecindario.",
+    "volunteer_card_title_2": "Banco de Llamadas",
+    "volunteer_card_subtitle_2": "Ayúdenos a llamar posibles partidarios para discutir los objetivos y eventos de nuestra campaña.",
+    "volunteer_card_title_3": "Alcance en Redes Sociales",
+    "volunteer_card_subtitle_3": "Involucra a la comunidad y amplía nuestra presencia en las redes sociales.",
+    
+    "h3_title_upcoming_events": "Próximos Eventos",
+
+    "getinvolved_event_data_title_1": "Reunión Vecinal",
+    "getinvolved_event_date_1": "1 de Abril, 2023",
+    "getinvolved_event_location_1": "Centro Comunitario",
+
+    "getinvolved_event_data_title_2": "Café con Crystal",
+    "getinvolved_event_date_2": "4 de Abril, 2023",
+    "getinvolved_event_location_2": "Primos Taco House",
+
+    "getinvolved_event_data_title_3": "Cena para Recaudar Fondos",
+    "getinvolved_event_date_3": "7 de Abril, 2023",
+    "getinvolved_event_location_3": "Primos Taco House",
+
+    "getinvolved_event_data_title_4": "Camina con Crystal",
+    "getinvolved_event_date_4": "30 de Abril, 2023",
+    "getinvolved_event_location_4": "Parque Memorial",
+
+    "getinvolved_event_data_title_5": "Corre con Crystal",
+    "getinvolved_event_date_5": "2 de Mayo, 2023",
+    "getinvolved_event_location_5": "Parque Strawberry",
+
+    "getinvolved_event_data_title_6": "Celebración de Cumpleaños",
+    "getinvolved_event_date_6": "3 de Mayo, 2023",
+    "getinvolved_event_location_6": "Primos Taco House",
+    "view_calendar_btn": "Calendario Completo",
+
+
+
+    "h3_title_voter_and_election": "Información Sobre Elecciones y Registro Para Votar",
+    "getinvolved_voter_and_election_data_title_1": "Registro de Votantes",
+    "getinvolved_voter_and_election_data_content_1": "Fecha límite: 1 de Octubre, 2023",
+    "register_now_btn": "REGISTRACIÓN",
+
+    "getinvolved_voter_and_election_data_title_2": "Votación Temprana",
+    "getinvolved_voter_and_election_data_content_2": "15 de Octubre - 1 de Noviembre, 2023",
+
+    "getinvolved_voter_and_election_data_title_3": "Lugares de Votación",
+    "getinvolved_voter_and_election_data_content_3": "Encuentre su lugar de votación más cercano",
+    "find_polling_location_btn": "Buscar",
+
+    
+    "h3_title_get_in_touch": "Comuníquese",
+    "subtitle_get_in_touch_phone": "Numero de Teléfono",
+    "subtitle_get_in_touch_address": "Dirección",
+
+
+    "h3_title_contact_us": "Contáctenos"
 }

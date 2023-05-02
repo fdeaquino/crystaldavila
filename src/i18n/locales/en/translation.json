@@ -7,6 +7,8 @@
     "your_email": "Your Email",
     "phone_number": "Phone Number",
     "your_phone_number": "Your Phone Number",
+    "message": "Message",
+    "your_message": "Your Message",
     "disclosure": "By submitting your cell phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply.",
     "submit": "Submit",
     "submission_successful": "¡Su envío fue exitoso!",
@@ -47,5 +49,71 @@
     "timeline_data_text_4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "timeline_data_title_5": "Trustee",
     "timeline_data_subtitle_5": "PISD School Board Member",
-    "timeline_data_text_5": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "timeline_data_text_5": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+
+
+    "h2_title_getinvolved1": "Get Involved.",
+    "h2_title_getinvolved2": "Let's Take a Stand Together.",
+    "h5_title_active_participation": "Your support and active participation are crucial to the success of our campaign.",
+    "subtitle_active_participation": "By joining our community-driven efforts, you can help make a lasting impact on the future of our schools. Let's work together to create positive change for our students, educators, and the entire community.",
+
+    "h3_title_volunteer_with_us": "Volunteer With Us",
+    "subtitle_volunteer_with_us": "Join our team and make a difference by participating in various volunteer activities:",
+    "sign_up_btn": "SIGN UP",
+    "volunteer_card_title_1": "Voter Outreach",
+    "volunteer_card_subtitle_1": "Help us spread the word by going door-to-door in your neighborhood.",
+    "volunteer_card_title_2": "Phone Banking",
+    "volunteer_card_subtitle_2": "Assist with calling potential supporters to discuss our campaign's goals and events.",
+    "volunteer_card_title_3": "Social Media Outreach",
+    "volunteer_card_subtitle_3": "Engage the community and expand our social media presence.",
+
+    "h3_title_upcoming_events": "Upcoming Events",
+
+    "getinvolved_event_data_title_1": "House Meeting",
+    "getinvolved_event_date_1": "April 1, 2023",
+    "getinvolved_event_location_1": "Community Center",
+
+    "getinvolved_event_data_title_2": "Café con Crystal",
+    "getinvolved_event_date_2": "April 4, 2023",
+    "getinvolved_event_location_2": "Primos Taco House",
+
+    "getinvolved_event_data_title_3": "Fundraising Dinner",
+    "getinvolved_event_date_3": "April 7, 2023",
+    "getinvolved_event_location_3": "Primos Taco House",
+
+    "getinvolved_event_data_title_4": "Walk With Crystal",
+    "getinvolved_event_date_4": "April 30, 2023",
+    "getinvolved_event_location_4": "Memorial Park",
+
+    "getinvolved_event_data_title_5": "Run With Crystal",
+    "getinvolved_event_date_5": "May 2, 2023",
+    "getinvolved_event_location_5": "Strawberry Park",
+
+    "getinvolved_event_data_title_6": "Birthday Celebration",
+    "getinvolved_event_date_6": "May 3, 2023",
+    "getinvolved_event_location_6": "Primos Taco House",
+    "view_calendar_btn": "View Full Calendar",
+
+
+
+    "h3_title_voter_and_election": "Register to Vote & Election Information",
+    "getinvolved_voter_and_election_data_title_1": "Voter Registration",
+    "getinvolved_voter_and_election_data_content_1": "Deadline: October 1, 2023",
+    "register_now_btn": "REGISTER NOW",
+
+    "getinvolved_voter_and_election_data_title_2": "Early Voting",
+    "getinvolved_voter_and_election_data_content_2": "October 15 - November 1, 2023",
+
+    "getinvolved_voter_and_election_data_title_3": "Polling Locations",
+    "getinvolved_voter_and_election_data_content_3": "Find your nearest polling location",
+    "find_polling_location_btn": "Find Location",
+
+    
+    "h3_title_get_in_touch": "Get in Touch",
+    "subtitle_get_in_touch_phone": "Phone",
+    "subtitle_get_in_touch_address": "Address",
+
+
+    "h3_title_contact_us": "Contact Us"
 }
