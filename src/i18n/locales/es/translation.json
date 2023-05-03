@@ -55,7 +55,7 @@
 
     "h2_title_getinvolved1": "Participe.",
     "h2_title_getinvolved2": "Luchemos Juntos.",
-    "h5_title_active_participation": "Su apoyo y participación activa son cruciales para el éxito de nuestra campaña.",
+    "h3_title_active_participation": "Su apoyo y participación activa son cruciales para el éxito de nuestra campaña.",
     "subtitle_active_participation": "Al unirse a nuestros esfuerzos, puede ayudar a tener un impacto duradero en el futuro de nuestras escuelas. Trabajemos juntos para crear un cambio positivo para nuestros estudiantes, educadores y toda la comunidad.",
 
     "h3_title_volunteer_with_us": "Hágase Voluntario",
@@ -157,5 +157,9 @@
     "upcoming_events_title_2": "Celebración de Cumpleaños",
     "upcoming_events_img_description_2": "Una imagen de globos de fiesta.",
     "upcoming_events_title_3": "Celebración del Cinco de Mayo",
-    "upcoming_events_img_description_3": "Una imagen de objetos relacionados con la festividad mexicana, Cinco de Mayo."
+    "upcoming_events_img_description_3": "Una imagen de objetos relacionados con la festividad mexicana, Cinco de Mayo.",
+    "signupform_coming_soon": "Formulario de Registro en Progreso :)",
+    "back_to_home": "Inicio"
+
+
 }

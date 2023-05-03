@@ -9,6 +9,7 @@ import GetInvolved from './components/GetInvolved';
 import OnTheJob from './components/OnTheJob';
 import Vision from './components/Vision';
 import Footer from './components/Footer';
+import VolunteerSignUp from './components/VolunteerSignUp';
 
 
 
@@ -39,6 +40,10 @@ function App() {
               <Route
                 path="/crystaldavila/get-involved"
                 element={<GetInvolved />}
+              />
+              <Route
+                path="/crystaldavila/volunteer-sign-up"
+                element={<VolunteerSignUp />}
               />
             </Routes>
           </main>
