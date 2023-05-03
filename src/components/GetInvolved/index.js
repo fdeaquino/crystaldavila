@@ -152,8 +152,8 @@ function GetInvolved() {
 
                         <div className="col-6 h-100 card-body card-width text-center">
 
-                            <h5 className="card-title text-uppercase">{t('h5_title_active_participation')}
-                            </h5>
+                            <h3 className="card-title text-uppercase">{t('h3_title_active_participation')}
+                            </h3>
                             <p className="card-subtitle mb-2 text-muted d-flex">{t('subtitle_active_participation')}</p>
                         </div>
 

@@ -55,7 +55,7 @@
 
     "h2_title_getinvolved1": "Get Involved.",
     "h2_title_getinvolved2": "Let's Take a Stand Together.",
-    "h5_title_active_participation": "Your support and active participation are crucial to the success of our campaign.",
+    "h3_title_active_participation": "Your support and active participation are crucial to the success of our campaign.",
     "subtitle_active_participation": "By joining our community-driven efforts, you can help make a lasting impact on the future of our schools. Let's work together to create positive change for our students, educators, and the entire community.",
 
     "h3_title_volunteer_with_us": "Volunteer With Us",
@@ -141,5 +141,15 @@
     "getinvolved_vision_card_3_3": "Third Example: Invest in Arts and Humanities",
 
     "form_validation_check_msg": "All fields are required.",
-    "invalid_email_error_msg": "Please enter a valid email."
+    "invalid_email_error_msg": "Please enter a valid email.",
+
+    "otj_h3_title_shaping_elevating": "Shaping and Elevating the Future of Education at P.I.S.D.",
+    "otj_subtitle_shaping_elevating": "Learn about my Top 5 Priorities as a School Board Member and recognize the impact of your involvement. Hand in hand, let's propel positive change and cultivate a vibrant educational landscape for our students and community.",
+    "h3_title_crystals_priorities": "Crystal's Priorities",
+    "otj_h4_title_school_safety": "School Safety",
+    "otj_h4_title_prep_students_world": "Preparing Students for the World",
+    "otj_h4_title_school_funding": "School Funding",
+    "otj_h4_title_teacher_wl_balance": "Teacher Work-Life Balance",
+    "otj_h4_title_emotional_support": "Emotional Support In Schools"
+
 }
