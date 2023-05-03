@@ -1,16 +1,25 @@
 import axios from 'axios';
 
 // Example function to submit voter info
-export const submitVoterInfo = async (name, phoneNumber, email) => {
+export const submitVoterInfo = async (name, phoneNumber, email, setError) => {
     try {
         const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/submit-voter-info`, {
             name,
             phoneNumber,
             email,
         });
-        console.log(response.data);
+
+        if (response.status === 200) {
+            console.log(response.data);
+        } else if (response.status === 400) {
+            setError(response.data.message);
+        }
     } catch (error) {
-        console.error('Error submitting voter info:', error);
+        if (error.response && error.response.status === 400) {
+            setError(error.response.data.message);
+        } else {
+            console.error('Error submitting voter info:', error);
+        }
     }
 };
 

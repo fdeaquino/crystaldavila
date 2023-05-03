@@ -5,22 +5,34 @@ import { useTranslation } from 'react-i18next';
 
 function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
     const { t } = useTranslation();
 
 
     const handlePopupFormSubmit = async (e) => {
         e.preventDefault();
-        await handleHeroFormSubmit(e);
-        setIsSubmitted(true);
+        const error = await handleHeroFormSubmit(e);
+
+        if (error) {
+            setErrorMessage(error);
+            setIsSubmitted(false);
+        } else {
+            setIsSubmitted(true);
+        }
     };
+
+    // asldkfj
+
 
     const popupContainerClass = isSubmitted
         ? "popup-background popup-hidden"
-        : "popup-background popup-container";
+        : "popup-background popup-container popup-visible";
+
 
     return (
         <>
             <div className={popupContainerClass}>
+
                 <div className="popup-content">
                     <div className="close-button-container">
                         <div className="popup-photo"></div>
@@ -66,6 +78,11 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
                                         onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                                     />
                                 </div>
+                                {errorMessage && (
+                                    <div className="alert alert-danger mt-2" role="alert">
+                                        {errorMessage}
+                                    </div>
+                                )}
                                 <p className='text-muted disclosure my-2'>{t('disclosure')}</p>
                                 <button className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">{t('submit')}</button>
                             </form>
@@ -74,12 +91,15 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
                 </div>
             </div>
             {isSubmitted && (
-                <ConfirmationPopup
-                    onClose={() => {
-                        setIsSubmitted(false);
-                        onClose(false);
-                    }}
-                />
+                <>
+                    {console.log('ConfirmationPopup should be rendered')}
+                    <ConfirmationPopup
+                        onClose={() => {
+                            setIsSubmitted(false);
+                            onClose(false);
+                        }}
+                    />
+                </>
             )}
         </>
     );

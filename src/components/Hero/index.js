@@ -27,13 +27,16 @@ function Hero() {
         phoneNumber: '',
     });
 
-    const handleHeroFormSubmit = async (e) => {
+    const handleHeroFormSubmit = async (e, setError) => {
         e.preventDefault();
-        await submitVoterInfo(formData.name, formData.phoneNumber, formData.email);
-        // Reset the form data after successful submission
-        setFormData({ name: '', email: '', phoneNumber: '' });
-        setSubmissionSuccessful(true);
+        await submitVoterInfo(formData.name, formData.phoneNumber, formData.email, setError);
+        if (!setError) {
+            // Reset the form data after successful submission
+            setFormData({ name: '', email: '', phoneNumber: '' });
+            setSubmissionSuccessful(true);
+        }
     };
+
 
     const closePopup = () => {
         setShowPopup(false);

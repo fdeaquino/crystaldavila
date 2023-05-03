@@ -1133,7 +1133,7 @@ button.close {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* z-index: 9999; */
+  z-index: 1000;
 }
 
 .popup-content,
@@ -1150,7 +1150,7 @@ button.close {
 }
 
 .success-popup-overlay {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: 10000;
 }
 
@@ -1200,9 +1200,10 @@ button.close {
   font-size: x-small;
 }
 
-.popup-hidden {
-  display: none !important;
+.popup-container:not(.popup-hidden) {
+  display: flex !important;
 }
+
 
 /* ========== END POPUP STYLES ========== */
 
@@ -1608,8 +1609,12 @@ footer {
     width: 70% !important;
   }
 
-  .popup-container {
+  .popup-container:not(.popup-hidden) {
     display: flex !important;
+  }
+
+  .popup-hidden {
+    display: none!important;
   }
 }
 
@@ -2133,3 +2138,4 @@ footer {
 }
 
 /* ========== END MEDIA QUERIES ========== */
+/* laksdj */
