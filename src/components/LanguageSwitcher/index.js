@@ -5,6 +5,8 @@ import languageIcon from '../../assets/images/language-icon.png'; // Adjust the 
 const LanguageSwitcher = () => {
     const { i18n } = useTranslation();
     const [showOptions, setShowOptions] = useState(false);
+    const [timeoutId, setTimeoutId] = useState(null);
+
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
@@ -13,12 +15,14 @@ const LanguageSwitcher = () => {
 
     const handleMouseEnter = () => {
         if (window.innerWidth >= 768) {
+            if (timeoutId) clearTimeout(timeoutId);
             setShowOptions(true);
         }
     };
 
     const handleMouseLeave = () => {
-        setShowOptions(false);
+        if (timeoutId) clearTimeout(timeoutId);
+        setTimeoutId(setTimeout(() => setShowOptions(false), 2000));
     };
 
     const handleToggleOptions = () => {

@@ -77,6 +77,7 @@ h6 {
   border-radius: 4px;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   width: 5rem;
+  height: 5rem;
   text-align: center;
 }
 
@@ -1199,10 +1200,10 @@ button.close {
 .disclosure {
   font-size: x-small;
 }
-
+/* 
 .popup-container:not(.popup-hidden) {
   display: flex !important;
-}
+} */
 
 
 /* ========== END POPUP STYLES ========== */
