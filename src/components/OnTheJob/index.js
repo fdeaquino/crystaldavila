@@ -1,57 +1,9 @@
 import React from 'react';
-
-// the priorities array stores the data for each dropdown
-const priorities = [
-    {
-        title: 'Preparing Students for the World',
-        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
-    },
-    {
-        title: 'School Funding',
-        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
-    },
-    {
-        title: 'Teacher Work-Life Balance',
-        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
-    },
-    {
-        title: 'School Safety',
-        content: 'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.',
-    },
-
-];
-
-const PriorityDropdown = ({ title, content, alignLeft }) => (
-    <div className={`col-lg-6 dropdown d-flex ${alignLeft ? 'dropdown-left' : 'dropdown-right'} my-2`}>
-        <button
-            className="priority-dropdown-styles btn btn-moving-gradient btn-moving-gradient--blue dropdown-toggle"
-            type='button'
-            id='dropdownMenuButton'
-            data-bs-toggle='dropdown'
-            aria-haspopup='true'
-            aria-expanded='false'
-        >
-            {title}
-        </button>
-        <div className={`dropdown-menu${alignLeft ? '' : ' dropdown-menu-end'}`} aria-labelledby="dropdownMenuButton">
-            <button type="button" className='close' data-dismiss="dropdown" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <ul className='p-4 mb-0'>
-                <li className='decoration-none'>
-                    <p className='priorities-modal'>{content}</p>
-                </li>
-                <li className='decoration-none'>
-                    <button className='dropdown-item' type='button'>
-                        <a className='priority-card-link' href='#'>
-                            Learn more
-                        </a>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-)
+import otjSchoolSafety from '../../assets/images/otj-school-safety.jpeg';
+import otjPrepStudentsWorld from '../../assets/images/otj-prep-students-world.jpeg';
+import otjSchoolFunding from '../../assets/images/otj-school-funding.jpeg';
+import otjTeacherWLBalance from '../../assets/images/otj-teacher-wl-balance.jpeg';
+import otjEmotionalSupport from '../../assets/images/otj-meeting-emotional-needs.jpeg';
 
 function OnTheJob() {
     return (
@@ -63,33 +15,76 @@ function OnTheJob() {
                         <div className='col my-auto d-flex'>
                             <h2 className='mb-5 p-1  otj-hero-text text-uppercase'>On The Job</h2>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
-            {/* Second section - Priorities list with dropdowns */}
-            <section className='py-4 py-lg-5'>
-                <div className="container h-100">
-                    <div className="row h-100 justify-content-center timeline-container">
-                        <div className="col-lg-12">
-                            <h3 className="join-convo-text text-center">Crystal's Priorities</h3>
+
+            <div className='blue-wrapper rectangle-section container h-100 my-4 my-lg-5'>
+                <section className="py-4 py-lg-5 ">
+                    <div className="container text-center h-100 rectangle-section">
+                        <h3 className='volunteer-title'>Crystal's Priorities</h3>
+                        <div className='row mt-4 h-100 justify-content-center'>
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={otjSchoolSafety}
+                                        // TODO: Change alt text
+                                        alt="Preparing Students for the World" className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">School Safety</h4>
+                                        <p className='work-card-text p-2'>'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.'</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={otjPrepStudentsWorld}
+                                        // TODO: Change alt text
+                                        alt="Preparing Students for the World" className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">Preparing Students for the World</h4>
+                                        <p className='work-card-text p-2'>'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.'</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={otjSchoolFunding}
+                                        // TODO: Change alt text
+                                        alt="Preparing Students for the World" className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">School Funding</h4>
+                                        <p className='work-card-text p-2'>'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.'</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={otjTeacherWLBalance}
+                                        // TODO: Change alt text
+                                        alt="Preparing Students for the World" className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">Teacher Work-Life Balance</h4>
+                                        <p className='work-card-text p-2'>'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.'</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 py-3 ">
+                                <div className=" bg-light-gray work-styles">
+                                    <img src={otjEmotionalSupport}
+                                        // TODO: Change alt text
+                                        alt="Preparing Students for the World" className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className="card-title my-2 px-1">Supporting Emotional Needs at School</h4>
+                                        <p className='work-card-text p-2'>'Unicorn asymmetrical hammock deep v yr aesthetic. Skateboard helvetica heirloom, edison bulb plaid vegan listicle chambray forage copper mug ugh poke ethical glossier pabst. Meh grailed lomo raclette vinyl enamel pin bushwick scenester. Tofu humblebrag la croix sartorial, mixtape small batch ascot godard pork belly fanny pack. Narwhal vegan raw denim letterpress offal.'</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div className="row h-100 timeline-container otj-container-margin-top">
-
-                        {/* PrioritiesDropdown component that takes in the title, content, and and alignLeft props to render each dropdown */}
-                        {priorities.map((priority, index) => (
-                            <PriorityDropdown
-                                key={index}
-                                title={priority.title}
-                                content={priority.content}
-                                alignLeft={index % 2 === 1}
-                            />
-                        ))}
-
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </>
     )
 }
