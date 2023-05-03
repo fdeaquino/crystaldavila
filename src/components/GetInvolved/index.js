@@ -18,6 +18,7 @@ import { useTranslation } from 'react-i18next';
 
 function GetInvolved() {
     const { t } = useTranslation();
+    const [errorMessage, setErrorMessage] = useState('');
 
     const [formData, setFormData] = useState({
         name: '',
@@ -27,13 +28,39 @@ function GetInvolved() {
 
     const [showPopup, setShowPopup] = useState(false);
 
+    const isFormValid = () => {
+        return (
+            formData.name.trim() !== '' &&
+            formData.email.trim() !== '' &&
+            formData.message.trim() !== ''
+        );
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!isFormValid()) {
+            // Display an error message for missing fields
+            setErrorMessage(t('form_validation_check_msg'));
+            return;
+        }
+
+        const emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+        if (!emailPattern.test(formData.email)) {
+            // Display an error message for invalid email
+            setErrorMessage(t('invalid_email_error_msg'));
+            return;
+        }
+
+        setErrorMessage(''); // Clear the error message if there are no errors
+
         await submitContactForm(formData.name, formData.email, formData.message);
         // Resets the form data after successful submission
         setFormData({ name: '', email: '', message: '' });
         setShowPopup(true);
     };
+
+
 
     const handleClosePopup = () => {
         setShowPopup(false);
@@ -336,7 +363,11 @@ function GetInvolved() {
                                     </textarea>
                                 </div>
                                 {/* TODO: Add working href */}
-
+                                {errorMessage && (
+                                    <div className="alert alert-danger mt-2" role="alert">
+                                        {errorMessage}
+                                    </div>
+                                )}
                                 <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">{t('submit')}</button>
 
                             </form>
