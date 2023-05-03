@@ -53,15 +53,15 @@ const PriorityDropdown = ({ title, content, alignLeft }) => (
     </div>
 )
 
-function OnTheIssues() {
+function OnTheJob() {
     return (
         <>
-            {/* First section - Issues header */}
+            {/* First section - On The Job header */}
             <section>
                 <div className='container container-padding h-100'>
-                    <div className='row cd-issues-photo h-100 justify-content-center hero-container issues-hero-container'>
+                    <div className='row cd-on-the-job-photo h-100 justify-content-center hero-container otj-hero-container'>
                         <div className='col my-auto d-flex'>
-                            <h2 className='mb-5 p-1  issues-hero-text text-uppercase'>On The Job</h2>
+                            <h2 className='mb-5 p-1  otj-hero-text text-uppercase'>On The Job</h2>
                         </div>
                         
                     </div>
@@ -75,7 +75,7 @@ function OnTheIssues() {
                             <h3 className="join-convo-text text-center">Crystal's Priorities</h3>
                         </div>
                     </div>
-                    <div className="row h-100 timeline-container issues-container-margin-top">
+                    <div className="row h-100 timeline-container otj-container-margin-top">
 
                         {/* PrioritiesDropdown component that takes in the title, content, and and alignLeft props to render each dropdown */}
                         {priorities.map((priority, index) => (
@@ -94,4 +94,4 @@ function OnTheIssues() {
     )
 }
 
-export default OnTheIssues;
+export default OnTheJob;

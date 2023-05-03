@@ -147,11 +147,11 @@ function Nav(props) {
                                     </li>
                                     <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
-                                            className={activeMenuItem === 'OnTheIssues' ? 'activeComponent' : ''}
-                                            to='/crystaldavila/on-the-issues'
+                                            className={activeMenuItem === 'OnTheJob' ? 'activeComponent' : ''}
+                                            to='/crystaldavila/on-the-job'
                                             onClick={() => {
-                                                setCurrentComponent('OnTheIssues');
-                                                setActiveMenuItem('OnTheIssues');
+                                                setCurrentComponent('OnTheJob');
+                                                setActiveMenuItem('OnTheJob');
                                             }}
                                         >
                                             {t('on_the_job')}
@@ -212,16 +212,16 @@ function Nav(props) {
                             {t('meet_crystal')}
                         </Link>
                     </li>
-                    <li className={currentComponent === 'OnTheIssues' ? 'activeComponent' : ''}>
+                    <li className={currentComponent === 'OnTheJob' ? 'activeComponent' : ''}>
                         <Link
-                            to="/crystaldavila/on-the-issues"
+                            to="/crystaldavila/on-the-job"
                             onClick={() => {
-                                setCurrentComponent('OnTheIssues');
+                                setCurrentComponent('OnTheJob');
                                 setOpenMenu(false);
-                                setActiveMenuItem('OnTheIssues');
+                                setActiveMenuItem('OnTheJob');
                                 setMenuVisible(false);
                             }}
-                            className={activeMenuItem === 'OnTheIssues' ? 'activeComponent' : ''}
+                            className={activeMenuItem === 'OnTheJob' ? 'activeComponent' : ''}
                         >
                             {t('on_the_job')}
                         </Link>

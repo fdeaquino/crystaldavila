@@ -6,7 +6,7 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
 import GetInvolved from './components/GetInvolved';
-import OnTheIssues from './components/OnTheIssues';
+import OnTheJob from './components/OnTheJob';
 import Vision from './components/Vision';
 import Footer from './components/Footer';
 
@@ -29,8 +29,8 @@ function App() {
                 element={<About />}
               />
               <Route
-                path="/crystaldavila/on-the-issues"
-                element={<OnTheIssues />}
+                path="/crystaldavila/on-the-job"
+                element={<OnTheJob />}
               />
               <Route
                 path="/crystaldavila/vision"

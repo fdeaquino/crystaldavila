@@ -780,8 +780,8 @@ svg {
 /* ========== END ABOUT SECTION STYLES ========== */
 
 /* ========== START ON THE JOB STYLES ========== */
-.cd-issues-photo {
-  background-image: url('./assets/images/cd-issues-photo.png');
+.cd-on-the-job-photo {
+  background-image: url('./assets/images/cd-on-the-job-photo.png');
   background-size: cover;
   background-position: top;
   animation: 1.8s ease 0s 1 zoomIn;
@@ -793,13 +793,13 @@ svg {
   transition: all 0.5s ease;
 }
 
-.issues-hero-container {
+.otj-hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.issues-hero-text {
+.otj-hero-text {
   font-family: 'Aboreto';
   color: white;
   /* letter-spacing: .2rem; */
@@ -814,7 +814,7 @@ svg {
   margin-bottom: 10px !important;
 }
 
-.issues-header-text {
+.otj-header-text {
   font-family: 'Aboreto';
   color: white;
   /* letter-spacing: .2rem; */
@@ -878,11 +878,11 @@ button.close {
   bottom: 0;
 }
 
-.issues-container-margin-top {
+.otj-container-margin-top {
   margin-top: 1.375rem;
 }
 
-/* ========== END ISSUES SECTION STYLES ========== */
+/* ========== END ON THE JOB SECTION STYLES ========== */
 
 /* ========== START VISION SECTION STYLES ========== */
 .cd-vision-photo {
@@ -1342,7 +1342,7 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .cd-about-photo,
-  .cd-issues-photo,
+  .cd-on-the-job-photo,
   .cd-vision-photo,
   .cd-getinvolved-photo {
     width: auto;
@@ -1432,7 +1432,7 @@ footer {
     margin-left: auto;
   }
 
-  .cd-issues-photo {
+  .cd-on-the-job-photo {
     width: auto;
     background-position: center;
     min-height: 80vh;
@@ -1531,7 +1531,7 @@ footer {
     min-height: 40vh;
   }
 
-  .cd-issues-photo {
+  .cd-on-the-job-photo {
     width: auto;
     background-position: center;
     min-height: 40vh;
@@ -1556,7 +1556,7 @@ footer {
     margin-right: .5rem;
   }
 
-  .issues-header-text {
+  .otj-header-text {
     font-size: clamp(1.5rem, 4vw, 4rem);
   }
 
@@ -1566,7 +1566,7 @@ footer {
     margin-right: 1rem;
   }
 
-  .issues-hero-text {
+  .otj-hero-text {
     font-size: clamp(1.8rem, 4vw, 4rem);
     margin-top: 13rem !important;
   }
@@ -1876,7 +1876,7 @@ footer {
     margin-bottom: 9rem !important;
   }
 
-  .issues-hero-text {
+  .otj-hero-text {
     font-size: clamp(1.7rem, 4vw, 4rem);
   }
 
