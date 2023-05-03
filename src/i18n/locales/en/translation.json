@@ -138,5 +138,8 @@
     "getinvolved_vision_card_data_title3": "3. For The Future",
     "getinvolved_vision_card_3_1": "First Example: Fight For LGBTQIA+ Rights",
     "getinvolved_vision_card_3_2": "Second Example: Create A Just Immigration System",
-    "getinvolved_vision_card_3_3": "Third Example: Invest in Arts and Humanities"
+    "getinvolved_vision_card_3_3": "Third Example: Invest in Arts and Humanities",
+
+    "form_validation_check_msg": "All fields are required.",
+    "invalid_email_error_msg": "Please enter a valid email."
 }

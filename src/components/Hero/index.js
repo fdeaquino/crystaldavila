@@ -18,7 +18,17 @@ function Hero() {
     const [isHorizontal, setIsHorizontal] = useState(false);
     const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
 
+    const [errorMessage, setErrorMessage] = useState('');
+
     const { t } = useTranslation();
+
+    const isFormValid = () => {
+        return (
+            formData.name.trim() !== '' &&
+            formData.email.trim() !== '' &&
+            formData.phoneNumber.trim() !== ''
+        );
+    };
 
 
     const [formData, setFormData] = useState({
@@ -27,15 +37,32 @@ function Hero() {
         phoneNumber: '',
     });
 
-    const handleHeroFormSubmit = async (e, setError) => {
+    const handleHeroFormSubmit = async (e) => {
         e.preventDefault();
-        await submitVoterInfo(formData.name, formData.phoneNumber, formData.email, setError);
-        if (!setError) {
+
+        if (!isFormValid()) {
+            setErrorMessage(t('form_validation_check_msg'));
+            return;
+        }
+
+        const emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+        if (!emailPattern.test(formData.email)) {
+            setErrorMessage(t('invalid_email_error_msg'));
+            return;
+        }
+
+        const setError = false;
+        const error = await submitVoterInfo(formData.name, formData.phoneNumber, formData.email, setError);
+        if (error) {
+            setErrorMessage(error);
+        } else {
             // Reset the form data after successful submission
             setFormData({ name: '', email: '', phoneNumber: '' });
             setSubmissionSuccessful(true);
+            setErrorMessage('');
         }
     };
+
 
 
     const closePopup = () => {
@@ -159,6 +186,12 @@ function Hero() {
                                                 />
                                             </div>
                                             <p className='text-muted disclosure mt-3'>{t('disclosure')}</p>
+
+                                            {errorMessage && (
+                                                <div className="alert alert-danger mt-2" role="alert">
+                                                    {errorMessage}
+                                                </div>
+                                            )}
                                             <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">{t('submit')}</button>
                                         </form>
                                     </div>
@@ -271,14 +304,7 @@ function Hero() {
                 </section>
             </div>
 
-            {showPopup && (
-                <Popup
-                    onClose={closePopup}
-                    formData={formData}
-                    setFormData={setFormData}
-                    handleHeroFormSubmit={handleHeroFormSubmit}
-                />
-            )}
+
 
         </>
     )
