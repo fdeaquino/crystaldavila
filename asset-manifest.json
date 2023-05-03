@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/crystaldavila/static/css/main.c44ca2fc.css",
-    "main.js": "/crystaldavila/static/js/main.7b36f321.js",
+    "main.css": "/crystaldavila/static/css/main.076feb93.css",
+    "main.js": "/crystaldavila/static/js/main.f08f6595.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
-    "static/media/cd-issues-photo.png": "/crystaldavila/static/media/cd-issues-photo.967deb132ccd03456e39.png",
+    "static/media/cd-on-the-job-photo.png": "/crystaldavila/static/media/cd-on-the-job-photo.967deb132ccd03456e39.png",
     "static/media/cd-getinvolved-photo.png": "/crystaldavila/static/media/cd-getinvolved-photo.eb42272c66a74ed6764f.png",
     "static/media/cd-photo-hero.png": "/crystaldavila/static/media/cd-photo-hero.fe6f1f20833ae283aea3.png",
     "static/media/cd-about-photo.png": "/crystaldavila/static/media/cd-about-photo.b71d4e5a3bd075151c33.png",
@@ -15,6 +15,7 @@
     "static/media/cd-group-photo.jpeg": "/crystaldavila/static/media/cd-group-photo.5f6e40b2e8999b3c86b6.jpeg",
     "static/media/fundraising-dinner.jpg": "/crystaldavila/static/media/fundraising-dinner.6216bd3ffd1ab865e947.jpg",
     "static/media/community-meeting.jpg": "/crystaldavila/static/media/community-meeting.ed8b34eeef6fc4552d7b.jpg",
+    "static/media/events_cinco_mayojpeg.jpeg": "/crystaldavila/static/media/events_cinco_mayojpeg.f5256c4e786b4129da2c.jpeg",
     "static/media/cd-photo-firstcampaign.jpeg": "/crystaldavila/static/media/cd-photo-firstcampaign.50fd2b5cf6fb8f6fa1c6.jpeg",
     "static/media/cd-photo-teacher.jpeg": "/crystaldavila/static/media/cd-photo-teacher.e29a9b29cdb70a7fbb45.jpeg",
     "static/media/cd-photo-advocacyatcapitol.jpeg": "/crystaldavila/static/media/cd-photo-advocacyatcapitol.ff6ca17c63f85d8b7dbf.jpeg",
@@ -22,20 +23,26 @@
     "static/media/cd-photo-womeninpolitics.jpeg": "/crystaldavila/static/media/cd-photo-womeninpolitics.16408ea97d19395a614a.jpeg",
     "static/media/polling-location.jpg": "/crystaldavila/static/media/polling-location.d0b29d1f57a068516e69.jpg",
     "static/media/cd-photo-tasb-conference.jpeg": "/crystaldavila/static/media/cd-photo-tasb-conference.6dd81c913f5db9ac6258.jpeg",
+    "static/media/otj-meeting-emotional-needs.jpeg": "/crystaldavila/static/media/otj-meeting-emotional-needs.ce1f9f5a894c7f932b4c.jpeg",
+    "static/media/events_dia_ninos.jpeg": "/crystaldavila/static/media/events_dia_ninos.b34a14dfe9eed2fcb768.jpeg",
+    "static/media/otj-school-funding.jpeg": "/crystaldavila/static/media/otj-school-funding.2c55759fb995097e6a7c.jpeg",
+    "static/media/otj-school-safety.jpeg": "/crystaldavila/static/media/otj-school-safety.36e923595ebcd73f1ea6.jpeg",
     "static/media/cd-photo-collegeyears.jpeg": "/crystaldavila/static/media/cd-photo-collegeyears.b870e977cd1779376629.jpeg",
+    "static/media/otj-teacher-wl-balance.jpeg": "/crystaldavila/static/media/otj-teacher-wl-balance.4e7ab082fde4e3ccfd3f.jpeg",
     "static/media/cd-photo-sb-swearing-in.jpeg": "/crystaldavila/static/media/cd-photo-sb-swearing-in.670dccd912477b2a0441.jpeg",
+    "static/media/otj-prep-students-world.jpeg": "/crystaldavila/static/media/otj-prep-students-world.ae25b08d9b70f393a86f.jpeg",
     "static/media/run-at-park.jpg": "/crystaldavila/static/media/run-at-park.add4b0011bf88f2897b0.jpg",
     "static/media/walking-at-park.jpg": "/crystaldavila/static/media/walking-at-park.2b630039d34b2383c4fe.jpg",
     "static/media/early-voting.jpg": "/crystaldavila/static/media/early-voting.363a1cc204c1b1617160.jpg",
     "static/media/voter-registration.jpg": "/crystaldavila/static/media/voter-registration.232a4e975f6cbd85f5c4.jpg",
     "static/media/language-icon.png": "/crystaldavila/static/media/language-icon.c9c76e03a35ee2d121ba.png",
     "index.html": "/crystaldavila/index.html",
-    "main.c44ca2fc.css.map": "/crystaldavila/static/css/main.c44ca2fc.css.map",
-    "main.7b36f321.js.map": "/crystaldavila/static/js/main.7b36f321.js.map",
+    "main.076feb93.css.map": "/crystaldavila/static/css/main.076feb93.css.map",
+    "main.f08f6595.js.map": "/crystaldavila/static/js/main.f08f6595.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c44ca2fc.css",
-    "static/js/main.7b36f321.js"
+    "static/css/main.076feb93.css",
+    "static/js/main.f08f6595.js"
   ]
 }
