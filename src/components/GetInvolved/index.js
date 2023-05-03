@@ -84,9 +84,9 @@ function GetInvolved() {
     const events = [
         {
             title: t('getinvolved_event_data_title_1'),
-            date: t('getinvolved_event_data_title_1'),
+            date: t('getinvolved_event_date_1'),
             time: '6:00 PM',
-            location: t('getinvolved_event_data_title_1'),
+            location: t('getinvolved_event_location_1'),
             imageUrl: communityMeeting
         },
         {

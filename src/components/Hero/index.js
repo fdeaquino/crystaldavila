@@ -9,6 +9,9 @@ import { submitVoterInfo } from '../../api';
 import tasbConferenceImage from '../../assets/images/cd-photo-tasb-conference.jpeg';
 import womenInPoliticsImage from '../../assets/images/cd-photo-womeninpolitics.jpeg';
 import advocacyAtCapitolImage from '../../assets/images/cd-photo-advocacyatcapitol.jpeg';
+import cdBdayCelebration from '../../assets/images/cd-bday-celebration.jpg';
+import cincoMayo from '../../assets/images/events_cinco_mayojpeg.jpeg';
+import diaNinos from '../../assets/images/events_dia_ninos.jpeg';
 
 
 
@@ -219,45 +222,6 @@ function Hero() {
             <div className='blue-wrapper rectangle-section container h-100 py-4 py-lg-5'>
                 <section className="py-4 py-lg-5 ">
                     <div className="container text-center h-100 rectangle-section">
-                        <h3 className='volunteer-title'>{t('h3_title_join_convo')}</h3>
-                        <p className='volunteer-content-text volunteer-card-text'>{t('subtitle_upcoming_events')}</p>
-                        <div className='row mt-4 h-100 justify-content-center'>
-                            <div className="col h-100 event-styles volunteer-card-background py-3 my-2">
-                                <h4 className='mb-3'>Café con Crystal</h4>
-                                {/* kids image goes here */}
-                                <div></div>
-                                <p className='event-info mb-1'>Restaurant Name</p>
-                                <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
-                                <p className='event-info'>April 4th, 2023</p>
-                                {/* TODO: Add working href */}
-                                <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button>
-                            </div>
-                            <div className="col h-100 event-styles volunteer-card-background py-3 my-2">
-                                <h4 className='mb-3'>Dia De Los Niños Celebration</h4>
-                                {/* kids image goes here */}
-                                <div></div>
-                                <p className='event-info mb-1'>Memorial Park</p>
-                                <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
-                                <p className='event-info'>April 30th, 2023</p>
-                                {/* TODO: Add working href */}
-                                <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button>
-                            </div>
-                            <div className="col h-100 event-styles volunteer-card-background py-3 my-2">
-                                <h4 className='mb-3'>Cinco de Mayo Celebration</h4>
-                                {/* kids image goes here */}
-                                <div></div>
-                                <p className='event-info mb-1'>Strawberry Park</p>
-                                <p className='event-info mb-1'>123 Main St. Pasadena, TX 77506</p>
-                                <p className='event-info'>May 5th, 2023</p>
-                                {/* TODO: Add working href */}
-                                <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-moving-gradient btn-moving-gradient--blue learn-more-btn-styles"> Learn More </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="py-4 py-lg-5 ">
-                    <div className="container text-center h-100 rectangle-section">
                         <h3 className='work-title'>{t('h3_title_pastwork_advocacy')}</h3>
                         <p className='work-content-text work-card-text'>{t('subtitle_pisd_progress')}</p>
                         <div className="row mt-4 h-100 justify-content-center">
@@ -289,6 +253,50 @@ function Hero() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="py-4 py-lg-5 ">
+                    <div className="container text-center h-100 rectangle-section">
+                        <h3 className='volunteer-title'>{t('h3_title_join_convo')}</h3>
+                        <p className='volunteer-content-text volunteer-card-text'>{t('subtitle_upcoming_events')}</p>
+                        <div className='row mt-4 h-100 justify-content-center'>
+                            <div className='col-md-6 col-lg-4 py-3 '>
+                                <div className="event-styles volunteer-card-background">
+                                    <img src={diaNinos} alt={t('upcoming_events_img_description_1')} className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className='card-title my-2 px-1'>{t('upcoming_events_title_1')}</h4>
+                                        <p className='event-info mb-1 work-card-text p-2'>Memorial Park</p>
+                                        <p className='event-info mb-1 work-card-text p-2'>500 W Jackson Ave, Pasadena, TX 77506</p>
+                                        <p className='event-info work-card-text p-2'>04/30/23</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-md-6 col-lg-4 py-3 '>
+                                <div className="event-styles volunteer-card-background">
+                                    <img src={cdBdayCelebration} alt={t('upcoming_events_img_description_2')} className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className='card-title my-2 px-1'>{t('upcoming_events_title_2')}</h4>
+                                        <p className='event-info mb-1 work-card-text p-2'>Primos Taco House</p>
+                                        <p className='event-info mb-1 work-card-text p-2'>723 Queens Rd. Pasadena, TX 77502</p>
+                                        <p className='event-info work-card-text p-2'>05/03/23</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-md-6 col-lg-4 py-3 '>
+                                <div className="event-styles volunteer-card-background">
+                                    <img src={cincoMayo} alt={t('upcoming_events_img_description_3')} className="card-img-top mb-2" />
+                                    <div className="card-body">
+                                        <h4 className='card-title my-2 px-1'>{t('upcoming_events_title_3')}</h4>
+                                        <p className='event-info mb-1 work-card-text p-2'>Strawberry Park</p>
+                                        <p className='event-info mb-1 work-card-text p-2'>500 W Jackson Ave, Pasadena, TX 77506</p>
+                                        <p className='event-info work-card-text p-2'>TBD</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
