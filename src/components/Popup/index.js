@@ -21,9 +21,6 @@ function Popup({ onClose, formData, setFormData, handleHeroFormSubmit }) {
         }
     };
 
-    // asldkfj
-
-
     const popupContainerClass = isSubmitted
         ? "popup-background popup-hidden"
         : "popup-background popup-container popup-visible";
