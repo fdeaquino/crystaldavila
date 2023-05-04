@@ -404,7 +404,7 @@ h6 {
 }
 
 .cd-photo {
-  background-image: url('./assets/images/cd-photo-hero.png');
+  background-image: url('./assets/images/cd-photo-hero.webp');
   background-size: cover;
   background-position: top;
   animation: 1.8s ease 0s 1 zoomIn;
@@ -576,7 +576,7 @@ h6 {
 
 /* ========== START ABOUT SECTION STYLES ========== */
 .cd-about-photo {
-  background-image: url('./assets/images/cd-about-photo.png');
+  background-image: url('./assets/images/cd-about-photo.webp');
   background-size: cover;
   background-position: top;
   animation: 1.8s ease 0s 1 zoomIn;
@@ -781,7 +781,7 @@ svg {
 
 /* ========== START ON THE JOB STYLES ========== */
 .cd-on-the-job-photo {
-  background-image: url('./assets/images/cd-on-the-job-photo.png');
+  background-image: url('./assets/images/cd-on-the-job-photo.webp');
   background-size: cover;
   background-position: top;
   animation: 1.8s ease 0s 1 zoomIn;
@@ -886,7 +886,7 @@ button.close {
 
 /* ========== START VISION SECTION STYLES ========== */
 .cd-vision-photo {
-  background-image: url('./assets/images/cd-vision-photo.png');
+  background-image: url('./assets/images/cd-vision-photo.webp');
   background-size: cover;
   background-position: left;
   animation: 1.8s ease 0s 1 zoomIn;
@@ -962,7 +962,7 @@ button.close {
 
 /* ========== START GET INVOLVED SECTION STYLES ========== */
 .cd-getinvolved-photo {
-  background-image: url('./assets/images/cd-getinvolved-photo.png');
+  background-image: url('./assets/images/cd-getinvolved-photo.webp');
   background-size: cover;
   background-position: left;
   animation: 1.8s ease 0s 1 zoomIn;
@@ -1157,7 +1157,7 @@ button.close {
 
 
 .popup-photo {
-  background-image: url('./assets/images/cd-popup-photo.png');
+  background-image: url('./assets/images/cd-popup-photo.webp');
   background-size: cover;
   background-position: bottom;
   animation: 1.8s ease 0s 1 zoomIn;
