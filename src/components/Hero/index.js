@@ -212,7 +212,7 @@ function Hero() {
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" fill="##000000" viewBox="0 0 34.01 30.64"><defs><style>.cls-1</style></defs><title>quotes</title><path className="cls-1" d="M14.56,0C4.24,2.17,0,9.45,0,18.91V30.64H12.6V17.93H7.28c0-7.28,2.17-11.84,8.91-13.69Z"></path><path className="cls-1" d="M32.38,0C22.06,2.17,17.82,9.45,17.82,18.91V30.64h12.6V17.93H25.1c0-7.28,2.17-11.84,8.91-13.69Z"></path></svg>				</span>
                             <h5 className="card-title text-uppercase">{t('h5_title_hero')}</h5>
                             {/* <p className="card-subtitle mb-2 text-muted">Card subtitle What we are trying to do is What we are trying to do is What we are trying to do is</p> */}
-                            <a href="/crystaldavila/vision" className="card-link card-link-style">{t('learn_about_cd_vision')}</a>
+                            <a href="/vision" className="card-link card-link-style">{t('learn_about_cd_vision')}</a>
                         </div>
                         <div className='col-6 cd-group-photo'></div>
                     </div>

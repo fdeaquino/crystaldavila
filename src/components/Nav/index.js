@@ -110,7 +110,7 @@ function Nav(props) {
                                 setMenuVisible(false);
                                 setActiveMenuItem('');
                             }}>
-                                <Link to='/crystaldavila'>
+                                <Link to='/'>
                                     Crystal Dávila
                                 </Link>
                             </h1>
@@ -136,7 +136,7 @@ function Nav(props) {
                                     <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
                                             className={activeMenuItem === 'About' ? 'activeComponent' : ''}
-                                            to='/crystaldavila/about'
+                                            to='/about'
                                             onClick={() => {
                                                 setCurrentComponent('About');
                                                 setActiveMenuItem('About');
@@ -148,7 +148,7 @@ function Nav(props) {
                                     <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
                                             className={activeMenuItem === 'OnTheJob' ? 'activeComponent' : ''}
-                                            to='/crystaldavila/on-the-job'
+                                            to='/on-the-job'
                                             onClick={() => {
                                                 setCurrentComponent('OnTheJob');
                                                 setActiveMenuItem('OnTheJob');
@@ -160,7 +160,7 @@ function Nav(props) {
                                     <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
                                             className={activeMenuItem === 'Vision' ? 'activeComponent' : ''}
-                                            to='/crystaldavila/vision'
+                                            to='/vision'
                                             onClick={() => {
                                                 setCurrentComponent('Vision');
                                                 setActiveMenuItem('Vision');
@@ -172,7 +172,7 @@ function Nav(props) {
                                     <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
                                             className={activeMenuItem === 'GetInvolved' ? 'activeComponent' : ''}
-                                            to='/crystaldavila/get-involved'
+                                            to='/get-involved'
                                             onClick={() => {
                                                 setCurrentComponent('GetInvolved');
                                                 setActiveMenuItem('GetInvolved');
@@ -200,7 +200,7 @@ function Nav(props) {
                 <ul className=''>
                     <li className={currentComponent === 'About' ? 'activeComponent' : ''}>
                         <Link
-                            to="/crystaldavila/about"
+                            to="/about"
                             onClick={() => {
                                 setCurrentComponent('About');
                                 setOpenMenu(false);
@@ -214,7 +214,7 @@ function Nav(props) {
                     </li>
                     <li className={currentComponent === 'OnTheJob' ? 'activeComponent' : ''}>
                         <Link
-                            to="/crystaldavila/on-the-job"
+                            to="/on-the-job"
                             onClick={() => {
                                 setCurrentComponent('OnTheJob');
                                 setOpenMenu(false);
@@ -228,7 +228,7 @@ function Nav(props) {
                     </li>
                     <li className={currentComponent === 'Vision' ? 'activeComponent' : ''}>
                         <Link
-                            to="/crystaldavila/vision"
+                            to="/vision"
                             onClick={() => {
                                 setCurrentComponent('Vision');
                                 setOpenMenu(false);
@@ -242,7 +242,7 @@ function Nav(props) {
                     </li>
                     <li className={currentComponent === 'GetInvolved' ? 'activeComponent' : ''}>
                         <Link
-                            to="/crystaldavila/get-involved"
+                            to="/get-involved"
                             onClick={() => {
                                 setCurrentComponent('GetInvolved');
                                 setOpenMenu(false);

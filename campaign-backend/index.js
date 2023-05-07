@@ -6,7 +6,11 @@ const uri = process.env.MONGODB_URI;
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:3000', 'https://fdeaquino.github.io'];
+const allowedOrigins = [
+    'http://localhost:3000',
+    'https://fdeaquino.github.io',
+    'https://www.crystal-davila.com'
+];
 
 app.use(
     cors({

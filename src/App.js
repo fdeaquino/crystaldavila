@@ -22,27 +22,27 @@ function App() {
           <main className='content-padding'>
             <Routes>
               <Route
-                path="/crystaldavila"
+                path="/"
                 element={<Hero />}
               />
               <Route
-                path="/crystaldavila/about"
+                path="/about"
                 element={<About />}
               />
               <Route
-                path="/crystaldavila/on-the-job"
+                path="/on-the-job"
                 element={<OnTheJob />}
               />
               <Route
-                path="/crystaldavila/vision"
+                path="/vision"
                 element={<Vision />}
               />
               <Route
-                path="/crystaldavila/get-involved"
+                path="/get-involved"
                 element={<GetInvolved />}
               />
               <Route
-                path="/crystaldavila/volunteer-sign-up"
+                path="/volunteer-sign-up"
                 element={<VolunteerSignUp />}
               />
             </Routes>
