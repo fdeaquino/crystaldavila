@@ -52,55 +52,55 @@ function OnTheJob() {
                             <div className="col-md-6 col-lg-4 py-3 ">
                                 <div className=" bg-light-gray work-styles">
                                     <img src={otjSchoolSafety}
-                                        // TODO: Change alt text
+                                        // TODO: Change alt text: "otj_h3_text_school_safety"
                                         alt="Preparing Students for the World" className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className="card-title my-2 px-1">{t('otj_h4_title_school_safety')}</h4>
-                                        <p className='work-card-text p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor nisl id ligula vehicula, sit amet vulputate elit pretium. Integer imperdiet quis massa eget volutpat. Fusce accumsan libero id nisl lobortis, ac tristique arcu molestie. Quisque malesuada, nunc ut fringilla scelerisque, lectus sapien faucibus risus, non sollicitudin dolor mauris at nulla. Suspendisse auctor eros vitae turpis maximus, eu ultricies quam porttitor.</p>
+                                        <p className='work-card-text p-2'>{t('otj_h3_text_school_safety')}</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4 py-3 ">
                                 <div className=" bg-light-gray work-styles">
                                     <img src={otjPrepStudentsWorld}
-                                        // TODO: Change alt text
+                                        // TODO: Change alt text: "otj_h3_text_prep_students_world"
                                         alt="Preparing Students for the World" className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className="card-title my-2 px-1">{t('otj_h4_title_prep_students_world')}</h4>
-                                        <p className='work-card-text p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor nisl id ligula vehicula, sit amet vulputate elit pretium. Integer imperdiet quis massa eget volutpat. Fusce accumsan libero id nisl lobortis, ac tristique arcu molestie. Quisque malesuada, nunc ut fringilla scelerisque, lectus sapien faucibus risus, non sollicitudin dolor mauris at nulla. Suspendisse auctor eros vitae turpis maximus, eu ultricies quam porttitor.</p>
+                                        <p className='work-card-text p-2'>{t('otj_h3_text_prep_students_world')}</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4 py-3 ">
                                 <div className=" bg-light-gray work-styles">
                                     <img src={otjSchoolFunding}
-                                        // TODO: Change alt text
+                                        // TODO: Change alt text: "otj_h3_text_school_funding"
                                         alt="Preparing Students for the World" className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className="card-title my-2 px-1">{t('otj_h4_title_school_funding')}</h4>
-                                        <p className='work-card-text p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor nisl id ligula vehicula, sit amet vulputate elit pretium. Integer imperdiet quis massa eget volutpat. Fusce accumsan libero id nisl lobortis, ac tristique arcu molestie. Quisque malesuada, nunc ut fringilla scelerisque, lectus sapien faucibus risus, non sollicitudin dolor mauris at nulla. Suspendisse auctor eros vitae turpis maximus, eu ultricies quam porttitor.</p>
+                                        <p className='work-card-text p-2'>{t('otj_h3_text_school_funding')}</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4 py-3 ">
                                 <div className=" bg-light-gray work-styles">
                                     <img src={otjTeacherWLBalance}
-                                        // TODO: Change alt text
+                                        // TODO: Change alt text: "otj_h3_text_teacher_wl_balance"
                                         alt="Preparing Students for the World" className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className="card-title my-2 px-1">{t('otj_h4_title_teacher_wl_balance')}</h4>
-                                        <p className='work-card-text p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor nisl id ligula vehicula, sit amet vulputate elit pretium. Integer imperdiet quis massa eget volutpat. Fusce accumsan libero id nisl lobortis, ac tristique arcu molestie. Quisque malesuada, nunc ut fringilla scelerisque, lectus sapien faucibus risus, non sollicitudin dolor mauris at nulla. Suspendisse auctor eros vitae turpis maximus, eu ultricies quam porttitor.</p>
+                                        <p className='work-card-text p-2'>{t('otj_h3_text_teacher_wl_balance')}</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4 py-3 ">
                                 <div className=" bg-light-gray work-styles">
                                     <img src={otjEmotionalSupport}
-                                        // TODO: Change alt text
+                                        // TODO: Change alt text: "otj_h3_text_emotional_support"
                                         alt="Preparing Students for the World" className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className="card-title my-2 px-1">{t('otj_h4_title_emotional_support')}</h4>
-                                        <p className='work-card-text p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor nisl id ligula vehicula, sit amet vulputate elit pretium. Integer imperdiet quis massa eget volutpat. Fusce accumsan libero id nisl lobortis, ac tristique arcu molestie. Quisque malesuada, nunc ut fringilla scelerisque, lectus sapien faucibus risus, non sollicitudin dolor mauris at nulla. Suspendisse auctor eros vitae turpis maximus, eu ultricies quam porttitor.</p>
+                                        <p className='work-card-text p-2'>{t('otj_h3_text_emotional_support')}</p>
                                     </div>
                                 </div>
                             </div>
