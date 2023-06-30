@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.436b942b.css",
-    "main.js": "/static/js/main.16cf0643.js",
+    "main.js": "/static/js/main.f145d9eb.js",
     "static/js/787.92a5ab7b.chunk.js": "/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-volunteer-photo.jpeg": "/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
     "static/media/cd-photo-hero.webp": "/static/media/cd-photo-hero.c09ab297c025414c3549.webp",
@@ -13,36 +13,36 @@
     "static/media/cd-group-photo.jpeg": "/static/media/cd-group-photo.5f6e40b2e8999b3c86b6.jpeg",
     "static/media/fundraising-dinner.jpg": "/static/media/fundraising-dinner.6216bd3ffd1ab865e947.jpg",
     "static/media/community-meeting.jpg": "/static/media/community-meeting.ed8b34eeef6fc4552d7b.jpg",
-    "static/media/events_cinco_mayojpeg.jpeg": "/static/media/events_cinco_mayojpeg.f5256c4e786b4129da2c.jpeg",
     "static/media/cd-vision-photo.webp": "/static/media/cd-vision-photo.05d68e0ec24a1cb84136.webp",
     "static/media/cd-photo-firstcampaign.jpeg": "/static/media/cd-photo-firstcampaign.50fd2b5cf6fb8f6fa1c6.jpeg",
     "static/media/cd-photo-teacher.jpeg": "/static/media/cd-photo-teacher.e29a9b29cdb70a7fbb45.jpeg",
     "static/media/cd-photo-advocacyatcapitol.jpeg": "/static/media/cd-photo-advocacyatcapitol.ff6ca17c63f85d8b7dbf.jpeg",
+    "static/media/events_new_cinco_mayo.webp": "/static/media/events_new_cinco_mayo.e980b5da72a5c93ae298.webp",
     "static/media/cd-bday-celebration.jpg": "/static/media/cd-bday-celebration.697b01b7d3e2c9fee1ba.jpg",
+    "static/media/walking-at-park-new.webp": "/static/media/walking-at-park-new.1a110d3d32ccf5bab6b7.webp",
     "static/media/cd-photo-womeninpolitics.jpeg": "/static/media/cd-photo-womeninpolitics.16408ea97d19395a614a.jpeg",
     "static/media/polling-location.jpg": "/static/media/polling-location.d0b29d1f57a068516e69.jpg",
     "static/media/cd-photo-tasb-conference.jpeg": "/static/media/cd-photo-tasb-conference.6dd81c913f5db9ac6258.jpeg",
     "static/media/otj-meeting-emotional-needs.jpeg": "/static/media/otj-meeting-emotional-needs.ce1f9f5a894c7f932b4c.jpeg",
-    "static/media/events_dia_ninos.jpeg": "/static/media/events_dia_ninos.b34a14dfe9eed2fcb768.jpeg",
     "static/media/otj-school-funding.jpeg": "/static/media/otj-school-funding.2c55759fb995097e6a7c.jpeg",
     "static/media/otj-school-safety.jpeg": "/static/media/otj-school-safety.36e923595ebcd73f1ea6.jpeg",
     "static/media/cd-photo-collegeyears.jpeg": "/static/media/cd-photo-collegeyears.b870e977cd1779376629.jpeg",
+    "static/media/events-new-dia-ninos.webp": "/static/media/events-new-dia-ninos.76ffc090df4df7cba0f3.webp",
     "static/media/otj-teacher-wl-balance.jpeg": "/static/media/otj-teacher-wl-balance.4e7ab082fde4e3ccfd3f.jpeg",
     "static/media/cd-photo-sb-swearing-in.jpeg": "/static/media/cd-photo-sb-swearing-in.670dccd912477b2a0441.jpeg",
     "static/media/otj-prep-students-world.jpeg": "/static/media/otj-prep-students-world.ae25b08d9b70f393a86f.jpeg",
     "static/media/cd-popup-photo.webp": "/static/media/cd-popup-photo.677f8c9dc378d6f2ff4d.webp",
-    "static/media/run-at-park.jpg": "/static/media/run-at-park.add4b0011bf88f2897b0.jpg",
-    "static/media/walking-at-park.jpg": "/static/media/walking-at-park.2b630039d34b2383c4fe.jpg",
+    "static/media/run-at-park-new.webp": "/static/media/run-at-park-new.f45fdbee6fd53a730da4.webp",
     "static/media/early-voting.jpg": "/static/media/early-voting.363a1cc204c1b1617160.jpg",
     "static/media/voter-registration.jpg": "/static/media/voter-registration.232a4e975f6cbd85f5c4.jpg",
     "static/media/language-icon.png": "/static/media/language-icon.c9c76e03a35ee2d121ba.png",
     "index.html": "/index.html",
     "main.436b942b.css.map": "/static/css/main.436b942b.css.map",
-    "main.16cf0643.js.map": "/static/js/main.16cf0643.js.map",
+    "main.f145d9eb.js.map": "/static/js/main.f145d9eb.js.map",
     "787.92a5ab7b.chunk.js.map": "/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.436b942b.css",
-    "static/js/main.16cf0643.js"
+    "static/js/main.f145d9eb.js"
   ]
 }
