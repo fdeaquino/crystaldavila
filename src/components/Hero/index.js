@@ -10,8 +10,8 @@ import tasbConferenceImage from '../../assets/images/cd-photo-tasb-conference.jp
 import womenInPoliticsImage from '../../assets/images/cd-photo-womeninpolitics.jpeg';
 import advocacyAtCapitolImage from '../../assets/images/cd-photo-advocacyatcapitol.jpeg';
 import cdBdayCelebration from '../../assets/images/cd-bday-celebration.jpg';
-import cincoMayo from '../../assets/images/events_cinco_mayojpeg.jpeg';
-import diaNinos from '../../assets/images/events_dia_ninos.jpeg';
+import cincoMayo from '../../assets/images/events_new_cinco_mayo.webp';
+import diaNinos from '../../assets/images/events-new-dia-ninos.webp';
 
 
 
