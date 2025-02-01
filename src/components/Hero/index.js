@@ -3,8 +3,7 @@ import Popup from '../Popup/index.js';
 import ConfirmationPopup from '../ConfirmationPopup/index.js';
 import { useTranslation } from 'react-i18next';
 
-
-import { submitVoterInfo } from '../../api';
+// Remove backend API import (no longer needed)
 
 import tasbConferenceImage from '../../assets/images/cd-photo-tasb-conference.jpeg';
 import womenInPoliticsImage from '../../assets/images/cd-photo-womeninpolitics.jpeg';
@@ -13,18 +12,21 @@ import cdBdayCelebration from '../../assets/images/cd-bday-celebration.jpg';
 import cincoMayo from '../../assets/images/events_cinco_mayojpeg.jpeg';
 import diaNinos from '../../assets/images/events_dia_ninos.jpeg';
 
-
-
 function Hero() {
     const [showForm, setShowForm] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
     const [isHorizontal, setIsHorizontal] = useState(false);
     const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
-
     const [errorMessage, setErrorMessage] = useState('');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phoneNumber: '',
+    });
 
     const { t } = useTranslation();
 
+    // Form validation function
     const isFormValid = () => {
         return (
             formData.name.trim() !== '' &&
@@ -33,13 +35,7 @@ function Hero() {
         );
     };
 
-
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phoneNumber: '',
-    });
-
+    // Handle form submission
     const handleHeroFormSubmit = async (e) => {
         e.preventDefault();
 
@@ -54,19 +50,28 @@ function Hero() {
             return;
         }
 
-        const setError = false;
-        const error = await submitVoterInfo(formData.name, formData.phoneNumber, formData.email, setError);
-        if (error) {
-            setErrorMessage(error);
-        } else {
-            // Reset the form data after successful submission
-            setFormData({ name: '', email: '', phoneNumber: '' });
-            setSubmissionSuccessful(true);
-            setErrorMessage('');
+        try {
+            const response = await fetch("https://formspree.io/f/xpwqrrgd", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                // Reset form data and show success popup
+                setFormData({ name: '', email: '', phoneNumber: '' });
+                setSubmissionSuccessful(true);
+                setErrorMessage('');
+            } else {
+                setErrorMessage(t('error_submission_msg'));
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setErrorMessage(t('error_submission_msg'));
         }
     };
-
-
 
     const closePopup = () => {
         setShowPopup(false);
@@ -88,12 +93,9 @@ function Hero() {
         };
 
         handleResize();
-
         window.addEventListener('resize', handleResize);
-
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
 
     useEffect(() => {
         const handleResize = () => {
@@ -102,9 +104,7 @@ function Hero() {
         };
 
         handleResize();
-
         window.addEventListener('resize', handleResize);
-
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
@@ -112,7 +112,7 @@ function Hero() {
         e.preventDefault();
         setTimeout(() => {
             handleHeroFormSubmit(e);
-        }, 700); // 700 milliseconds (0.7 second) delay
+        }, 700);
     };
 
     const handleButtonClick = (e, url) => {
@@ -121,6 +121,7 @@ function Hero() {
             window.location.href = url;
         }, 700); // 700 milliseconds (0.7 second) delay
     };
+    
 
     return (
         <>
@@ -141,8 +142,6 @@ function Hero() {
                     <div className='row h-100 justify-content-center hero-container'>
                         <div className={`col my-auto photo-container ${isHorizontal ? 'cd-photo' : ''}`}>
                             <div id={isHorizontal ? 'horizontal-cd-photo' : ''} className={isHorizontal ? 'hidden' : 'cd-photo'}></div>
-
-
                         </div>
                         <div className='col my-auto'>
                             <h2 id='about-hero-text' className={`mb-5 mb-10 hero-text text-uppercase about-hero-text ${showForm ? 'centered-h2' : ''}`}>{t('h2_title_hero')}</h2>
@@ -150,11 +149,9 @@ function Hero() {
                                 <div className='col my-auto text-center'>
                                     <div className="col-10 mx-auto">
                                         <h3 id='about-hero-text' className='mt-4'>{t('join_campaign')}</h3>
-                                        <form
-                                            className="contact-form d-block mx-auto"
+                                        <form className="contact-form d-block mx-auto"
                                             autoComplete="off"
-                                            onSubmit={handleHeroFormSubmit}
-                                        >
+                                            onSubmit={handleHeroFormSubmit}>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">{t('name')}</label>
                                                 <input type="text"
@@ -167,15 +164,13 @@ function Hero() {
                                             </div>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">{t('email')}</label>
-                                                <input
-                                                    type="email"
+                                                <input type="email"
                                                     className="form-control volunteer-card-text text-muted"
                                                     id="email"
                                                     placeholder={t('your_email')}
                                                     required
                                                     value={formData.email}
-                                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                                />
+                                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                                             </div>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="phone">{t('phone_number')}</label>
@@ -185,11 +180,9 @@ function Hero() {
                                                     placeholder={t('your_phone_number')}
                                                     required
                                                     value={formData.phoneNumber}
-                                                    onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
-                                                />
+                                                    onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })} />
                                             </div>
                                             <p className='text-muted disclosure mt-3'>{t('disclosure')}</p>
-
                                             {errorMessage && (
                                                 <div className="alert alert-danger mt-2" role="alert">
                                                     {errorMessage}
