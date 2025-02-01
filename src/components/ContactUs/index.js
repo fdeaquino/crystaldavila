@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { submitContactForm } from '../../api';
 import Popup from '../Popup';
-
 
 function ContactUs() {
     const { t } = useTranslation();
@@ -14,26 +12,33 @@ function ContactUs() {
     });
 
     const [showPopup, setShowPopup] = useState(false);
+    const [status, setStatus] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await submitContactForm(formData.name, formData.email, formData.message);
-        // Resets the form data after successful submission
-        setFormData({ name: '', email: '', message: '' });
-        setShowPopup(true);
+        setStatus('Sending...');
+    
+        const response = await fetch("https://formspree.io/f/xpwqrgrd", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
+    
+        if (response.ok) {
+            setStatus('Message sent successfully!');
+            setFormData({ name: '', email: '', message: '' });
+            setShowPopup(true);
+        } else {
+            setStatus('Error sending message. Please try again.');
+        }
     };
+   
 
     const handleClosePopup = () => {
         setShowPopup(false);
     };
-
-    const handleFormButtonClick = (e) => {
-        e.preventDefault();
-        setTimeout(() => {
-            handleSubmit(e);
-        }, 700); // 700 milliseconds (0.7 second) delay
-    };
-
 
     return (
         <section className="contact-info py-4 py-lg-5 ">
@@ -51,15 +56,14 @@ function ContactUs() {
                             autoComplete='off'
                             onSubmit={handleSubmit}>
                             <div className="form-group">
-                                <label
-                                    className='volunteer-card-text mb-1 bold-form-label'
-                                    htmlFor="name">
+                                <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">
                                     {t('name')}
                                 </label>
                                 <input
                                     type="text"
                                     className="form-control volunteer-card-text text-muted"
                                     id="name"
+                                    name="name"
                                     placeholder={t('your_name')}
                                     required
                                     value={formData.name}
@@ -67,15 +71,14 @@ function ContactUs() {
                                 />
                             </div>
                             <div className="form-group">
-                                <label
-                                    className='volunteer-card-text mt-3 mb-1 bold-form-label'
-                                    htmlFor="email">
+                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">
                                     {t('email')}
                                 </label>
                                 <input
                                     type="email"
                                     className="form-control volunteer-card-text text-muted"
                                     id="email"
+                                    name="email"
                                     placeholder={t('your_email')}
                                     required
                                     value={formData.email}
@@ -83,31 +86,30 @@ function ContactUs() {
                                 />
                             </div>
                             <div className="form-group">
-                                <label
-                                    className='volunteer-card-text mt-3 mb-1 bold-form-label'
-                                    htmlFor="message">
+                                <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="message">
                                     {t('message')}
                                 </label>
                                 <textarea
                                     className="form-control volunteer-card-text text-muted"
                                     id="message"
+                                    name="message"
                                     rows="4"
                                     placeholder={t('your_message')}
                                     required
                                     value={formData.message}
-                                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}>
-
-                                </textarea>
+                                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                />
                             </div>
-                            {/* TODO: Add working href */}
 
-                            <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">{t('submit')}</button>
+                            <button type="submit" className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">
+                                {t('submit')}
+                            </button>
 
+                            <p className="volunteer-card-text mt-2">{status}</p>
                         </form>
                     </div>
                 </div>
             </div>
-            {/* Add a Popup component if showPopup is true */}
             {showPopup && (
                 <Popup
                     title={t('popup_title')}

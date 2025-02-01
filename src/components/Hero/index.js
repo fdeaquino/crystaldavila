@@ -4,8 +4,6 @@ import ConfirmationPopup from '../ConfirmationPopup/index.js';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 
-import { submitVoterInfo } from '../../api';
-
 import tasbConferenceImage from '../../assets/images/cd-photo-tasb-conference.jpeg';
 import womenInPoliticsImage from '../../assets/images/cd-photo-womeninpolitics.jpeg';
 import advocacyAtCapitolImage from '../../assets/images/cd-photo-advocacyatcapitol.jpeg';
@@ -13,27 +11,9 @@ import cdBdayCelebration from '../../assets/images/cd-bday-celebration.jpg';
 import cincoMayo from '../../assets/images/events_new_cinco_mayo.webp';
 import diaNinos from '../../assets/images/events-new-dia-ninos.webp';
 
-
-
 function Hero() {
-    const { pathname } = useLocation();
-    const [showForm, setShowForm] = useState(false);
-    const [showPopup, setShowPopup] = useState(false);
-    const [isHorizontal, setIsHorizontal] = useState(false);
-    const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
-
-    const [errorMessage, setErrorMessage] = useState('');
-
     const { t } = useTranslation();
-
-    const isFormValid = () => {
-        return (
-            formData.name.trim() !== '' &&
-            formData.email.trim() !== '' &&
-            formData.phoneNumber.trim() !== ''
-        );
-    };
-
+    const { pathname } = useLocation();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -41,31 +21,52 @@ function Hero() {
         phoneNumber: '',
     });
 
+    const [status, setStatus] = useState('');  // ✅ Added this
+    const [showForm, setShowForm] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
+    const [isHorizontal, setIsHorizontal] = useState(false);
+    const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
+
+    const isFormValid = () => {
+        return formData.name.trim() !== '' && formData.email.trim() !== '' && formData.phoneNumber.trim() !== '';
+    };
+
     const handleHeroFormSubmit = async (e) => {
         e.preventDefault();
-
+    
         if (!isFormValid()) {
-            setErrorMessage(t('form_validation_check_msg'));
+            setStatus('Please fill out all fields.');
             return;
         }
-
-        const emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-        if (!emailPattern.test(formData.email)) {
-            setErrorMessage(t('invalid_email_error_msg'));
-            return;
-        }
-
-        const setError = false;
-        const error = await submitVoterInfo(formData.name, formData.phoneNumber, formData.email, setError);
-        if (error) {
-            setErrorMessage(error);
-        } else {
-            // Reset the form data after successful submission
-            setFormData({ name: '', email: '', phoneNumber: '' });
-            setSubmissionSuccessful(true);
-            setErrorMessage('');
+    
+        setStatus('Sending...');
+    
+        try {
+            const response = await fetch("https://formspree.io/f/xpwqrrgd", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+    
+            if (response.ok) {
+                setStatus('Message sent successfully!');
+                setFormData({ name: '', email: '', phoneNumber: '' });
+                setSubmissionSuccessful(true);  // ✅ Only show popup on success
+            } else {
+                const errorResponse = await response.json();
+                console.error('Error response:', errorResponse);
+                setStatus('Error sending message. Please try again.');
+                setSubmissionSuccessful(false);  // ✅ Prevents popup from showing
+            }
+        } catch (error) {
+            console.error('Fetch Error:', error);
+            setStatus('Error sending message. Please try again.');
+            setSubmissionSuccessful(false);  // ✅ Prevents popup from showing
         }
     };
+    
 
     const closePopup = () => {
         setShowPopup(false);
@@ -80,7 +81,6 @@ function Hero() {
         const timer = setTimeout(() => {
             setShowPopup(true);
         }, 1500);
-
         return () => clearTimeout(timer);
     }, []);
 
@@ -91,23 +91,17 @@ function Hero() {
         };
 
         handleResize();
-
         window.addEventListener('resize', handleResize);
-
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-
     useEffect(() => {
         const handleResize = () => {
-            const width = window.innerWidth;
-            setShowForm(width >= 992);
+            setShowForm(window.innerWidth >= 992);
         };
 
         handleResize();
-
         window.addEventListener('resize', handleResize);
-
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
@@ -115,14 +109,14 @@ function Hero() {
         e.preventDefault();
         setTimeout(() => {
             handleHeroFormSubmit(e);
-        }, 700); // 700 milliseconds (0.7 second) delay
+        }, 700);
     };
 
     const handleButtonClick = (e, url) => {
         e.preventDefault();
         setTimeout(() => {
             window.location.href = url;
-        }, 700); // 700 milliseconds (0.7 second) delay
+        }, 700);
     };
 
     return (
@@ -131,21 +125,14 @@ function Hero() {
                 <ConfirmationPopup onClose={() => setSubmissionSuccessful(false)} />
             )}
             {showPopup && !submissionSuccessful && (
-                <Popup
-                    onClose={closePopup}
-                    formData={formData}
-                    setFormData={setFormData}
-                    handleHeroFormSubmit={handleHeroFormSubmit}
-                />
+                <Popup onClose={closePopup} formData={formData} setFormData={setFormData} handleHeroFormSubmit={handleHeroFormSubmit} />
             )}
 
-            <section className='large-screen-mb-2'>
+<section className='large-screen-mb-2'>
                 <div className='container h-100'>
                     <div className='row h-100 justify-content-center hero-container'>
                         <div className={`col my-auto photo-container ${isHorizontal ? 'cd-photo' : ''}`}>
                             <div id={isHorizontal ? 'horizontal-cd-photo' : ''} className={isHorizontal ? 'hidden' : 'cd-photo'}></div>
-
-
                         </div>
                         <div className='col my-auto'>
                             <h2 id='about-hero-text' className={`mb-5 mb-10 hero-text text-uppercase about-hero-text ${showForm ? 'centered-h2' : ''}`}>{t('h2_title_hero')}</h2>
@@ -153,51 +140,21 @@ function Hero() {
                                 <div className='col my-auto text-center'>
                                     <div className="col-10 mx-auto">
                                         <h3 id='about-hero-text' className='mt-4'>{t('join_campaign')}</h3>
-                                        <form
-                                            className="contact-form d-block mx-auto"
-                                            autoComplete="off"
-                                            onSubmit={handleHeroFormSubmit}
-                                        >
+                                        <form className="contact-form d-block mx-auto" autoComplete="off" onSubmit={handleHeroFormSubmit}>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">{t('name')}</label>
-                                                <input type="text"
-                                                    className="form-control volunteer-card-text text-muted"
-                                                    id="name"
-                                                    placeholder={t('your_name')}
-                                                    required
-                                                    value={formData.name}
-                                                    onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
+                                                <input type="text" className="form-control volunteer-card-text text-muted" id="name" placeholder={t('your_name')} required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                                             </div>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">{t('email')}</label>
-                                                <input
-                                                    type="email"
-                                                    className="form-control volunteer-card-text text-muted"
-                                                    id="email"
-                                                    placeholder={t('your_email')}
-                                                    required
-                                                    value={formData.email}
-                                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                                />
+                                                <input type="email" className="form-control volunteer-card-text text-muted" id="email" placeholder={t('your_email')} required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                                             </div>
                                             <div className="form-group">
                                                 <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="phone">{t('phone_number')}</label>
-                                                <input type="tel"
-                                                    className="form-control volunteer-card-text text-muted"
-                                                    id="phone"
-                                                    placeholder={t('your_phone_number')}
-                                                    required
-                                                    value={formData.phoneNumber}
-                                                    onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
-                                                />
+                                                <input type="tel" className="form-control volunteer-card-text text-muted" id="phone" placeholder={t('your_phone_number')} required value={formData.phoneNumber} onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })} />
                                             </div>
                                             <p className='text-muted disclosure mt-3'>{t('disclosure')}</p>
-
-                                            {errorMessage && (
-                                                <div className="alert alert-danger mt-2" role="alert">
-                                                    {errorMessage}
-                                                </div>
-                                            )}
+                                            <p className="volunteer-card-text mt-2">{status}</p>
                                             <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mb-4" type="submit">{t('submit')}</button>
                                         </form>
                                     </div>
