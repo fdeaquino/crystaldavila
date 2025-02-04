@@ -110,6 +110,7 @@ function Hero() {
         setTimeout(() => {
             handleHeroFormSubmit(e);
         }, 700);
+        }, 700);
     };
 
     const handleButtonClick = (e, url) => {
@@ -118,6 +119,7 @@ function Hero() {
             window.location.href = url;
         }, 700);
     };
+    
 
     return (
         <>

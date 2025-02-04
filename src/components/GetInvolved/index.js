@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { submitContactForm } from '../../api';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import ConfirmationPopup from '../ConfirmationPopup';
 import communityMeeting from '../../assets/images/community-meeting.jpg';
 import coffeeCrystal from '../../assets/images/coffee-crystal.jpg';
@@ -11,28 +11,22 @@ import voterRegistration from '../../assets/images/voter-registration.jpg';
 import earlyVoting from '../../assets/images/early-voting.jpg';
 import pollingLocation from '../../assets/images/polling-location.jpg';
 
-
-
-
-import { useTranslation } from 'react-i18next';
-
 function GetInvolved() {
     const { t } = useTranslation();
     const [errorMessage, setErrorMessage] = useState('');
+    const [showPopup, setShowPopup] = useState(false);
 
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        message: '',
+        phoneNumber: '',
     });
-
-    const [showPopup, setShowPopup] = useState(false);
 
     const isFormValid = () => {
         return (
             formData.name.trim() !== '' &&
             formData.email.trim() !== '' &&
-            formData.message.trim() !== ''
+            formData.phoneNumber.trim() !== ''
         );
     };
 
@@ -40,27 +34,40 @@ function GetInvolved() {
         e.preventDefault();
 
         if (!isFormValid()) {
-            // Display an error message for missing fields
             setErrorMessage(t('form_validation_check_msg'));
             return;
         }
 
         const emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
         if (!emailPattern.test(formData.email)) {
-            // Display an error message for invalid email
             setErrorMessage(t('invalid_email_error_msg'));
             return;
         }
 
-        setErrorMessage(''); // Clear the error message if there are no errors
+        try {
+            const response = await fetch("https://formspree.io/f/xpwqrrgd", {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
 
-        await submitContactForm(formData.name, formData.email, formData.message);
-        // Resets the form data after successful submission
-        setFormData({ name: '', email: '', message: '' });
-        setShowPopup(true);
+            if (response.ok) {
+                setFormData({ name: '', email: '', phoneNumber: '' });
+                setShowPopup(true);
+                setErrorMessage('');
+            } else {
+                const result = await response.json();
+                console.error("Formspree Error:", result);
+                setErrorMessage(result.error || t('error_submission_msg'));
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setErrorMessage(t('error_submission_msg'));
+        }
     };
-
-
 
     const handleClosePopup = () => {
         setShowPopup(false);
@@ -70,17 +77,16 @@ function GetInvolved() {
         e.preventDefault();
         setTimeout(() => {
             handleSubmit(e);
-        }, 700); // 700 milliseconds (0.7 second) delay
+        }, 700);
     };
 
     const handleButtonClick = (e, url) => {
         e.preventDefault();
         setTimeout(() => {
             window.location.href = url;
-        }, 700); // 700 milliseconds (0.7 second) delay
+        }, 700);
     };
 
-    // Replace this sample data
     const events = [
         {
             title: t('getinvolved_event_data_title_1'),
@@ -126,10 +132,12 @@ function GetInvolved() {
         }
     ];
 
-
     return (
         <>
             {showPopup && <ConfirmationPopup onClose={handleClosePopup} />}
+
+            {/* 🔹 Keeping All Visuals and Layout the Same */}
+
             {/* First section - Get Involved header */}
             <section>
                 <div className='container container-padding h-100'>
@@ -297,9 +305,8 @@ function GetInvolved() {
                 </section>
 
             </div>
-
-            {/* Seventh section - Contact Information */}
-            <section className="contact-info py-4 py-lg-5 ">
+            
+            <section className="contact-info py-4 py-lg-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
@@ -310,13 +317,9 @@ function GetInvolved() {
                         </div>
                         <div className="col-md-6">
                             <h3 className='mb-4'>{t('h3_title_contact_us')}</h3>
-                            <form className="contact-form"
-                                autoComplete='off'
-                                onSubmit={handleSubmit}>
+                            <form className="contact-form" autoComplete="off" onSubmit={handleSubmit}>
                                 <div className="form-group">
-                                    <label
-                                        className='volunteer-card-text mb-1 bold-form-label'
-                                        htmlFor="name">
+                                    <label className='volunteer-card-text mb-1 bold-form-label' htmlFor="name">
                                         {t('name')}
                                     </label>
                                     <input
@@ -330,9 +333,7 @@ function GetInvolved() {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label
-                                        className='volunteer-card-text mt-3 mb-1 bold-form-label'
-                                        htmlFor="email">
+                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="email">
                                         {t('email')}
                                     </label>
                                     <input
@@ -346,39 +347,36 @@ function GetInvolved() {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label
-                                        className='volunteer-card-text mt-3 mb-1 bold-form-label'
-                                        htmlFor="message">
-                                        {t('message')}
+                                    <label className='volunteer-card-text mt-3 mb-1 bold-form-label' htmlFor="phone">
+                                        {t('phone_number')}
                                     </label>
-                                    <textarea
+                                    <input
+                                        type="tel"
                                         className="form-control volunteer-card-text text-muted"
-                                        id="message"
-                                        rows="4"
-                                        placeholder={t('your_message')}
+                                        id="phone"
+                                        placeholder={t('your_phone_number')}
                                         required
-                                        value={formData.message}
-                                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}>
-
-                                    </textarea>
+                                        value={formData.phoneNumber}
+                                        onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
+                                    />
                                 </div>
-                                {/* TODO: Add working href */}
+
                                 {errorMessage && (
                                     <div className="alert alert-danger mt-2" role="alert">
                                         {errorMessage}
                                     </div>
                                 )}
-                                <button onClick={handleFormButtonClick} className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4">{t('submit')}</button>
 
+                                <button className="btn btn-moving-gradient btn-moving-gradient--blue mt-3 mb-4" type="submit">
+                                    {t('submit')}
+                                </button>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
-
-
         </>
-    )
+    );
 }
 
 export default GetInvolved;
