@@ -110,7 +110,6 @@ function Hero() {
         setTimeout(() => {
             handleHeroFormSubmit(e);
         }, 700);
-        }, 700);
     };
 
     const handleButtonClick = (e, url) => {
