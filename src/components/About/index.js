@@ -55,9 +55,23 @@ function About() {
             imageUrl: trusteeSwearingIn,
             inverted: false
         },
+        {
+            title: t('timeline_data_title_6'),
+            subtitle: t('timeline_data_subtitle_6'),
+            text: t('timeline_data_text_6'),
+            imageUrl: firstCampaign,
+            inverted: true
+        },
     ]
 
     const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleButtonClick = (e, url) => {
+        e.preventDefault();
+        setTimeout(() => {
+            window.location.href = url;
+        }, 700);
+    };
 
     return (
         <>
@@ -107,6 +121,7 @@ function About() {
                     </div>
                 </div>
             </section>
+            
 
             {selectedImage && (
                 <div className="modal show d-block" tabIndex="-1" onClick={() => setSelectedImage(null)}>
@@ -125,6 +140,26 @@ function About() {
                     <div className="modal-backdrop show"></div>
                 </div>
             )}
+
+            <div className='blue-wrapper rectangle-section container h-100 py-4 py-lg-5'>
+                <section className="donate-section py-4 py-lg-5 ">
+                    <div className="container text-center">
+                        <h3 className='mb-5 contribution-title'>{t('h3_title_need_your_help')}</h3>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_1')}</p>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_2')}</p>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_3')}</p>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_4')}</p>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_5')}</p>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_6')}</p>
+                        <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_7')}</p>
+
+
+                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">{t('donate_today_btn')}</button>
+
+                    </div>
+                </section>
+
+            </div>
 
         </>
     )
