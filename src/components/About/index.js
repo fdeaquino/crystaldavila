@@ -7,6 +7,8 @@ import collegeYears from '../../assets/images/cd-photo-collegeyears.jpeg';
 import workTeacher from '../../assets/images/cd-photo-teacher.jpeg';
 import firstCampaign from '../../assets/images/cd-photo-firstcampaign.jpeg';
 import trusteeSwearingIn from '../../assets/images/cd-photo-sb-swearing-in.jpeg';
+import crystalAndMom from '../../assets/images/cd-photo-mom.JPG';
+
 
 import { useTranslation } from 'react-i18next';
 
@@ -59,7 +61,7 @@ function About() {
             title: t('timeline_data_title_6'),
             subtitle: t('timeline_data_subtitle_6'),
             text: t('timeline_data_text_6'),
-            imageUrl: firstCampaign,
+            imageUrl: crystalAndMom,
             inverted: true
         },
     ]
