@@ -40,8 +40,8 @@ function Vision() {
             items: [
                 t('getinvolved_vision_card_1_1'),
                 t('getinvolved_vision_card_1_2'),
-                t('getinvolved_vision_card_1_3'),
-                t('getinvolved_vision_card_1_4'),
+                // t('getinvolved_vision_card_1_3'),
+                // t('getinvolved_vision_card_1_4'),
             ],
         },
         {
@@ -51,7 +51,7 @@ function Vision() {
                 t('getinvolved_vision_card_2_2'),
                 t('getinvolved_vision_card_2_3'),
                 t('getinvolved_vision_card_2_4'),
-                t('getinvolved_vision_card_2_5'),
+                // t('getinvolved_vision_card_2_5'),
             ],
         },
         {
@@ -59,7 +59,15 @@ function Vision() {
             items: [
                 t('getinvolved_vision_card_3_1'),
                 t('getinvolved_vision_card_3_2'),
-                t('getinvolved_vision_card_3_3'),
+                // t('getinvolved_vision_card_3_3'),
+            ],
+        },
+        {
+            title: t('getinvolved_vision_card_data_title4'),
+            items: [
+                t('getinvolved_vision_card_4_1'),
+                t('getinvolved_vision_card_4_2'),
+                t('getinvolved_vision_card_4_3'),
             ],
         },
     ];
