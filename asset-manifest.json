@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/crystaldavila/static/css/main.b4611781.css",
-    "main.js": "/crystaldavila/static/js/main.4b2c186d.js",
+    "main.css": "/crystaldavila/static/css/main.8489c479.css",
+    "main.js": "/crystaldavila/static/js/main.2bfaac7b.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
+    "static/media/cd-group-photo-3.JPG": "/crystaldavila/static/media/cd-group-photo-3.18b9c0170f3e596bcb39.JPG",
+    "static/media/cd-photo-mom.JPG": "/crystaldavila/static/media/cd-photo-mom.f37d92d3abbf3fb0fa00.JPG",
     "static/media/cd-volunteer-photo.jpeg": "/crystaldavila/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
     "static/media/cd-photo-hero.webp": "/crystaldavila/static/media/cd-photo-hero.c09ab297c025414c3549.webp",
     "static/media/cd-on-the-job-photo.webp": "/crystaldavila/static/media/cd-on-the-job-photo.1dcca56197f29d1fdc61.webp",
+    "static/media/cd-group-photo-2.JPG": "/crystaldavila/static/media/cd-group-photo-2.760d793a064d6d140db8.JPG",
     "static/media/cd-getinvolved-photo.webp": "/crystaldavila/static/media/cd-getinvolved-photo.0d7780013f98c7d109c6.webp",
     "static/media/otj-meeting-emotional-needs.jpg": "/crystaldavila/static/media/otj-meeting-emotional-needs.f6c1197b2d006a32d9cd.jpg",
     "static/media/cd-about-photo.webp": "/crystaldavila/static/media/cd-about-photo.13fde346d5685bc41058.webp",
@@ -37,12 +40,12 @@
     "static/media/voter-registration.jpg": "/crystaldavila/static/media/voter-registration.232a4e975f6cbd85f5c4.jpg",
     "static/media/language-icon.png": "/crystaldavila/static/media/language-icon.c9c76e03a35ee2d121ba.png",
     "index.html": "/crystaldavila/index.html",
-    "main.b4611781.css.map": "/crystaldavila/static/css/main.b4611781.css.map",
-    "main.4b2c186d.js.map": "/crystaldavila/static/js/main.4b2c186d.js.map",
+    "main.8489c479.css.map": "/crystaldavila/static/css/main.8489c479.css.map",
+    "main.2bfaac7b.js.map": "/crystaldavila/static/js/main.2bfaac7b.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4611781.css",
-    "static/js/main.4b2c186d.js"
+    "static/css/main.8489c479.css",
+    "static/js/main.2bfaac7b.js"
   ]
 }
