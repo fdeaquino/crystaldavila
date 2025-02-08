@@ -3,7 +3,7 @@ import otjSchoolSafety from '../../assets/images/otj-school-safety.jpeg';
 import otjPrepStudentsWorld from '../../assets/images/otj-prep-students-world.jpeg';
 import otjSchoolFunding from '../../assets/images/otj-school-funding.jpeg';
 import otjTeacherWLBalance from '../../assets/images/otj-teacher-wl-balance.jpeg';
-import otjEmotionalSupport from '../../assets/images/otj-meeting-emotional-needs.jpeg';
+import otjEmotionalSupport from '../../assets/images/otj-meeting-emotional-needs.jpg';
 
 import { useTranslation } from 'react-i18next';
 
