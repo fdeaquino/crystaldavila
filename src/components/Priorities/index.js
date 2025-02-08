@@ -8,7 +8,7 @@ import otjEmotionalSupport from '../../assets/images/otj-meeting-emotional-needs
 import { useTranslation } from 'react-i18next';
 
 
-function OnTheJob() {
+function Priorities() {
     const { t } = useTranslation();
 
     return (
@@ -113,4 +113,4 @@ function OnTheJob() {
     )
 }
 
-export default OnTheJob;
+export default Priorities;

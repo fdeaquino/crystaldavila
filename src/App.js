@@ -6,7 +6,7 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
 import GetInvolved from './components/GetInvolved';
-import OnTheJob from './components/OnTheJob';
+import Priorities from './components/Priorities';
 import Vision from './components/Vision';
 import Footer from './components/Footer';
 import VolunteerSignUp from './components/VolunteerSignUp';
@@ -30,8 +30,8 @@ function App() {
                 element={<About />}
               />
               <Route
-                path="/on-the-job"
-                element={<OnTheJob />}
+                path="/Priorities"
+                element={<Priorities />}
               />
               <Route
                 path="/vision"
