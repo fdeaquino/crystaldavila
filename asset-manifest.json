@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/crystaldavila/static/css/main.b4611781.css",
-    "main.js": "/crystaldavila/static/js/main.c8534ed3.js",
+    "main.js": "/crystaldavila/static/js/main.4b2c186d.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-volunteer-photo.jpeg": "/crystaldavila/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
     "static/media/cd-photo-hero.webp": "/crystaldavila/static/media/cd-photo-hero.c09ab297c025414c3549.webp",
     "static/media/cd-on-the-job-photo.webp": "/crystaldavila/static/media/cd-on-the-job-photo.1dcca56197f29d1fdc61.webp",
     "static/media/cd-getinvolved-photo.webp": "/crystaldavila/static/media/cd-getinvolved-photo.0d7780013f98c7d109c6.webp",
+    "static/media/otj-meeting-emotional-needs.jpg": "/crystaldavila/static/media/otj-meeting-emotional-needs.f6c1197b2d006a32d9cd.jpg",
     "static/media/cd-about-photo.webp": "/crystaldavila/static/media/cd-about-photo.13fde346d5685bc41058.webp",
     "static/media/cd-photo-student.jpg": "/crystaldavila/static/media/cd-photo-student.3b0e9f06570be5e92776.jpg",
     "static/media/coffee-crystal.jpg": "/crystaldavila/static/media/coffee-crystal.ec8957c974ebbff7d64e.jpg",
@@ -23,7 +24,6 @@
     "static/media/cd-photo-womeninpolitics.jpeg": "/crystaldavila/static/media/cd-photo-womeninpolitics.16408ea97d19395a614a.jpeg",
     "static/media/polling-location.jpg": "/crystaldavila/static/media/polling-location.d0b29d1f57a068516e69.jpg",
     "static/media/cd-photo-tasb-conference.jpeg": "/crystaldavila/static/media/cd-photo-tasb-conference.6dd81c913f5db9ac6258.jpeg",
-    "static/media/otj-meeting-emotional-needs.jpeg": "/crystaldavila/static/media/otj-meeting-emotional-needs.ce1f9f5a894c7f932b4c.jpeg",
     "static/media/otj-school-funding.jpeg": "/crystaldavila/static/media/otj-school-funding.2c55759fb995097e6a7c.jpeg",
     "static/media/otj-school-safety.jpeg": "/crystaldavila/static/media/otj-school-safety.36e923595ebcd73f1ea6.jpeg",
     "static/media/cd-photo-collegeyears.jpeg": "/crystaldavila/static/media/cd-photo-collegeyears.b870e977cd1779376629.jpeg",
@@ -38,11 +38,11 @@
     "static/media/language-icon.png": "/crystaldavila/static/media/language-icon.c9c76e03a35ee2d121ba.png",
     "index.html": "/crystaldavila/index.html",
     "main.b4611781.css.map": "/crystaldavila/static/css/main.b4611781.css.map",
-    "main.c8534ed3.js.map": "/crystaldavila/static/js/main.c8534ed3.js.map",
+    "main.4b2c186d.js.map": "/crystaldavila/static/js/main.4b2c186d.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4611781.css",
-    "static/js/main.c8534ed3.js"
+    "static/js/main.4b2c186d.js"
   ]
 }
