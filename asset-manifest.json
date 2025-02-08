@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crystaldavila/static/css/main.b4611781.css",
-    "main.js": "/crystaldavila/static/js/main.be19f73b.js",
+    "main.js": "/crystaldavila/static/js/main.c8534ed3.js",
     "static/js/787.92a5ab7b.chunk.js": "/crystaldavila/static/js/787.92a5ab7b.chunk.js",
     "static/media/cd-volunteer-photo.jpeg": "/crystaldavila/static/media/cd-volunteer-photo.cce8432229ac3c5c81fe.jpeg",
     "static/media/cd-photo-hero.webp": "/crystaldavila/static/media/cd-photo-hero.c09ab297c025414c3549.webp",
@@ -38,11 +38,11 @@
     "static/media/language-icon.png": "/crystaldavila/static/media/language-icon.c9c76e03a35ee2d121ba.png",
     "index.html": "/crystaldavila/index.html",
     "main.b4611781.css.map": "/crystaldavila/static/css/main.b4611781.css.map",
-    "main.be19f73b.js.map": "/crystaldavila/static/js/main.be19f73b.js.map",
+    "main.c8534ed3.js.map": "/crystaldavila/static/js/main.c8534ed3.js.map",
     "787.92a5ab7b.chunk.js.map": "/crystaldavila/static/js/787.92a5ab7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4611781.css",
-    "static/js/main.be19f73b.js"
+    "static/js/main.c8534ed3.js"
   ]
 }
