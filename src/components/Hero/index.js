@@ -181,7 +181,7 @@ function Hero() {
                                 {t('learn_more_about_crystal')}
                             </Link>
                         </div>
-                        <div className='col-6 cd-group-photo'></div>
+                        <div className='col-6 cd-group-photo-2'></div>
                     </div>
                 </div>
 
@@ -224,7 +224,7 @@ function Hero() {
                                 {t('learn_about_cd_vision')}
                             </Link>
                         </div>
-                        <div className='col-6 cd-group-photo'></div>
+                        <div className='col-6 cd-group-photo-3'></div>
                     </div>
                 </div>
 

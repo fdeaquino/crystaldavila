@@ -483,6 +483,34 @@ h6 {
   border-radius: 10px;
 }
 
+.cd-group-photo-2 {
+  background-image: url('./assets/images/cd-group-photo-2.JPG');
+  background-size: cover;
+  background-position: top;
+  animation: 1.8s ease 0s 1 zoomIn;
+  -webkit-animation: 1.8s ease 0s 1 zoomIn;
+  max-height: 100%;
+  /* width: 40%; */
+  min-height: 50vh;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.cd-group-photo-3 {
+  background-image: url('./assets/images/cd-group-photo-3.JPG');
+  background-size: cover;
+  background-position: top;
+  animation: 1.8s ease 0s 1 zoomIn;
+  -webkit-animation: 1.8s ease 0s 1 zoomIn;
+  max-height: 100%;
+  /* width: 40%; */
+  min-height: 50vh;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
 .join-convo-text,
 .event-header {
   display: flex !important;
