@@ -33,14 +33,14 @@ function Hero() {
 
     const handleHeroFormSubmit = async (e) => {
         e.preventDefault();
-    
+
         if (!isFormValid()) {
             setStatus('Please fill out all fields.');
             return;
         }
-    
+
         setStatus('Sending...');
-    
+
         try {
             const response = await fetch("https://formspree.io/f/xpwqrrgd", {
                 method: "POST",
@@ -49,7 +49,7 @@ function Hero() {
                 },
                 body: JSON.stringify(formData),
             });
-    
+
             if (response.ok) {
                 setStatus('Message sent successfully!');
                 setFormData({ name: '', email: '', phoneNumber: '' });
@@ -66,7 +66,7 @@ function Hero() {
             setSubmissionSuccessful(false);  // ✅ Prevents popup from showing
         }
     };
-    
+
 
     const closePopup = () => {
         setShowPopup(false);
@@ -118,7 +118,7 @@ function Hero() {
             window.location.href = url;
         }, 700);
     };
-    
+
 
     return (
         <>
@@ -129,7 +129,7 @@ function Hero() {
                 <Popup onClose={closePopup} formData={formData} setFormData={setFormData} handleHeroFormSubmit={handleHeroFormSubmit} />
             )}
 
-<section className='large-screen-mb-2'>
+            <section className='large-screen-mb-2'>
                 <div className='container h-100'>
                     <div className='row h-100 justify-content-center hero-container'>
                         <div className={`col my-auto photo-container ${isHorizontal ? 'cd-photo' : ''}`}>
@@ -171,7 +171,50 @@ function Hero() {
                         <div className="col-6 h-100 card-body card-width">
                             <span className="tm--quote_icon icon_quote">
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" fill="##000000" viewBox="0 0 34.01 30.64"><defs><style>.cls-1</style></defs><title>quotes</title><path className="cls-1" d="M14.56,0C4.24,2.17,0,9.45,0,18.91V30.64H12.6V17.93H7.28c0-7.28,2.17-11.84,8.91-13.69Z"></path><path className="cls-1" d="M32.38,0C22.06,2.17,17.82,9.45,17.82,18.91V30.64h12.6V17.93H25.1c0-7.28,2.17-11.84,8.91-13.69Z"></path></svg>				</span>
-                            <h5 className="card-title text-uppercase">{t('h5_title_hero')}</h5>
+                            <h5 className="card-title text-uppercase">{t('h5_title_hero_1')}</h5>
+                            {/* <p className="card-subtitle mb-2 text-muted">Card subtitle What we are trying to do is What we are trying to do is What we are trying to do is</p> */}
+                            <Link
+                                to="/about"
+                                className="card-link card-link-style"
+                                onClick={() => window.scrollTo(0, 0)}
+                            >
+                                {t('learn_more_about_crystal')}
+                            </Link>
+                        </div>
+                        <div className='col-6 cd-group-photo'></div>
+                    </div>
+                </div>
+
+            </section>
+            <section className="py-4 py-lg-5">
+                <div className="container h-100 card custom-card-styles" >
+                    <div className='row justify-content-center align-items-center stack-quote-photo'>
+                        <div className='col-6 cd-group-photo'></div>
+
+                        <div className="col-6 h-100 card-body card-width">
+                            <span className="tm--quote_icon icon_quote">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" fill="##000000" viewBox="0 0 34.01 30.64"><defs><style>.cls-1</style></defs><title>quotes</title><path className="cls-1" d="M14.56,0C4.24,2.17,0,9.45,0,18.91V30.64H12.6V17.93H7.28c0-7.28,2.17-11.84,8.91-13.69Z"></path><path className="cls-1" d="M32.38,0C22.06,2.17,17.82,9.45,17.82,18.91V30.64h12.6V17.93H25.1c0-7.28,2.17-11.84,8.91-13.69Z"></path></svg>				</span>
+                            <h5 className="card-title text-uppercase">{t('h5_title_hero_2')}</h5>
+                            {/* <p className="card-subtitle mb-2 text-muted">Card subtitle What we are trying to do is What we are trying to do is What we are trying to do is</p> */}
+                            <Link
+                                to="/get-involved"
+                                className="card-link card-link-style"
+                                onClick={() => window.scrollTo(0, 0)}
+                            >
+                                {t('get_involved')}
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section className="py-4 py-lg-5">
+                <div className="container h-100 card custom-card-styles" >
+                    <div className='row justify-content-center align-items-center stack-quote-photo'>
+                        <div className="col-6 h-100 card-body card-width">
+                            <span className="tm--quote_icon icon_quote">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" fill="##000000" viewBox="0 0 34.01 30.64"><defs><style>.cls-1</style></defs><title>quotes</title><path className="cls-1" d="M14.56,0C4.24,2.17,0,9.45,0,18.91V30.64H12.6V17.93H7.28c0-7.28,2.17-11.84,8.91-13.69Z"></path><path className="cls-1" d="M32.38,0C22.06,2.17,17.82,9.45,17.82,18.91V30.64h12.6V17.93H25.1c0-7.28,2.17-11.84,8.91-13.69Z"></path></svg>				</span>
+                            <h5 className="card-title text-uppercase">{t('h5_title_hero_3')}</h5>
                             {/* <p className="card-subtitle mb-2 text-muted">Card subtitle What we are trying to do is What we are trying to do is What we are trying to do is</p> */}
                             <Link
                                 to="/vision"
