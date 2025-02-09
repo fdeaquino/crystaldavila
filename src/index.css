@@ -168,7 +168,7 @@ h6 {
 }
 
 .activeComponent {
-  border-bottom: 2px solid #9e2987;
+  border-bottom: 2px solid #cd2338;
   padding-bottom: 10px;
 
 }
@@ -682,7 +682,7 @@ h6 {
   width: 12.5rem;
   height: 12.5rem;
   margin-left: -100px;
-  background-image: linear-gradient(88deg, #9e2987, #d76ac1);
+  background-image: linear-gradient(88deg, #cd2338, #d76ac1);
 }
 
 .timeline>li .timeline-image h4 {
@@ -741,7 +741,7 @@ h6 {
   left: 43.125rem;
   width: 4px;
   height: 11.25rem;
-  background-color: #9e2987;
+  background-color: #cd2338;
   -ms-transform: rotate(-44deg);
   -webkit-transform: rotate(-44deg);
   transform: rotate(-44deg);
@@ -756,7 +756,7 @@ h6 {
   left: 33.125rem;
   width: 4px;
   height: 11.25rem;
-  background-color: #9e2987;
+  background-color: #cd2338;
   -ms-transform: rotate(44deg);
   -webkit-transform: rotate(44deg);
   transform: rotate(44deg);
