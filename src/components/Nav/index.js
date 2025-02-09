@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import cdlogo from '../../assets/images/crystal-logo-1.png';
+
+
 
 function Nav(props) {
     const [currentComponent, setCurrentComponent] = useState('');
@@ -28,20 +31,20 @@ function Nav(props) {
             mobileMenu.style.transitionProperty = "top";
             menu.classList.remove("openmenu");
             mobileMenu.style.position = "absolute";
-            mobileMenu.style.top = "-81px";
+            mobileMenu.style.top = "-45px";
             mobileMenu.style.right = "12px";
 
         } else if (!openMenu && scrolled) {
             menu.classList.remove("openmenu");
             mobileMenu.style.position = "absolute";
-            mobileMenu.style.top = "-71px";
+            mobileMenu.style.top = "-50px";
             mobileMenu.style.right = "12px";
 
         } else {
             menu.classList.remove("openmenu");
             setTimeout(() => {
                 mobileMenu.style.position = "absolute";
-                mobileMenu.style.top = "-81px";
+                mobileMenu.style.top = "-45px";
                 mobileMenu.style.right = "12px";
 
             }, 500); // matches the transition in the CSS
@@ -104,20 +107,19 @@ function Nav(props) {
                 <nav className={`navbar navbar-expand-lg navbar-fixed-top navigation-clean-button navbar-custom-css${openMenu ? '' : (scrolled ? ' navbar-scrolled' : '')}`}>
                     <div className='container-fluid container nav-container-custom-css p-0' style={{ position: 'relative', zIndex: '9999' }}>
                         <div className='container-for-mediaquery'>
-                            <h1 className='d-inline-flex brand' style={{ zIndex: '9999' }} onClick={() => {
+                            <Link to='/' onClick={() => {
                                 setCurrentComponent('');
                                 setOpenMenu(false);
                                 setMenuVisible(false);
                                 setActiveMenuItem('');
                             }}>
-                                <Link to='/'>
-                                    Crystal Dávila
-                                </Link>
-                            </h1>
-
-                            <span className='d-inline-flex text-uppercase secondary-brand-styles secondary-brand-size' style={{ zIndex: '9999' }}>
-                                For P.I.S.D. School Board
-                            </span>
+                                <img
+                                    src={cdlogo}
+                                    alt="Crystal Dávila Logo"
+                                    className="nav-logo"
+                                    style={{ height: '50px', width: 'auto' }} // Adjust size as needed
+                                />
+                            </Link>
                         </div>
 
                         <div className='container position-relative'>
