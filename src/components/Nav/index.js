@@ -145,7 +145,7 @@ function Nav(props) {
                                             {t('meet_crystal')}
                                         </Link>
                                     </li>
-                                    <li className='nav-item nav-link-custom-css me-4'>
+                                    {/* <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
                                             className={activeMenuItem === 'Priorities' ? 'activeComponent' : ''}
                                             to='/priorities'
@@ -156,7 +156,7 @@ function Nav(props) {
                                         >
                                             {t('priorities')}
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
                                             className={activeMenuItem === 'Vision' ? 'activeComponent' : ''}
@@ -212,7 +212,7 @@ function Nav(props) {
                             {t('meet_crystal')}
                         </Link>
                     </li>
-                    <li className={currentComponent === 'Priorities' ? 'activeComponent' : ''}>
+                    {/* <li className={currentComponent === 'Priorities' ? 'activeComponent' : ''}>
                         <Link
                             to="/priorities"
                             onClick={() => {
@@ -225,7 +225,7 @@ function Nav(props) {
                         >
                             {t('priorities')}
                         </Link>
-                    </li>
+                    </li> */}
                     <li className={currentComponent === 'Vision' ? 'activeComponent' : ''}>
                         <Link
                             to="/vision"

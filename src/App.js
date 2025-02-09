@@ -6,7 +6,7 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
 import GetInvolved from './components/GetInvolved';
-import Priorities from './components/Priorities';
+// import Priorities from './components/Priorities';
 import Vision from './components/Vision';
 import Footer from './components/Footer';
 import VolunteerSignUp from './components/VolunteerSignUp';
@@ -29,10 +29,10 @@ function App() {
                 path="/about"
                 element={<About />}
               />
-              <Route
+              {/* <Route
                 path="/Priorities"
                 element={<Priorities />}
-              />
+              /> */}
               <Route
                 path="/vision"
                 element={<Vision />}
