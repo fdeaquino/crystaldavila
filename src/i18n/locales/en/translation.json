@@ -83,29 +83,29 @@
 
     "h3_title_upcoming_events": "Upcoming Events",
 
-    "getinvolved_event_data_title_1": "Community Meeting",
-    "getinvolved_event_date_1": "April 1, 2023",
-    "getinvolved_event_location_1": "Community Center",
+    "getinvolved_event_data_title_1": "Canvassing Campaign Launch + Canvas",
+    "getinvolved_event_date_1": "3:00 - 6:00pm",
+    "getinvolved_event_location_1": "02/13/25",
 
-    "getinvolved_event_data_title_2": "Café con Crystal",
-    "getinvolved_event_date_2": "April 4, 2023",
-    "getinvolved_event_location_2": "Primos Taco House",
+    "getinvolved_event_data_title_2": "We’re planning new events",
+    "getinvolved_event_date_2": "—updates coming soon!",
+    "getinvolved_event_location_2": "",
 
-    "getinvolved_event_data_title_3": "Fundraising Dinner",
-    "getinvolved_event_date_3": "April 7, 2023",
-    "getinvolved_event_location_3": "Primos Taco House",
+    "getinvolved_event_data_title_3": "We’re planning new events",
+    "getinvolved_event_date_3": "—updates coming soon!",
+    "getinvolved_event_location_3": "",
 
-    "getinvolved_event_data_title_4": "Walk With Crystal",
-    "getinvolved_event_date_4": "April 30, 2023",
-    "getinvolved_event_location_4": "Memorial Park",
+    "getinvolved_event_data_title_4": "We’re planning new events",
+    "getinvolved_event_date_4": "—updates coming soon!",
+    "getinvolved_event_location_4": "",
 
-    "getinvolved_event_data_title_5": "Run With Crystal",
-    "getinvolved_event_date_5": "May 2, 2023",
-    "getinvolved_event_location_5": "Strawberry Park",
+    "getinvolved_event_data_title_5": "We’re planning new events",
+    "getinvolved_event_date_5": "—updates coming soon!",
+    "getinvolved_event_location_5": "",
 
-    "getinvolved_event_data_title_6": "Birthday Celebration",
-    "getinvolved_event_date_6": "May 3, 2023",
-    "getinvolved_event_location_6": "Primos Taco House",
+    "getinvolved_event_data_title_6": "We’re planning new events",
+    "getinvolved_event_date_6": "—updates coming soon!",
+    "getinvolved_event_location_6": "",
     "view_calendar_btn": "View Full Calendar",
 
 
@@ -176,12 +176,14 @@
     "otj_h3_text_emotional_support": "You are currently reading PLACEHOLDER text. Rest assured, this is only temporary. Our team is working hard to prepare engaging content to take its place. Genuine content is just around the corner, pending campaign approval. Remember to bookmark us, fresh updates are coming soon!",
 
 
-    "upcoming_events_title_1": "Dia De Los Niños Celebration",
-    "upcoming_events_img_description_1": "An image of children around the globe.",
-    "upcoming_events_title_2": "Birthday Celebration",
-    "upcoming_events_img_description_2": "An image of party balloons.",
-    "upcoming_events_title_3": "Cinco de Mayo Celebration",
-    "upcoming_events_img_description_3": "An image of items relating to the Mexican holiday, Cinco de Mayo.",
+    "upcoming_events_title_1": "Canvassing Campaign Launch + Canvas",
+    "upcoming_events_img_description_1": "",
+    "upcoming_events_title_2": "We’re planning new events",
+    "upcoming_events_subtitle_2": "—updates coming soon!",
+    "upcoming_events_img_description_2": "",
+    "upcoming_events_title_3": "We’re planning new events",
+    "upcoming_events_subtitle_3": "—updates coming soon!",
+    "upcoming_events_img_description_3": "",
     "signupform_coming_soon": "Sign Up Form Coming Soon :)",
     "back_to_home": "Home"
 

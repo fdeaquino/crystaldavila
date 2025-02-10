@@ -91,42 +91,42 @@ function GetInvolved() {
         {
             title: t('getinvolved_event_data_title_1'),
             date: t('getinvolved_event_date_1'),
-            time: '6:00 PM',
+            // time: '6:00 PM',
             location: t('getinvolved_event_location_1'),
             imageUrl: communityMeeting
         },
         {
             title: t('getinvolved_event_data_title_2'),
             date: t('getinvolved_event_date_2'),
-            time: '11:00 AM',
+            // time: '11:00 AM',
             location: t('getinvolved_event_location_2'),
             imageUrl: coffeeCrystal
         },
         {
             title: t('getinvolved_event_data_title_3'),
             date: t('getinvolved_event_date_3'),
-            time: '7:00 PM',
+            // time: '7:00 PM',
             location: t('getinvolved_event_location_3'),
             imageUrl: fundraisingDinner
         },
         {
             title: t('getinvolved_event_data_title_4'),
             date: t('getinvolved_event_date_4'),
-            time: '4:00 PM',
+            // time: '4:00 PM',
             location: t('getinvolved_event_location_4'),
             imageUrl: walkingAtPark
         },
         {
             title: t('getinvolved_event_data_title_5'),
             date: t('getinvolved_event_date_5'),
-            time: '2:00 PM',
+            // time: '2:00 PM',
             location: t('getinvolved_event_location_5'),
             imageUrl: runAtPark
         },
         {
             title: t('getinvolved_event_data_title_6'),
             date: t('getinvolved_event_date_6'),
-            time: '7:00 PM',
+            // time: '7:00 PM',
             location: t('getinvolved_event_location_6'),
             imageUrl: cdBdayCelebration
         }
@@ -244,7 +244,7 @@ function GetInvolved() {
                                         <img src={event.imageUrl} alt={event.title} className="card-img-top mb-2" />
                                         <div className="card-body">
                                             <h4 className="card-title my-2">{event.title}</h4>
-                                            <p className='volunteer-card-text mt-3'>{event.date} at {event.time}</p>
+                                            <p className='volunteer-card-text mt-3'>{event.date} {event.time}</p>
                                             <p className='volunteer-card-text'>{event.location}</p>
                                         </div>
                                     </div>

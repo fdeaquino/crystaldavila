@@ -285,9 +285,9 @@ function Hero() {
                                     <img src={diaNinos} alt={t('upcoming_events_img_description_1')} className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className='card-title my-2 px-1'>{t('upcoming_events_title_1')}</h4>
-                                        <p className='event-info mb-1 work-card-text p-2'>Memorial Park</p>
-                                        <p className='event-info mb-1 work-card-text p-2'>500 W Jackson Ave, Pasadena, TX 77506</p>
-                                        <p className='event-info work-card-text p-2'>04/30/23</p>
+                                        {/* <p className='event-info mb-1 work-card-text p-2'>Memorial Park</p> */}
+                                        <p className='event-info mb-1 work-card-text p-2'>3:00 - 6:00pm</p>
+                                        <p className='event-info work-card-text p-2'>02/13/25</p>
                                     </div>
                                 </div>
                             </div>
@@ -297,9 +297,9 @@ function Hero() {
                                     <img src={cdBdayCelebration} alt={t('upcoming_events_img_description_2')} className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className='card-title my-2 px-1'>{t('upcoming_events_title_2')}</h4>
-                                        <p className='event-info mb-1 work-card-text p-2'>Primos Taco House</p>
-                                        <p className='event-info mb-1 work-card-text p-2'>723 Queens Rd. Pasadena, TX 77502</p>
-                                        <p className='event-info work-card-text p-2'>05/03/23</p>
+                                        {/* <p className='event-info mb-1 work-card-text p-2'>Primos Taco House</p> */}
+                                        <p className='event-info mb-1 work-card-text p-2'>{t('upcoming_events_subtitle_2')}</p>
+                                        {/* <p className='event-info work-card-text p-2'>05/03/23</p> */}
                                     </div>
                                 </div>
                             </div>
@@ -309,9 +309,9 @@ function Hero() {
                                     <img src={cincoMayo} alt={t('upcoming_events_img_description_3')} className="card-img-top mb-2" />
                                     <div className="card-body">
                                         <h4 className='card-title my-2 px-1'>{t('upcoming_events_title_3')}</h4>
-                                        <p className='event-info mb-1 work-card-text p-2'>Strawberry Park</p>
-                                        <p className='event-info mb-1 work-card-text p-2'>500 W Jackson Ave, Pasadena, TX 77506</p>
-                                        <p className='event-info work-card-text p-2'>TBD</p>
+                                        {/* <p className='event-info mb-1 work-card-text p-2'>Strawberry Park</p> */}
+                                        <p className='event-info mb-1 work-card-text p-2'>{t('upcoming_events_subtitle_3')}</p>
+                                        {/* <p className='event-info work-card-text p-2'>TBD</p> */}
                                     </div>
                                 </div>
                             </div>

@@ -83,27 +83,27 @@
     
     "h3_title_upcoming_events": "Próximos Eventos",
 
-    "getinvolved_event_data_title_1": "Reunión Vecinal",
-    "getinvolved_event_date_1": "1 de Abril, 2023",
-    "getinvolved_event_location_1": "Centro Comunitario",
+    "getinvolved_event_data_title_1": "Canvassing Campaign Launch + Canvas",
+    "getinvolved_event_date_1": "3:00 - 6:00pm",
+    "getinvolved_event_location_1": "02/13/25",
 
-    "getinvolved_event_data_title_2": "Café con Crystal",
+    "getinvolved_event_data_title_2": "Eventos en planificación:",
     "getinvolved_event_date_2": "4 de Abril, 2023",
     "getinvolved_event_location_2": "Primos Taco House",
 
-    "getinvolved_event_data_title_3": "Cena para Recaudar Fondos",
+    "getinvolved_event_data_title_3": "Eventos en planificación:",
     "getinvolved_event_date_3": "7 de Abril, 2023",
     "getinvolved_event_location_3": "Primos Taco House",
 
-    "getinvolved_event_data_title_4": "Camina con Crystal",
+    "getinvolved_event_data_title_4": "Eventos en planificación:",
     "getinvolved_event_date_4": "30 de Abril, 2023",
     "getinvolved_event_location_4": "Parque Memorial",
 
-    "getinvolved_event_data_title_5": "Corre con Crystal",
+    "getinvolved_event_data_title_5": "Eventos en planificación:",
     "getinvolved_event_date_5": "2 de Mayo, 2023",
     "getinvolved_event_location_5": "Parque Strawberry",
 
-    "getinvolved_event_data_title_6": "Celebración de Cumpleaños",
+    "getinvolved_event_data_title_6": "Eventos en planificación:",
     "getinvolved_event_date_6": "3 de Mayo, 2023",
     "getinvolved_event_location_6": "Primos Taco House",
     "view_calendar_btn": "Más Eventos",
@@ -175,12 +175,14 @@
     "otj_h4_title_emotional_support": "Apoyo Emocional en las Escuelas",
     "otj_h3_text_emotional_support": "Estás leyendo texto sustituto. Pero es momentáneo. Nuestro equipo está generando contenido cautivante para ocupar este espacio. El contenido real está cerca, simplemente esperando la aprobación de la campaña. Mantenganos en sus paginas favoritas, las nuevas actualizaciones están cerca!",
 
-    "upcoming_events_title_1": "Celebración del Día De Los Niños",
-    "upcoming_events_img_description_1": "Una imagen de niños alrededor del mundo.",
-    "upcoming_events_title_2": "Celebración de Cumpleaños",
-    "upcoming_events_img_description_2": "Una imagen de globos de fiesta.",
-    "upcoming_events_title_3": "Celebración del Cinco de Mayo",
-    "upcoming_events_img_description_3": "Una imagen de objetos relacionados con la festividad mexicana, Cinco de Mayo.",
+    "upcoming_events_title_1": "Lanzamiento de la Campaña",
+    "upcoming_events_img_description_1": "",
+    "upcoming_events_title_2": "Eventos en planificación:",
+    "upcoming_events_subtitle_2": "¡Te avisaremos pronto!",
+    "upcoming_events_img_description_2": "",
+    "upcoming_events_title_3": "Eventos en planificación:",
+    "upcoming_events_subtitle_3": "¡Te avisaremos pronto!",
+    "upcoming_events_img_description_3": "",
     "signupform_coming_soon": "Formulario de Registro en Progreso :)",
     "back_to_home": "Inicio"
 
