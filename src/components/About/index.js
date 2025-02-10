@@ -156,7 +156,7 @@ function About() {
                         <p className='volunteer-card-text mt-3 contribution-content-text'>{t('subtitle_need_your_help_7')}</p>
 
 
-                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crystal-davila-1")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">{t('donate_today_btn')}</button>
+                        <button onClick={(e) => handleButtonClick(e, "https://secure.actblue.com/donate/crysforpasadena")} className="btn btn-moving-gradient btn-moving-gradient--donate mt-3 mb-4">{t('donate_today_btn')}</button>
 
                     </div>
                 </section>

@@ -185,7 +185,7 @@ function Nav(props) {
                                     </li>
                                     <li className='nav-item nav-link-custom-css donate-color'>
                                         <Link
-                                            to="https://secure.actblue.com/donate/crystal-davila-1"
+                                            to="https://secure.actblue.com/donate/crysforpasadena"
                                         >
                                             {t('donate')}
                                         </Link>
@@ -258,7 +258,7 @@ function Nav(props) {
                     </li>
                     <li className='donate-color'>
                         <Link
-                            to="https://secure.actblue.com/donate/crystal-davila-1"
+                            to="https://secure.actblue.com/donate/crysforpasadena"
                         >
                             {t('donate')}
                         </Link>
