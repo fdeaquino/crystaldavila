@@ -311,9 +311,9 @@ function GetInvolved() {
                     <div className="row">
                         <div className="col-md-6">
                             <h3 className='mb-4'>{t('h3_title_get_in_touch')}</h3>
-                            <p className='volunteer-card-text mt-3'>{t('subtitle_get_in_touch_phone')}: (123) 456-7890</p>
-                            <p className='volunteer-card-text mt-3'>{t('email')}: info@campaignwebsite.com</p>
-                            <p className='volunteer-card-text mt-3'>{t('subtitle_get_in_touch_address')}: 1234 Main St, Pasadena, TX 77506</p>
+                            <p className='volunteer-card-text mt-3'>{t('subtitle_get_in_touch_phone')}: (713) 518-8029</p>
+                            <p className='volunteer-card-text mt-3'>{t('email')}: info@crystaldavila.com</p>
+                            {/* <p className='volunteer-card-text mt-3'>{t('subtitle_get_in_touch_address')}: 1234 Main St, Pasadena, TX 77506</p> */}
                         </div>
                         <div className="col-md-6">
                             <h3 className='mb-4'>{t('h3_title_contact_us')}</h3>
