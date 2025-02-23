@@ -10,6 +10,8 @@ import cdBdayCelebration from '../../assets/images/cd-bday-celebration.jpg';
 import voterRegistration from '../../assets/images/voter-registration.jpg';
 import earlyVoting from '../../assets/images/early-voting.jpg';
 import pollingLocation from '../../assets/images/polling-location.jpg';
+import communityCanvasing from '../../assets/images/communityCanvasing.jpeg';
+
 
 function GetInvolved() {
     const { t } = useTranslation();
@@ -93,43 +95,43 @@ function GetInvolved() {
             date: t('getinvolved_event_date_1'),
             // time: '6:00 PM',
             location: t('getinvolved_event_location_1'),
-            imageUrl: communityMeeting
+            imageUrl: communityCanvasing
         },
         {
             title: t('getinvolved_event_data_title_2'),
             date: t('getinvolved_event_date_2'),
             // time: '11:00 AM',
             location: t('getinvolved_event_location_2'),
-            imageUrl: coffeeCrystal
+            imageUrl: communityMeeting
         },
-        {
-            title: t('getinvolved_event_data_title_3'),
-            date: t('getinvolved_event_date_3'),
-            // time: '7:00 PM',
-            location: t('getinvolved_event_location_3'),
-            imageUrl: fundraisingDinner
-        },
-        {
-            title: t('getinvolved_event_data_title_4'),
-            date: t('getinvolved_event_date_4'),
-            // time: '4:00 PM',
-            location: t('getinvolved_event_location_4'),
-            imageUrl: walkingAtPark
-        },
-        {
-            title: t('getinvolved_event_data_title_5'),
-            date: t('getinvolved_event_date_5'),
-            // time: '2:00 PM',
-            location: t('getinvolved_event_location_5'),
-            imageUrl: runAtPark
-        },
-        {
-            title: t('getinvolved_event_data_title_6'),
-            date: t('getinvolved_event_date_6'),
-            // time: '7:00 PM',
-            location: t('getinvolved_event_location_6'),
-            imageUrl: cdBdayCelebration
-        }
+        // {
+        //     title: t('getinvolved_event_data_title_3'),
+        //     date: t('getinvolved_event_date_3'),
+        //     // time: '7:00 PM',
+        //     location: t('getinvolved_event_location_3'),
+        //     imageUrl: fundraisingDinner
+        // },
+        // {
+        //     title: t('getinvolved_event_data_title_4'),
+        //     date: t('getinvolved_event_date_4'),
+        //     // time: '4:00 PM',
+        //     location: t('getinvolved_event_location_4'),
+        //     imageUrl: walkingAtPark
+        // },
+        // {
+        //     title: t('getinvolved_event_data_title_5'),
+        //     date: t('getinvolved_event_date_5'),
+        //     // time: '2:00 PM',
+        //     location: t('getinvolved_event_location_5'),
+        //     imageUrl: runAtPark
+        // },
+        // {
+        //     title: t('getinvolved_event_data_title_6'),
+        //     date: t('getinvolved_event_date_6'),
+        //     // time: '7:00 PM',
+        //     location: t('getinvolved_event_location_6'),
+        //     imageUrl: cdBdayCelebration
+        // }
     ];
 
     return (
@@ -253,7 +255,7 @@ function GetInvolved() {
                         </div>
                         {/* TODO: Add working url */}
 
-                        <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-primary btn-moving-gradient btn-moving-gradient--blue w-50 mt-3 mb-4">{t('view_calendar_btn')}</button>
+                        {/* <button onClick={(e) => handleButtonClick(e, "")} className="btn btn-primary btn-moving-gradient btn-moving-gradient--blue w-50 mt-3 mb-4">{t('view_calendar_btn')}</button> */}
 
                     </div>
                 </section>
