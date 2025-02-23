@@ -83,13 +83,13 @@
     
     "h3_title_upcoming_events": "Próximos Eventos",
 
-    "getinvolved_event_data_title_1": "Canvassing Campaign Launch + Canvas",
-    "getinvolved_event_date_1": "3:00 - 6:00pm",
-    "getinvolved_event_location_1": "02/13/25",
+    "getinvolved_event_data_title_1": "Campaña Puerta A Puerta En La Comunidad",
+    "getinvolved_event_date_1": "3:00 - 6:00pm Cada Domingo",
+    "getinvolved_event_location_1": "Comida Proporcionada, Regístrate Para Obtener Más Detalles",
 
-    "getinvolved_event_data_title_2": "Eventos en planificación:",
-    "getinvolved_event_date_2": "¡Te avisaremos pronto!",
-    "getinvolved_event_location_2": "",
+    "getinvolved_event_data_title_2": "Lanzamiento de la Campaña",
+    "getinvolved_event_date_2": "3:00 - 6:00pm",
+    "getinvolved_event_location_2": "02/13/25",
 
     "getinvolved_event_data_title_3": "Eventos en planificación:",
     "getinvolved_event_date_3": "¡Te avisaremos pronto!",
@@ -175,14 +175,15 @@
     "otj_h4_title_emotional_support": "Apoyo Emocional en las Escuelas",
     "otj_h3_text_emotional_support": "Estás leyendo texto sustituto. Pero es momentáneo. Nuestro equipo está generando contenido cautivante para ocupar este espacio. El contenido real está cerca, simplemente esperando la aprobación de la campaña. Mantenganos en sus paginas favoritas, las nuevas actualizaciones están cerca!",
 
-    "upcoming_events_title_1": "Lanzamiento de la Campaña",
-    "upcoming_events_img_description_1": "",
-    "upcoming_events_title_2": "Eventos en planificación:",
-    "upcoming_events_subtitle_2": "¡Te avisaremos pronto!",
-    "upcoming_events_img_description_2": "",
-    "upcoming_events_title_3": "Eventos en planificación:",
-    "upcoming_events_subtitle_3": "¡Te avisaremos pronto!",
-    "upcoming_events_img_description_3": "",
+    "upcoming_events_title_1": "Campaña Puerta A Puerta En La Comunidad",
+    "upcoming_events_img_description_1": "3:00 - 6:00pm Cada Domingo",
+    "upcoming_events_details_1": "Comida Proporcionada, Regístrate Para Obtener Más Detalles",
+
+
+    "upcoming_events_title_2": "Lanzamiento de la Campaña",
+    "upcoming_events_subtitle_2": "3:00 - 6:00pm",
+    "upcoming_events_details_2": "02/13/25",
+
     "signupform_coming_soon": "Formulario de Registro en Progreso :)",
     "back_to_home": "Inicio"
 

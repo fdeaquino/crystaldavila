@@ -177,16 +177,12 @@
     "otj_h3_text_emotional_support": "You are currently reading PLACEHOLDER text. Rest assured, this is only temporary. Our team is working hard to prepare engaging content to take its place. Genuine content is just around the corner, pending campaign approval. Remember to bookmark us, fresh updates are coming soon!",
 
 
-    "upcoming_events_title_1": "Canvassing Campaign Launch + Canvas",
-    "upcoming_events_img_description_1": "",
-    "upcoming_events_title_2": "We’re planning new events",
-    "upcoming_events_subtitle_2": "—updates coming soon!",
-    "upcoming_events_img_description_2": "",
-    "upcoming_events_title_3": "We’re planning new events",
-    "upcoming_events_subtitle_3": "—updates coming soon!",
-    "upcoming_events_img_description_3": "",
-    "signupform_coming_soon": "Sign Up Form Coming Soon :)",
-    "back_to_home": "Home"
+    "upcoming_events_title_1": "Canvassing In The Community",
+    "upcoming_events_img_description_1": "3:00 - 6:00pm Every Sunday",
+    "upcoming_events_details_1": "Food Provided, Sign Up For More Info",
 
 
+    "upcoming_events_title_2": "Canvassing Campaign Launch + Canvas",
+    "upcoming_events_subtitle_2": "3:00 - 6:00pm",
+    "upcoming_events_details_2": "02/13/25"
 }
