@@ -179,7 +179,7 @@ function GetInvolved() {
                         <h3 className='volunteer-title'>{t('h3_title_volunteer_with_us')}</h3>
                         <p className='volunteer-content-text volunteer-card-text'>{t('subtitle_volunteer_with_us')}</p>
                         {/* TODO: Add working url */}
-                        <button onClick={(e) => handleButtonClick(e, "/volunteer-sign-up")} className="btn btn-moving-gradient btn-moving-gradient--blue">{t('sign_up_btn')}</button>
+                        <button onClick={(e) => handleButtonClick(e, "https://docs.google.com/forms/d/e/1FAIpQLSecOqlHuUm_QHrbYmOlA87yWKDR1n0fRZgudEsnXneb-f2X6Q/viewform?pli=1")} className="btn btn-moving-gradient btn-moving-gradient--blue">{t('sign_up_btn')}</button>
                         <div className="row mt-4 h-100 justify-content-center ">
                             <div className="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
                                 <div className="volunteer-card volunteer-card-background card p-4">
