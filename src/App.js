@@ -29,14 +29,14 @@ function App() {
                 path="/about"
                 element={<About />}
               />
-              {/* <Route
-                path="/Priorities"
-                element={<Priorities />}
-              /> */}
               <Route
-                path="/vision"
+                path="/priorities"
                 element={<Vision />}
               />
+              {/* <Route
+                path="/vision"
+                element={<Vision />}
+              /> */}
               <Route
                 path="/get-involved"
                 element={<GetInvolved />}

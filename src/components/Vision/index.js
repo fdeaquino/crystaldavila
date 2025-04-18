@@ -54,14 +54,14 @@ function Vision() {
                 // t('getinvolved_vision_card_2_5'),
             ],
         },
-        {
-            title: t('getinvolved_vision_card_data_title3'),
-            items: [
-                t('getinvolved_vision_card_3_1'),
-                t('getinvolved_vision_card_3_2'),
-                // t('getinvolved_vision_card_3_3'),
-            ],
-        },
+        // {
+        //     title: t('getinvolved_vision_card_data_title3'),
+        //     items: [
+        //         t('getinvolved_vision_card_3_1'),
+        //         t('getinvolved_vision_card_3_2'),
+        //         // t('getinvolved_vision_card_3_3'),
+        //     ],
+        // },
         {
             title: t('getinvolved_vision_card_data_title4'),
             items: [

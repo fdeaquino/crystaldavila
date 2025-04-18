@@ -161,14 +161,14 @@ function Nav(props) {
                                     </li> */}
                                     <li className='nav-item nav-link-custom-css me-4'>
                                         <Link
-                                            className={activeMenuItem === 'Vision' ? 'activeComponent' : ''}
-                                            to='/vision'
+                                            className={activeMenuItem === 'Priorities' ? 'activeComponent' : ''}
+                                            to='/priorities'
                                             onClick={() => {
-                                                setCurrentComponent('Vision');
-                                                setActiveMenuItem('Vision');
+                                                setCurrentComponent('Priorities');
+                                                setActiveMenuItem('Priorities');
                                             }}
                                         >
-                                            {t('vision')}
+                                            {t('priorities')}
                                         </Link>
                                     </li>
                                     <li className='nav-item nav-link-custom-css me-4'>
@@ -228,18 +228,18 @@ function Nav(props) {
                             {t('priorities')}
                         </Link>
                     </li> */}
-                    <li className={currentComponent === 'Vision' ? 'activeComponent' : ''}>
+                    <li className={currentComponent === 'Priorities' ? 'activeComponent' : ''}>
                         <Link
-                            to="/vision"
+                            to="/priorities"
                             onClick={() => {
-                                setCurrentComponent('Vision');
+                                setCurrentComponent('Priorities');
                                 setOpenMenu(false);
-                                setActiveMenuItem('Vision');
+                                setActiveMenuItem('Priorities');
                                 setMenuVisible(false);
                             }}
-                            className={activeMenuItem === 'Vision' ? 'activeComponent' : ''}
+                            className={activeMenuItem === 'Priorities' ? 'activeComponent' : ''}
                         >
-                            {t('vision')}
+                            {t('priorities')}
                         </Link>
                     </li>
                     <li className={currentComponent === 'GetInvolved' ? 'activeComponent' : ''}>
