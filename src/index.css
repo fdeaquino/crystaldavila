@@ -982,12 +982,23 @@ button.close {
 }
 
 .line-vision-sections {
-  border-bottom: 2px solid rgb(158, 41, 135);
+  border-bottom: 2px solid #cd2338;
   margin-top: 20px;
 }
 
+.card-body .list-inline-item > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 
+.card-body .list-inline-item > div svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+}
 /* ========== END VISION SECTION STYLES ========== */
 
 /* ========== START GET INVOLVED SECTION STYLES ========== */
